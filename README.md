@@ -1,5 +1,5 @@
 ![](https://yt3.ggpht.com/WZi7-QLmIwHR6wNUcvzGoRmDC_OO8UunJLyxcfkCI7sBXFMBRQl01rvgQbVCX_ocwKDlOkWhLzw73dY=s640-nd-v1)
-# Friday Night Funkin' - OS Engine - Modded Psych Engine 
+# FNF El Chavo Full week
 ![](https://img.shields.io/github/issues/notweuz/FNF-OSEngine) ![](https://img.shields.io/github/forks/notweuz/FNF-OSEngine) ![](https://img.shields.io/github/stars/notweuz/FNF-OSEngine) ![](https://img.shields.io/github/license/notweuz/FNF-OSEngine) ![GitHub all releases](https://img.shields.io/github/downloads/notweuz/FNF-OSEngine/total) ![GitHub repo size](https://img.shields.io/github/repo-size/notweuz/FNF-OSEngine) ![](https://img.shields.io/github/contributors/notweuz/FNF-OSEngine) ![GitHub release (latest by date)](https://img.shields.io/github/downloads/notweuz/FNF-OSEngine/latest/total)
 
 ## Installation:
