@@ -1,0 +1,25 @@
+{
+	"dialogue_pos": "left",
+	"position": [
+		120,
+		80
+	],
+	"no_antialiasing": false,
+	"scale": 1.35,
+	"animations": [
+		{
+			"anim": "talk",
+			"loop_offsets": [
+				0,
+				0
+			],
+			"idle_offsets": [
+				-1,
+				-12
+			],
+			"loop_name": " Donramon_DialogueLOOP",
+			"idle_name": " Donramon_Dialogue"
+		}
+	],
+	"image": "Dialogue-Donramon"
+}

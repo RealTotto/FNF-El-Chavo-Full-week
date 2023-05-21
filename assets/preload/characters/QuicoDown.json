@@ -1,0 +1,41 @@
+{
+	"animations": [
+		{
+			"loop": true,
+			"offsets": [
+				-5,
+				0
+			],
+			"anim": "idle",
+			"fps": 12,
+			"name": "QuicoMami mami",
+			"indices": [
+				25,
+				26,
+				27,
+				28,
+				29,
+				30
+			]
+		}
+	],
+	"no_antialiasing": false,
+	"image": "T2/QuicoMami",
+	"position": [
+		-225,
+		260
+	],
+	"healthicon": "quico-T2",
+	"flip_x": false,
+	"healthbar_colors": [
+		233,
+		240,
+		125
+	],
+	"camera_position": [
+		0,
+		0
+	],
+	"sing_duration": 4,
+	"scale": 1
+}

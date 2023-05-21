@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="emptybreak.png">
+	<!-- Created with Adobe Animate version 20.0.3.25487 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="emptybreak0000" x="5" y="5" width="300" height="486"/>
+	<SubTexture name="emptybreak0001" x="5" y="5" width="300" height="486"/>
+	<SubTexture name="emptybreak0002" x="5" y="5" width="300" height="486"/>
+	<SubTexture name="emptybreak0003" x="310" y="5" width="300" height="486"/>
+	<SubTexture name="emptybreak0004" x="310" y="5" width="300" height="486"/>
+	<SubTexture name="emptybreak0005" x="310" y="5" width="300" height="486"/>
+	<SubTexture name="emptybreak0006" x="615" y="5" width="300" height="486"/>
+	<SubTexture name="emptybreak0007" x="615" y="5" width="300" height="486"/>
+	<SubTexture name="emptybreak0008" x="615" y="5" width="300" height="486"/>
+	<SubTexture name="emptybreak0009" x="920" y="5" width="300" height="486"/>
+	<SubTexture name="emptybreak0010" x="920" y="5" width="300" height="486"/>
+	<SubTexture name="emptybreak0011" x="920" y="5" width="300" height="486"/>
+	<SubTexture name="emptybreak0012" x="1225" y="5" width="300" height="486"/>
+	<SubTexture name="emptybreak0013" x="1225" y="5" width="300" height="486"/>
+	<SubTexture name="emptybreak0014" x="1225" y="5" width="300" height="486"/>
+	<SubTexture name="emptybreak0015" x="1530" y="5" width="300" height="486"/>
+	<SubTexture name="emptybreak0016" x="1530" y="5" width="300" height="486"/>
+	<SubTexture name="emptybreak0017" x="1530" y="5" width="300" height="486"/>
+	<SubTexture name="emptybreak0018" x="5" y="496" width="300" height="486"/>
+	<SubTexture name="emptybreak0019" x="5" y="496" width="300" height="486"/>
+	<SubTexture name="emptybreak0020" x="5" y="496" width="300" height="486"/>
+	<SubTexture name="emptybreak0021" x="310" y="496" width="300" height="486"/>
+	<SubTexture name="emptybreak0022" x="310" y="496" width="300" height="486"/>
+	<SubTexture name="emptybreak0023" x="310" y="496" width="300" height="486"/>
+	<SubTexture name="emptybreak0024" x="615" y="496" width="300" height="486"/>
+	<SubTexture name="emptybreak0025" x="615" y="496" width="300" height="486"/>
+	<SubTexture name="emptybreak0026" x="615" y="496" width="300" height="486"/>
+	<SubTexture name="emptybreak0027" x="920" y="496" width="300" height="486"/>
+	<SubTexture name="emptybreak0028" x="920" y="496" width="300" height="486"/>
+	<SubTexture name="emptybreak0029" x="920" y="496" width="300" height="486"/>
+	<SubTexture name="emptybreak0030" x="1225" y="496" width="300" height="486"/>
+</TextureAtlas>

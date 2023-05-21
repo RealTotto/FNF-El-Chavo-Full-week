@@ -1,0 +1,5 @@
+<?xml version='1.0' encoding='utf-8'?>
+<TextureAtlas imagePath="menu_mods.png"><SubTexture name="locked0000" x="0" y="108" width="280" height="106" frameX="-116" frameY="-11" frameWidth="512" frameHeight="128" />
+<SubTexture name="basic0000" x="280" y="0" width="280" height="105" frameX="0" frameY="0" frameWidth="280" frameHeight="105" />
+<SubTexture name="white0000" x="0" y="0" width="280" height="108" frameX="0" frameY="0" frameWidth="280" frameHeight="108" />
+</TextureAtlas>

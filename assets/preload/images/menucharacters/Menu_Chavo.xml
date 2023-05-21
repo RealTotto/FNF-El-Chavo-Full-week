@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='utf-8'?>
+<TextureAtlas imagePath="Menu_Chavo.png"><SubTexture name="Menu_Chavo0000" x="0" y="411" width="348" height="409" frameX="-28" frameY="-6" frameWidth="463" frameHeight="448" />
+<SubTexture name="Menu_Chavo0001" x="0" y="411" width="348" height="409" frameX="-28" frameY="-6" frameWidth="463" frameHeight="448" />
+<SubTexture name="Menu_Chavo0002" x="348" y="411" width="347" height="406" frameX="-29" frameY="-9" frameWidth="463" frameHeight="448" />
+<SubTexture name="Menu_Chavo0003" x="348" y="411" width="347" height="406" frameX="-29" frameY="-9" frameWidth="463" frameHeight="448" />
+<SubTexture name="Menu_Chavo0004" x="695" y="411" width="346" height="401" frameX="-30" frameY="-14" frameWidth="463" frameHeight="448" />
+<SubTexture name="Menu_Chavo0005" x="695" y="411" width="346" height="401" frameX="-30" frameY="-14" frameWidth="463" frameHeight="448" />
+<SubTexture name="Menu_Chavo0006" x="1173" y="0" width="345" height="393" frameX="-31" frameY="-21" frameWidth="463" frameHeight="448" />
+<SubTexture name="Menu_Chavo0007" x="1173" y="0" width="345" height="393" frameX="-31" frameY="-21" frameWidth="463" frameHeight="448" />
+<SubTexture name="Menu_Chavo0008" x="1173" y="393" width="342" height="385" frameX="-34" frameY="-28" frameWidth="463" frameHeight="448" />
+<SubTexture name="Menu_Chavo0009" x="1173" y="393" width="342" height="385" frameX="-34" frameY="-28" frameWidth="463" frameHeight="448" />
+<SubTexture name="HEY_Chavo0000" x="0" y="0" width="384" height="411" frameX="-18" frameY="-2" frameWidth="424" frameHeight="421" />
+<SubTexture name="HEY_Chavo0001" x="0" y="0" width="384" height="411" frameX="-18" frameY="-2" frameWidth="424" frameHeight="421" />
+<SubTexture name="HEY_Chavo0002" x="776" y="0" width="397" height="410" frameX="-18" frameY="-2" frameWidth="424" frameHeight="421" />
+<SubTexture name="HEY_Chavo0003" x="776" y="0" width="397" height="410" frameX="-18" frameY="-2" frameWidth="424" frameHeight="421" />
+<SubTexture name="HEY_Chavo0004" x="384" y="0" width="392" height="410" frameX="-18" frameY="-2" frameWidth="424" frameHeight="421" />
+<SubTexture name="HEY_Chavo0005" x="384" y="0" width="392" height="410" frameX="-18" frameY="-2" frameWidth="424" frameHeight="421" />
+</TextureAtlas>

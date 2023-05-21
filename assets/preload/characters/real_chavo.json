@@ -1,0 +1,78 @@
+{
+	"animations": [
+		{
+			"offsets": [
+				-15,
+				8
+			],
+			"indices": [],
+			"fps": 17,
+			"anim": "idle",
+			"loop": false,
+			"name": "c_idle"
+		},
+		{
+			"offsets": [
+				-17,
+				10
+			],
+			"indices": [],
+			"fps": 17,
+			"anim": "singLEFT",
+			"loop": false,
+			"name": "c_left"
+		},
+		{
+			"offsets": [
+				-16,
+				9
+			],
+			"indices": [],
+			"fps": 17,
+			"anim": "singDOWN",
+			"loop": false,
+			"name": "c_down"
+		},
+		{
+			"offsets": [
+				-32,
+				14
+			],
+			"indices": [],
+			"fps": 17,
+			"anim": "singUP",
+			"loop": false,
+			"name": "c_up"
+		},
+		{
+			"offsets": [
+				-23,
+				7
+			],
+			"indices": [],
+			"fps": 17,
+			"anim": "singRIGHT",
+			"loop": false,
+			"name": "c_right"
+		}
+	],
+	"no_antialiasing": false,
+	"image": "Full_week/Real_Chavo",
+	"position": [
+		-10,
+		290
+	],
+	"healthicon": "realchavo",
+	"flip_x": false,
+	"healthbar_colors": [
+		49,
+		190,
+		105
+	],
+	"camera_position": [
+		0,
+		0
+	],
+	"sing_duration": 6.1,
+	"scale": 1.8
+}

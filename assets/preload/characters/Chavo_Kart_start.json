@@ -1,0 +1,100 @@
+{
+	"animations": [
+		{
+			"loop": true,
+			"offsets": [
+				146,
+				-15
+			],
+			"anim": "singLEFT",
+			"fps": 24,
+			"name": "left",
+			"indices": []
+		},
+		{
+			"loop": true,
+			"offsets": [
+				167,
+				-47
+			],
+			"anim": "singDOWN",
+			"fps": 24,
+			"name": "down",
+			"indices": []
+		},
+		{
+			"loop": true,
+			"offsets": [
+				160,
+				86
+			],
+			"anim": "singUP",
+			"fps": 24,
+			"name": "up",
+			"indices": []
+		},
+		{
+			"loop": true,
+			"offsets": [
+				146,
+				-11
+			],
+			"anim": "singRIGHT",
+			"fps": 24,
+			"name": "right",
+			"indices": []
+		},
+		{
+			"loop": true,
+			"offsets": [
+				146,
+				-11
+			],
+			"anim": "normal",
+			"fps": 24,
+			"name": "normal",
+			"indices": []
+		},
+		{
+			"offsets": [
+				146,
+				-10
+			],
+			"indices": [],
+			"fps": 24,
+			"anim": "idle",
+			"loop": true,
+			"name": "normal"
+		},
+		{
+			"offsets": [
+				146,
+				-11
+			],
+			"indices": [],
+			"fps": 24,
+			"anim": "quico",
+			"loop": true,
+			"name": "quico"
+		}
+	],
+	"no_antialiasing": false,
+	"image": "Full_week/Chavo_kart",
+	"position": [
+		70,
+		270
+	],
+	"healthicon": "chavoKart",
+	"flip_x": true,
+	"healthbar_colors": [
+		255,
+		211,
+		30
+	],
+	"camera_position": [
+		250,
+		30
+	],
+	"sing_duration": 4,
+	"scale": 1.3
+}

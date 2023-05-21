@@ -1,0 +1,60 @@
+{
+	"storyName": "ya salio la leche de burra kikin",
+	"difficulties": "",
+	"hideFreeplay": false,
+	"weekBackground": "vecindad_lluviosa",
+	"freeplayColor": [
+		146,
+		113,
+		253
+	],
+	"weekBefore": "tutorial",
+	"startUnlocked": true,
+	"weekCharacters": [
+		"",
+		"chavo",
+		""
+	],
+	"songs": [
+		[
+		  "impaciencia",
+		  "don-ramon",
+		  [
+			226,
+			11,
+			41
+		  ]
+		],
+		[
+		  "miralo eh",
+		  "jr",
+		  [
+			54,
+			104,
+			220
+		  ]
+		],
+		[
+		  "paga de renta",
+		  "sr-barriga",
+		  [
+			226,
+			38,
+			38
+		  ]
+		],
+		[
+		  "rap night",
+		  "quico",
+		  [
+			223,
+			201,
+			56
+		  ]
+		]		
+	  ],
+	
+	"hideStoryMode": false,
+	"weekName": "Custom Week",
+	"hiddenUntilUnlocked": false
+}

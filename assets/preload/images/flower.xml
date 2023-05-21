@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="flower.png">
+	<!-- Created with Adobe Animate version 20.0.3.25487 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="arrowDOWN0000" x="5" y="5" width="153" height="144"/>
+	<SubTexture name="arrowLEFT0000" x="163" y="5" width="153" height="144"/>
+	<SubTexture name="arrowRIGHT0000" x="321" y="5" width="153" height="145"/>
+	<SubTexture name="arrowUP0000" x="479" y="5" width="153" height="144"/>
+	<SubTexture name="blue0000" x="637" y="5" width="144" height="144"/>
+	<SubTexture name="blue hold end0000" x="786" y="5" width="54" height="96"/>
+	<SubTexture name="blue hold piece0000" x="845" y="5" width="54" height="66"/>
+	<SubTexture name="down confirm0000" x="5" y="155" width="154" height="145"/>
+	<SubTexture name="down press0000" x="164" y="155" width="153" height="144"/>
+	<SubTexture name="green0000" x="637" y="5" width="144" height="144"/>
+	<SubTexture name="green hold end0000" x="322" y="155" width="54" height="96"/>
+	<SubTexture name="green hold piece0000" x="381" y="155" width="54" height="66"/>
+	<SubTexture name="left confirm0000" x="440" y="155" width="153" height="144"/>
+	<SubTexture name="left press0000" x="598" y="155" width="153" height="144"/>
+	<SubTexture name="left press0001" x="598" y="155" width="153" height="144"/>
+	<SubTexture name="left press0002" x="598" y="155" width="153" height="144"/>
+	<SubTexture name="left press0003" x="598" y="155" width="153" height="144"/>
+	<SubTexture name="left press0004" x="598" y="155" width="153" height="144"/>
+	<SubTexture name="left press0005" x="598" y="155" width="153" height="144"/>
+	<SubTexture name="left press0006" x="598" y="155" width="153" height="144"/>
+	<SubTexture name="left press0007" x="598" y="155" width="153" height="144"/>
+	<SubTexture name="left press0008" x="598" y="155" width="153" height="144"/>
+	<SubTexture name="left press0009" x="598" y="155" width="153" height="144"/>
+	<SubTexture name="left press0010" x="598" y="155" width="153" height="144"/>
+	<SubTexture name="left press0011" x="598" y="155" width="153" height="144"/>
+	<SubTexture name="left press0012" x="598" y="155" width="153" height="144"/>
+	<SubTexture name="left press0013" x="598" y="155" width="153" height="144"/>
+	<SubTexture name="left press0014" x="598" y="155" width="153" height="144"/>
+	<SubTexture name="left press0015" x="598" y="155" width="153" height="144"/>
+	<SubTexture name="left press0016" x="598" y="155" width="153" height="144"/>
+	<SubTexture name="left press0017" x="598" y="155" width="153" height="144"/>
+	<SubTexture name="left press0018" x="598" y="155" width="153" height="144"/>
+	<SubTexture name="left press0019" x="598" y="155" width="153" height="144"/>
+	<SubTexture name="pruple end hold0000" x="756" y="155" width="54" height="95"/>
+	<SubTexture name="purple0000" x="637" y="5" width="144" height="144"/>
+	<SubTexture name="purple hold piece0000" x="815" y="155" width="54" height="66"/>
+	<SubTexture name="red0000" x="637" y="5" width="144" height="144"/>
+	<SubTexture name="red hold end0000" x="874" y="155" width="54" height="96"/>
+	<SubTexture name="red hold piece0000" x="933" y="155" width="54" height="66"/>
+	<SubTexture name="right confirm0000" x="5" y="305" width="153" height="144"/>
+	<SubTexture name="right press0000" x="163" y="305" width="153" height="144"/>
+	<SubTexture name="up confirm0000" x="321" y="305" width="153" height="145"/>
+	<SubTexture name="up press0000" x="479" y="305" width="153" height="144"/>
+</TextureAtlas>

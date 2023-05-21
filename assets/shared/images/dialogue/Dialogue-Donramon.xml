@@ -1,0 +1,10 @@
+<?xml version='1.0' encoding='utf-8'?>
+<TextureAtlas imagePath="Dialogue-Donramon.png"><SubTexture name=" Donramon_Dialogue0000" x="543" y="0" width="272" height="296" frameX="-49" frameY="-37" frameWidth="336" frameHeight="379" />
+<SubTexture name=" Donramon_Dialogue0001" x="0" y="0" width="272" height="300" frameX="-49" frameY="-33" frameWidth="336" frameHeight="379" />
+<SubTexture name=" Donramon_Dialogue0002" x="272" y="0" width="271" height="299" frameX="-49" frameY="-33" frameWidth="336" frameHeight="379" />
+<SubTexture name=" Donramon_Dialogue0003" x="0" y="300" width="270" height="294" frameX="-49" frameY="-39" frameWidth="336" frameHeight="379" />
+<SubTexture name=" Donramon_DialogueLOOP0000" x="543" y="0" width="272" height="296" frameX="-49" frameY="-37" frameWidth="336" frameHeight="379" />
+<SubTexture name=" Donramon_DialogueLOOP0001" x="0" y="0" width="272" height="300" frameX="-49" frameY="-33" frameWidth="336" frameHeight="379" />
+<SubTexture name=" Donramon_DialogueLOOP0002" x="272" y="0" width="271" height="299" frameX="-49" frameY="-33" frameWidth="336" frameHeight="379" />
+<SubTexture name=" Donramon_DialogueLOOP0003" x="0" y="300" width="270" height="294" frameX="-49" frameY="-39" frameWidth="336" frameHeight="379" />
+</TextureAtlas>

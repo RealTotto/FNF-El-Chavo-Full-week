@@ -1,0 +1,156 @@
+{
+	"animations": [
+		{
+			"loop": false,
+			"offsets": [
+				146,
+				20
+			],
+			"anim": "peep",
+			"fps": 17,
+			"name": "peep",
+			"indices": []
+		},
+		{
+			"loop": true,
+			"offsets": [
+				146,
+				-1
+			],
+			"anim": "singLEFT-loop",
+			"fps": 19,
+			"name": "left",
+			"indices": [
+				9,
+				10
+			]
+		},
+		{
+			"loop": true,
+			"offsets": [
+				158,
+				70
+			],
+			"anim": "singUP-loop",
+			"fps": 15,
+			"name": "up",
+			"indices": [
+				9,
+				10
+			]
+		},
+		{
+			"loop": true,
+			"offsets": [
+				156,
+				-1
+			],
+			"anim": "singRIGHT-loop",
+			"fps": 15,
+			"name": "right",
+			"indices": [
+				9,
+				10
+			]
+		},
+		{
+			"loop": true,
+			"offsets": [
+				167,
+				-41
+			],
+			"anim": "singDOWN-loop",
+			"fps": 15,
+			"name": "down",
+			"indices": [
+				9,
+				10
+			]
+		},
+		{
+			"offsets": [
+				146,
+				-10
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "idle",
+			"indices": [],
+			"name": "idle"
+		},
+		{
+			"loop": true,
+			"offsets": [
+				146,
+				-10
+			],
+			"anim": "idle-loop",
+			"fps": 24,
+			"name": "idle",
+			"indices": []
+		},
+		{
+			"offsets": [
+				156,
+				-1
+			],
+			"indices": [],
+			"fps": 15,
+			"anim": "singRIGHT",
+			"loop": false,
+			"name": "right"
+		},
+		{
+			"offsets": [
+				167,
+				-41
+			],
+			"indices": [],
+			"fps": 15,
+			"anim": "singDOWN",
+			"loop": false,
+			"name": "down"
+		},
+		{
+			"offsets": [
+				158,
+				70
+			],
+			"indices": [],
+			"fps": 15,
+			"anim": "singUP",
+			"loop": false,
+			"name": "up"
+		},
+		{
+			"offsets": [
+				146,
+				-1
+			],
+			"indices": [],
+			"fps": 19,
+			"anim": "singLEFT",
+			"loop": false,
+			"name": "left"
+		}
+	],
+	"no_antialiasing": false,
+	"image": "Full_week/Quico_kart",
+	"position": [
+		70,
+		270
+	],
+	"healthicon": "quicoKart",
+	"flip_x": false,
+	"healthbar_colors": [
+		233,
+		240,
+		125
+	],
+	"camera_position": [
+		-60,
+		10
+	],
+	"sing_duration": 4,
+	"scale": 1.3
+}

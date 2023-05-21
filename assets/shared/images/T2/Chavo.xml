@@ -1,0 +1,145 @@
+<?xml version='1.0' encoding='utf-8'?>
+<TextureAtlas imagePath="Chavo.png">
+<SubTexture name="Chavo Idle0000" x="2349" y="2477" width="382" height="462" frameX="-161" frameY="-199" frameWidth="780" frameHeight="801" />
+<SubTexture name="Chavo Idle0001" x="744" y="2477" width="375" height="472" frameX="-166" frameY="-189" frameWidth="780" frameHeight="801" />
+<SubTexture name="Chavo Idle0002" x="0" y="2477" width="371" height="477" frameX="-170" frameY="-184" frameWidth="780" frameHeight="801" />
+<SubTexture name="Chavo Idle0003" x="2483" y="0" width="368" height="479" frameX="-172" frameY="-182" frameWidth="780" frameHeight="801" />
+<SubTexture name="Chavo Idle0004" x="1155" y="1514" width="366" height="481" frameX="-174" frameY="-180" frameWidth="780" frameHeight="801" />
+<SubTexture name="Chavo Idle0005" x="1155" y="1514" width="366" height="481" frameX="-174" frameY="-180" frameWidth="780" frameHeight="801" />
+<SubTexture name="Chavo Idle0006" x="1155" y="1514" width="366" height="481" frameX="-174" frameY="-180" frameWidth="780" frameHeight="801" />
+<SubTexture name="Chavo Idle0007" x="1155" y="1514" width="366" height="481" frameX="-174" frameY="-180" frameWidth="780" frameHeight="801" />
+<SubTexture name="Chavo Idle0008" x="1155" y="1514" width="366" height="481" frameX="-174" frameY="-180" frameWidth="780" frameHeight="801" />
+<SubTexture name="Chavo Idle0009" x="1155" y="1514" width="366" height="481" frameX="-174" frameY="-180" frameWidth="780" frameHeight="801" />
+<SubTexture name="Chavo Idle0010" x="2084" y="481" width="367" height="480" frameX="-173" frameY="-181" frameWidth="780" frameHeight="801" />
+<SubTexture name="Chavo Idle0011" x="1972" y="2477" width="377" height="467" frameX="-168" frameY="-194" frameWidth="780" frameHeight="801" />
+<SubTexture name="Chavo Idle0012" x="371" y="2477" width="373" height="477" frameX="-170" frameY="-184" frameWidth="780" frameHeight="801" />
+<SubTexture name="Chavo Idle0013" x="2851" y="0" width="369" height="479" frameX="-172" frameY="-182" frameWidth="780" frameHeight="801" />
+<SubTexture name="Chavo Idle0014" x="2084" y="481" width="367" height="480" frameX="-173" frameY="-181" frameWidth="780" frameHeight="801" />
+<SubTexture name="Chavo Idle0015" x="1155" y="1514" width="366" height="481" frameX="-174" frameY="-180" frameWidth="780" frameHeight="801" />
+<SubTexture name="Chavo Idle0016" x="1155" y="1514" width="366" height="481" frameX="-174" frameY="-180" frameWidth="780" frameHeight="801" />
+<SubTexture name="Chavo Idle0017" x="1155" y="1514" width="366" height="481" frameX="-174" frameY="-180" frameWidth="780" frameHeight="801" />
+<SubTexture name="Chavo Idle0018" x="1155" y="1514" width="366" height="481" frameX="-174" frameY="-180" frameWidth="780" frameHeight="801" />
+<SubTexture name="Chavo Idle0019" x="1155" y="1514" width="366" height="481" frameX="-174" frameY="-180" frameWidth="780" frameHeight="801" />
+<SubTexture name="Chavo Idle0020" x="1155" y="1514" width="366" height="481" frameX="-174" frameY="-180" frameWidth="780" frameHeight="801" />
+<SubTexture name="Chavo Idle0021" x="2483" y="0" width="368" height="479" frameX="-172" frameY="-182" frameWidth="780" frameHeight="801" />
+<SubTexture name="Chavo Up0000" x="0" y="0" width="330" height="515" frameX="-207" frameY="-145" frameWidth="780" frameHeight="801" />
+<SubTexture name="Chavo Up0001" x="682" y="0" width="333" height="505" frameX="-204" frameY="-155" frameWidth="780" frameHeight="801" />
+<SubTexture name="Chavo Up0002" x="1015" y="0" width="336" height="502" frameX="-202" frameY="-158" frameWidth="780" frameHeight="801" />
+<SubTexture name="Chavo Up0003" x="0" y="515" width="340" height="501" frameX="-200" frameY="-159" frameWidth="780" frameHeight="801" />
+<SubTexture name="Chavo Up0004" x="340" y="515" width="342" height="500" frameX="-199" frameY="-160" frameWidth="780" frameHeight="801" />
+<SubTexture name="Chavo Up0005" x="682" y="515" width="342" height="500" frameX="-199" frameY="-160" frameWidth="780" frameHeight="801" />
+<SubTexture name="Chavo Up0006" x="682" y="515" width="342" height="500" frameX="-199" frameY="-160" frameWidth="780" frameHeight="801" />
+<SubTexture name="Chavo Up0007" x="682" y="515" width="342" height="500" frameX="-199" frameY="-160" frameWidth="780" frameHeight="801" />
+<SubTexture name="Chavo Up0008" x="682" y="515" width="342" height="500" frameX="-199" frameY="-160" frameWidth="780" frameHeight="801" />
+<SubTexture name="Chavo Up0009" x="682" y="515" width="342" height="500" frameX="-199" frameY="-160" frameWidth="780" frameHeight="801" />
+<SubTexture name="Chavo Up0010" x="682" y="515" width="342" height="500" frameX="-199" frameY="-160" frameWidth="780" frameHeight="801" />
+<SubTexture name="Chavo Down0000" x="2483" y="1839" width="366" height="425" frameX="-186" frameY="-232" frameWidth="780" frameHeight="801" />
+<SubTexture name="Chavo Down0001" x="2483" y="1399" width="361" height="440" frameX="-188" frameY="-217" frameWidth="780" frameHeight="801" />
+<SubTexture name="Chavo Down0002" x="3639" y="2704" width="356" height="447" frameX="-190" frameY="-210" frameWidth="780" frameHeight="801" />
+<SubTexture name="Chavo Down0003" x="3639" y="1805" width="355" height="450" frameX="-190" frameY="-207" frameWidth="780" frameHeight="801" />
+<SubTexture name="Chavo Down0004" x="3639" y="452" width="354" height="451" frameX="-191" frameY="-206" frameWidth="780" frameHeight="801" />
+<SubTexture name="Chavo Down0005" x="3639" y="903" width="354" height="451" frameX="-191" frameY="-206" frameWidth="780" frameHeight="801" />
+<SubTexture name="Chavo Down0006" x="3639" y="903" width="354" height="451" frameX="-191" frameY="-206" frameWidth="780" frameHeight="801" />
+<SubTexture name="Chavo Down0007" x="3639" y="903" width="354" height="451" frameX="-191" frameY="-206" frameWidth="780" frameHeight="801" />
+<SubTexture name="Chavo Down0008" x="3639" y="903" width="354" height="451" frameX="-191" frameY="-206" frameWidth="780" frameHeight="801" />
+<SubTexture name="Chavo Down0009" x="3639" y="903" width="354" height="451" frameX="-191" frameY="-206" frameWidth="780" frameHeight="801" />
+<SubTexture name="Chavo Down0010" x="3639" y="903" width="354" height="451" frameX="-191" frameY="-206" frameWidth="780" frameHeight="801" />
+<SubTexture name="Chavo Left0000" x="0" y="1514" width="388" height="483" frameX="-149" frameY="-178" frameWidth="780" frameHeight="801" />
+<SubTexture name="Chavo Left0001" x="747" y="1016" width="378" height="485" frameX="-160" frameY="-176" frameWidth="780" frameHeight="801" />
+<SubTexture name="Chavo Left0002" x="1125" y="1016" width="373" height="484" frameX="-166" frameY="-177" frameWidth="780" frameHeight="801" />
+<SubTexture name="Chavo Left0003" x="1712" y="0" width="372" height="484" frameX="-167" frameY="-177" frameWidth="780" frameHeight="801" />
+<SubTexture name="Chavo Left0004" x="1712" y="484" width="371" height="483" frameX="-168" frameY="-178" frameWidth="780" frameHeight="801" />
+<SubTexture name="Chavo Left0005" x="1712" y="967" width="371" height="483" frameX="-168" frameY="-178" frameWidth="780" frameHeight="801" />
+<SubTexture name="Chavo Left0006" x="1712" y="967" width="371" height="483" frameX="-168" frameY="-178" frameWidth="780" frameHeight="801" />
+<SubTexture name="Chavo Left0007" x="1712" y="967" width="371" height="483" frameX="-168" frameY="-178" frameWidth="780" frameHeight="801" />
+<SubTexture name="Chavo Left0008" x="1712" y="967" width="371" height="483" frameX="-168" frameY="-178" frameWidth="780" frameHeight="801" />
+<SubTexture name="Chavo Left0009" x="1712" y="967" width="371" height="483" frameX="-168" frameY="-178" frameWidth="780" frameHeight="801" />
+<SubTexture name="Chavo Left0010" x="1712" y="967" width="371" height="483" frameX="-168" frameY="-178" frameWidth="780" frameHeight="801" />
+<SubTexture name="Chavo Right0000" x="2851" y="1435" width="369" height="476" frameX="-207" frameY="-185" frameWidth="780" frameHeight="801" />
+<SubTexture name="Chavo Right0001" x="2851" y="479" width="356" height="479" frameX="-204" frameY="-182" frameWidth="780" frameHeight="801" />
+<SubTexture name="Chavo Right0002" x="2084" y="961" width="351" height="480" frameX="-202" frameY="-181" frameWidth="780" frameHeight="801" />
+<SubTexture name="Chavo Right0003" x="2084" y="1441" width="349" height="480" frameX="-201" frameY="-181" frameWidth="780" frameHeight="801" />
+<SubTexture name="Chavo Right0004" x="0" y="1997" width="348" height="480" frameX="-201" frameY="-181" frameWidth="780" frameHeight="801" />
+<SubTexture name="Chavo Right0005" x="348" y="1997" width="348" height="480" frameX="-201" frameY="-181" frameWidth="780" frameHeight="801" />
+<SubTexture name="Chavo Right0006" x="348" y="1997" width="348" height="480" frameX="-201" frameY="-181" frameWidth="780" frameHeight="801" />
+<SubTexture name="Chavo Right0007" x="348" y="1997" width="348" height="480" frameX="-201" frameY="-181" frameWidth="780" frameHeight="801" />
+<SubTexture name="Chavo Right0008" x="348" y="1997" width="348" height="480" frameX="-201" frameY="-181" frameWidth="780" frameHeight="801" />
+<SubTexture name="Chavo Right0009" x="348" y="1997" width="348" height="480" frameX="-201" frameY="-181" frameWidth="780" frameHeight="801" />
+<SubTexture name="Chavo Right0010" x="348" y="1997" width="348" height="480" frameX="-201" frameY="-181" frameWidth="780" frameHeight="801" />
+<SubTexture name="Chavo Hey0000" x="388" y="1514" width="373" height="483" frameX="-198" frameY="-178" frameWidth="780" frameHeight="801" />
+<SubTexture name="Chavo Hey0001" x="1521" y="1514" width="366" height="481" frameX="-198" frameY="-180" frameWidth="780" frameHeight="801" />
+<SubTexture name="Chavo Hey0002" x="696" y="1997" width="370" height="480" frameX="-194" frameY="-181" frameWidth="780" frameHeight="801" />
+<SubTexture name="Chavo Hey0003" x="1066" y="1997" width="370" height="480" frameX="-194" frameY="-181" frameWidth="780" frameHeight="801" />
+<SubTexture name="Chavo Hey0004" x="1436" y="1997" width="371" height="480" frameX="-194" frameY="-181" frameWidth="780" frameHeight="801" />
+<SubTexture name="Chavo Hey0005" x="1436" y="1997" width="371" height="480" frameX="-194" frameY="-181" frameWidth="780" frameHeight="801" />
+<SubTexture name="Chavo Hey0006" x="1436" y="1997" width="371" height="480" frameX="-194" frameY="-181" frameWidth="780" frameHeight="801" />
+<SubTexture name="Chavo Hey0007" x="1436" y="1997" width="371" height="480" frameX="-194" frameY="-181" frameWidth="780" frameHeight="801" />
+<SubTexture name="Chavo Hey0008" x="1436" y="1997" width="371" height="480" frameX="-194" frameY="-181" frameWidth="780" frameHeight="801" />
+<SubTexture name="Chavo Hey0009" x="1436" y="1997" width="371" height="480" frameX="-194" frameY="-181" frameWidth="780" frameHeight="801" />
+<SubTexture name="Chavo Up Miss0000" x="1580" y="2477" width="392" height="469" frameX="-164" frameY="-191" frameWidth="780" frameHeight="801" />
+<SubTexture name="Chavo Up Miss0001" x="330" y="0" width="352" height="510" frameX="-184" frameY="-150" frameWidth="780" frameHeight="801" />
+<SubTexture name="Chavo Up Miss0002" x="0" y="1016" width="365" height="498" frameX="-179" frameY="-162" frameWidth="780" frameHeight="801" />
+<SubTexture name="Chavo Up Miss0003" x="1351" y="0" width="361" height="500" frameX="-180" frameY="-160" frameWidth="780" frameHeight="801" />
+<SubTexture name="Chavo Up Miss0004" x="1351" y="0" width="361" height="500" frameX="-180" frameY="-160" frameWidth="780" frameHeight="801" />
+<SubTexture name="Chavo Up Miss0005" x="1351" y="0" width="361" height="500" frameX="-180" frameY="-160" frameWidth="780" frameHeight="801" />
+<SubTexture name="Chavo Up Miss0006" x="1351" y="0" width="361" height="500" frameX="-180" frameY="-160" frameWidth="780" frameHeight="801" />
+<SubTexture name="Chavo Up Miss0007" x="1351" y="0" width="361" height="500" frameX="-180" frameY="-160" frameWidth="780" frameHeight="801" />
+<SubTexture name="Chavo Up Miss0008" x="1351" y="0" width="361" height="500" frameX="-180" frameY="-160" frameWidth="780" frameHeight="801" />
+<SubTexture name="Chavo Down Miss0000" x="0" y="3414" width="400" height="437" frameX="-156" frameY="-220" frameWidth="780" frameHeight="801" />
+<SubTexture name="Chavo Down Miss0001" x="2643" y="2954" width="373" height="457" frameX="-169" frameY="-200" frameWidth="780" frameHeight="801" />
+<SubTexture name="Chavo Down Miss0002" x="3639" y="2255" width="383" height="449" frameX="-164" frameY="-208" frameWidth="780" frameHeight="801" />
+<SubTexture name="Chavo Down Miss0003" x="3639" y="1354" width="379" height="451" frameX="-166" frameY="-206" frameWidth="780" frameHeight="801" />
+<SubTexture name="Chavo Down Miss0004" x="3639" y="1354" width="379" height="451" frameX="-166" frameY="-206" frameWidth="780" frameHeight="801" />
+<SubTexture name="Chavo Down Miss0005" x="3639" y="1354" width="379" height="451" frameX="-166" frameY="-206" frameWidth="780" frameHeight="801" />
+<SubTexture name="Chavo Down Miss0006" x="3639" y="1354" width="379" height="451" frameX="-166" frameY="-206" frameWidth="780" frameHeight="801" />
+<SubTexture name="Chavo Down Miss0007" x="3639" y="1354" width="379" height="451" frameX="-166" frameY="-206" frameWidth="780" frameHeight="801" />
+<SubTexture name="Chavo Down Miss0008" x="3639" y="1354" width="379" height="451" frameX="-166" frameY="-206" frameWidth="780" frameHeight="801" />
+<SubTexture name="Chavo Left Miss0000" x="3220" y="0" width="419" height="460" frameX="-134" frameY="-201" frameWidth="780" frameHeight="801" />
+<SubTexture name="Chavo Left Miss0001" x="365" y="1016" width="382" height="495" frameX="-151" frameY="-166" frameWidth="780" frameHeight="801" />
+<SubTexture name="Chavo Left Miss0002" x="2084" y="0" width="399" height="481" frameX="-143" frameY="-180" frameWidth="780" frameHeight="801" />
+<SubTexture name="Chavo Left Miss0003" x="761" y="1514" width="394" height="483" frameX="-145" frameY="-178" frameWidth="780" frameHeight="801" />
+<SubTexture name="Chavo Left Miss0004" x="761" y="1514" width="394" height="483" frameX="-145" frameY="-178" frameWidth="780" frameHeight="801" />
+<SubTexture name="Chavo Left Miss0005" x="761" y="1514" width="394" height="483" frameX="-145" frameY="-178" frameWidth="780" frameHeight="801" />
+<SubTexture name="Chavo Left Miss0006" x="761" y="1514" width="394" height="483" frameX="-145" frameY="-178" frameWidth="780" frameHeight="801" />
+<SubTexture name="Chavo Left Miss0007" x="761" y="1514" width="394" height="483" frameX="-145" frameY="-178" frameWidth="780" frameHeight="801" />
+<SubTexture name="Chavo Left Miss0008" x="761" y="1514" width="394" height="483" frameX="-145" frameY="-178" frameWidth="780" frameHeight="801" />
+<SubTexture name="Chavo Right Miss0000" x="3016" y="2954" width="379" height="457" frameX="-181" frameY="-204" frameWidth="780" frameHeight="801" />
+<SubTexture name="Chavo Right Miss0001" x="1351" y="500" width="346" height="489" frameX="-198" frameY="-172" frameWidth="780" frameHeight="801" />
+<SubTexture name="Chavo Right Miss0002" x="2851" y="958" width="360" height="477" frameX="-191" frameY="-184" frameWidth="780" frameHeight="801" />
+<SubTexture name="Chavo Right Miss0003" x="1807" y="1997" width="356" height="480" frameX="-193" frameY="-181" frameWidth="780" frameHeight="801" />
+<SubTexture name="Chavo Right Miss0004" x="1807" y="1997" width="356" height="480" frameX="-193" frameY="-181" frameWidth="780" frameHeight="801" />
+<SubTexture name="Chavo Right Miss0005" x="1807" y="1997" width="356" height="480" frameX="-193" frameY="-181" frameWidth="780" frameHeight="801" />
+<SubTexture name="Chavo Right Miss0006" x="1807" y="1997" width="356" height="480" frameX="-193" frameY="-181" frameWidth="780" frameHeight="801" />
+<SubTexture name="Chavo Right Miss0007" x="1807" y="1997" width="356" height="480" frameX="-193" frameY="-181" frameWidth="780" frameHeight="801" />
+<SubTexture name="Chavo Right Miss0008" x="1807" y="1997" width="356" height="480" frameX="-193" frameY="-181" frameWidth="780" frameHeight="801" />
+<SubTexture name="Chavo Death0000" x="400" y="3414" width="452" height="422" frameX="-127" frameY="-235" frameWidth="780" frameHeight="801" />
+<SubTexture name="Chavo Death0001" x="1119" y="2477" width="461" height="471" frameX="-122" frameY="-186" frameWidth="780" frameHeight="801" />
+<SubTexture name="Chavo Death0002" x="3639" y="0" width="463" height="452" frameX="-123" frameY="-205" frameWidth="780" frameHeight="801" />
+<SubTexture name="Chavo Death0003" x="2731" y="2477" width="468" height="462" frameX="-121" frameY="-195" frameWidth="780" frameHeight="801" />
+<SubTexture name="Chavo Death0004" x="2172" y="2954" width="471" height="458" frameX="-120" frameY="-199" frameWidth="780" frameHeight="801" />
+<SubTexture name="Chavo Death0005" x="3220" y="460" width="365" height="460" frameX="-180" frameY="-197" frameWidth="780" frameHeight="801" />
+<SubTexture name="Chavo Death0006" x="3220" y="460" width="365" height="460" frameX="-180" frameY="-197" frameWidth="780" frameHeight="801" />
+<SubTexture name="Chavo Death0007" x="3220" y="460" width="365" height="460" frameX="-180" frameY="-197" frameWidth="780" frameHeight="801" />
+<SubTexture name="Chavo Death0008" x="3220" y="460" width="365" height="460" frameX="-180" frameY="-197" frameWidth="780" frameHeight="801" />
+<SubTexture name="Chavo Death0009" x="3220" y="460" width="365" height="460" frameX="-180" frameY="-197" frameWidth="780" frameHeight="801" />
+<SubTexture name="Chavo Death0010" x="3220" y="460" width="365" height="460" frameX="-180" frameY="-197" frameWidth="780" frameHeight="801" />
+<SubTexture name="Chavo Death0011" x="3220" y="920" width="365" height="460" frameX="-180" frameY="-197" frameWidth="780" frameHeight="801" />
+<SubTexture name="Chavo Death0012" x="3220" y="1380" width="365" height="460" frameX="-180" frameY="-197" frameWidth="780" frameHeight="801" />
+<SubTexture name="Chavo Death0013" x="3220" y="1840" width="363" height="460" frameX="-182" frameY="-197" frameWidth="780" frameHeight="801" />
+<SubTexture name="Chavo Death0014" x="3220" y="2300" width="362" height="460" frameX="-183" frameY="-197" frameWidth="780" frameHeight="801" />
+<SubTexture name="Chavo Death0015" x="2851" y="1911" width="361" height="460" frameX="-184" frameY="-197" frameWidth="780" frameHeight="801" />
+<SubTexture name="Chavo Death0016" x="2483" y="479" width="360" height="460" frameX="-185" frameY="-197" frameWidth="780" frameHeight="801" />
+<SubTexture name="Chavo Death0017" x="2483" y="939" width="357" height="460" frameX="-188" frameY="-197" frameWidth="780" frameHeight="801" />
+<SubTexture name="Chavo Death0018" x="0" y="2954" width="421" height="460" frameX="-124" frameY="-197" frameWidth="780" frameHeight="801" />
+<SubTexture name="Chavo Death0019" x="421" y="2954" width="436" height="460" frameX="-109" frameY="-197" frameWidth="780" frameHeight="801" />
+<SubTexture name="Chavo Death0020" x="857" y="2954" width="439" height="460" frameX="-106" frameY="-197" frameWidth="780" frameHeight="801" />
+<SubTexture name="Chavo Death0021" x="1296" y="2954" width="438" height="460" frameX="-107" frameY="-197" frameWidth="780" frameHeight="801" />
+<SubTexture name="Chavo Death0022" x="1734" y="2954" width="438" height="460" frameX="-107" frameY="-197" frameWidth="780" frameHeight="801" />
+<SubTexture name="Chavo Death0023" x="1734" y="2954" width="438" height="460" frameX="-107" frameY="-197" frameWidth="780" frameHeight="801" />
+<SubTexture name="Chavo Death0024" x="1734" y="2954" width="438" height="460" frameX="-107" frameY="-197" frameWidth="780" frameHeight="801" />
+<SubTexture name="Chavo Death0025" x="1734" y="2954" width="438" height="460" frameX="-107" frameY="-197" frameWidth="780" frameHeight="801" />
+<SubTexture name="Chavo Death0026" x="1734" y="2954" width="438" height="460" frameX="-107" frameY="-197" frameWidth="780" frameHeight="801" />
+<SubTexture name="Chavo Death0027" x="1734" y="2954" width="438" height="460" frameX="-107" frameY="-197" frameWidth="780" frameHeight="801" />
+<SubTexture name="Chavo Death0028" x="1734" y="2954" width="438" height="460" frameX="-107" frameY="-197" frameWidth="780" frameHeight="801" />
+<SubTexture name="Chavo Death0029" x="1734" y="2954" width="438" height="460" frameX="-107" frameY="-197" frameWidth="780" frameHeight="801" />
+</TextureAtlas>

@@ -1,0 +1,906 @@
+{
+	"song": {
+		"events": [
+			[
+				0,
+				[
+					[
+						"Cinematics",
+						"1",
+						"0.5"
+					]
+				]
+			],
+			[
+				4500,
+				[
+					[
+						"lyrics",
+						"Cuando",
+						"ffD000, 40 "
+					]
+				]
+			],
+			[
+				4700,
+				[
+					[
+						"lyrics",
+						"Cuando llegues",
+						"ffD000, 40 "
+					]
+				]
+			],
+			[
+				5400,
+				[
+					[
+						"Change Character",
+						"bf",
+						"Chavo_Kart"
+					],
+					[
+						"Play Animation",
+						"quico",
+						"bf"
+					]
+				]
+			],
+			[
+				6400,
+				[
+					[
+						"lyrics",
+						"Cuando llegues arrastrandote con",
+						"ffD000, 40 "
+					]
+				]
+			],
+			[
+				6700,
+				[
+					[
+						"lyrics",
+						"Cuando llegues arrastrandote con tu",
+						"ffD000, 40 "
+					]
+				]
+			],
+			[
+				6900,
+				[
+					[
+						"lyrics",
+						"Cuando llegues arrastrandote con tu cosa",
+						"ffD000, 40 "
+					]
+				]
+			],
+			[
+				7200,
+				[
+					[
+						"lyrics",
+						"Cuando llegues arrastrandote con tu cosa esa",
+						"ffD000, 40 "
+					]
+				]
+			],
+			[
+				7500,
+				[
+					[
+						"lyrics",
+						"Cuando llegues arrastrandote con tu cosa esa a",
+						"ffD000, 40 "
+					]
+				]
+			],
+			[
+				7600,
+				[
+					[
+						"lyrics",
+						"Cuando llegues arrastrandote con tu cosa esa a la",
+						"ffD000, 40 "
+					]
+				]
+			],
+			[
+				7800,
+				[
+					[
+						"lyrics",
+						"Cuando llegues arrastrandote con tu cosa esa a la meta",
+						"ffD000, 40 "
+					]
+				]
+			],
+			[
+				8000,
+				[
+					[
+						"lyrics",
+						"Cuando llegues arrastrandote con tu cosa esa a la meta me",
+						"ffD000, 40 "
+					]
+				]
+			],
+			[
+				8200,
+				[
+					[
+						"lyrics",
+						"Cuando llegues arrastrandote con tu cosa esa a la meta me avisas",
+						"ffD000, 40 "
+					]
+				]
+			],
+			[
+				8667.5,
+				[
+					[
+						"lyrics",
+						"Cuando llegues arrastrandote con tu cosa esa a la meta me avisas eh",
+						"ffD000, 40"
+					]
+				]
+			],
+			[
+				9000,
+				[
+					[
+						"lyrics",
+						"Esta",
+						"AAA, 40"
+					]
+				]
+			],
+			[
+				9200,
+				[
+					[
+						"lyrics",
+						"Esta cosa",
+						"AAA, 40"
+					]
+				]
+			],
+			[
+				9400,
+				[
+					[
+						"lyrics",
+						"Esta cosa es",
+						"AAA, 40"
+					]
+				]
+			],
+			[
+				9500,
+				[
+					[
+						"lyrics",
+						"Esta cosa es mas",
+						"AAA, 40"
+					]
+				]
+			],
+			[
+				9700,
+				[
+					[
+						"lyrics",
+						"Esta cosa es mas rapida",
+						"AAA, 40"
+					]
+				]
+			],
+			[
+				10200,
+				[
+					[
+						"lyrics",
+						"Esta cosa es mas rapida que",
+						"AAA, 40"
+					]
+				]
+			],
+			[
+				10300,
+				[
+					[
+						"lyrics",
+						"Esta cosa es mas rapida que tu",
+						"AAA, 40"
+					]
+				]
+			],
+			[
+				10500,
+				[
+					[
+						"lyrics",
+						"Esta cosa es mas rapida que tu coche",
+						"AAA, 40"
+					]
+				]
+			],
+			[
+				10800,
+				[
+					[
+						"lyrics",
+						"Esta cosa es mas rapida que tu coche porque",
+						"AAA, 40"
+					]
+				]
+			],
+			[
+				11000,
+				[
+					[
+						"lyrics",
+						"Esta cosa es mas rapida que tu coche porque es",
+						"AAA, 40"
+					]
+				]
+			],
+			[
+				11100,
+				[
+					[
+						"lyrics",
+						"Esta cosa es mas rapida que tu coche porque es Aero",
+						"AAA, 40"
+					]
+				]
+			],
+			[
+				11400,
+				[
+					[
+						"lyrics",
+						"Esta cosa es mas rapida que tu coche porque es Aerodia",
+						"AAA, 40"
+					]
+				]
+			],
+			[
+				11600,
+				[
+					[
+						"lyrics",
+						"Esta cosa es mas rapida que tu coche porque es Aerodiabetica",
+						"AAA, 40"
+					]
+				]
+			],
+			[
+				12000,
+				[
+					[
+						"lyrics",
+						"",
+						"ffD000, 40"
+					]
+				]
+			],
+			[
+				12100,
+				[
+					[
+						"Add Camera Zoom",
+						"0.1",
+						"0.050"
+					]
+				]
+			],
+			[
+				12200,
+				[
+					[
+						"Set Cam Zoom",
+						"0.9",
+						""
+					],
+					[
+						"Play Animation",
+						"peep",
+						"dad"
+					]
+				]
+			],
+			[
+				12400,
+				[
+					[
+						"Add Camera Zoom",
+						"0.2",
+						"0.1"
+					],
+					[
+						"Play Animation",
+						"peep",
+						"dad"
+					]
+				]
+			],
+			[
+				12700,
+				[
+					[
+						"Cinematics",
+						"2",
+						"0.5"
+					]
+				]
+			],
+			[
+				12800,
+				[
+					[
+						"LightCam",
+						"",
+						""
+					]
+				]
+			],
+			[
+				38397.5,
+				[
+					[
+						"Cam Boom Speed",
+						"1",
+						"1"
+					]
+				]
+			],
+			[
+				38400,
+				[
+					[
+						"Change Scroll Speed",
+						"1.3",
+						"1.5"
+					]
+				]
+			],
+			[
+				56992.5,
+				[
+					[
+						"Play Animation",
+						"peep",
+						"Dad"
+					]
+				]
+			],
+			[
+				57000,
+				[
+					[
+						"Add Camera Zoom",
+						"0.1",
+						"0.050"
+					]
+				]
+			],
+			[
+				57292.5,
+				[
+					[
+						"Play Animation",
+						"peep",
+						"Dad"
+					]
+				]
+			],
+			[
+				57300,
+				[
+					[
+						"Add Camera Zoom",
+						"0.2",
+						"0.1"
+					]
+				]
+			],
+			[
+				70395,
+				[
+					[
+						"Cam Boom Speed",
+						"0",
+						"0"
+					],
+					[
+						"LightCam",
+						"",
+						""
+					]
+				]
+			],
+			[
+				70400,
+				[
+					[
+						"Cinematics",
+						"1",
+						"0.5"
+					]
+				]
+			],
+			[
+				74100,
+				[
+					[
+						"lyrics",
+						"Mi carrito",
+						"AAA, 40"
+					]
+				]
+			],
+			[
+				74300,
+				[
+					[
+						"lyrics",
+						"Mi carrito",
+						"AAA, 40"
+					]
+				]
+			],
+			[
+				74500,
+				[
+					[
+						"lyrics",
+						"Mi carrito es el mas rapidi",
+						"AAA, 40"
+					]
+				]
+			],
+			[
+				74600,
+				[
+					[
+						"lyrics",
+						"Mi carrito es",
+						"AAA, 40"
+					]
+				]
+			],
+			[
+				74700,
+				[
+					[
+						"lyrics",
+						"Mi carrito es el",
+						"AAA, 40"
+					]
+				]
+			],
+			[
+				74800,
+				[
+					[
+						"lyrics",
+						"Mi carrito es el mas ",
+						"AAA, 40"
+					]
+				]
+			],
+			[
+				74900,
+				[
+					[
+						"lyrics",
+						"Mi carrito es el mas ra",
+						"AAA, 40"
+					]
+				]
+			],
+			[
+				75000,
+				[
+					[
+						"lyrics",
+						"Mi carrito es el mas rapi",
+						"AAA, 40"
+					]
+				]
+			],
+			[
+				75100,
+				[
+					[
+						"lyrics",
+						"Mi carrito es el mas rapidi",
+						"AAA, 40"
+					]
+				]
+			],
+			[
+				75200,
+				[
+					[
+						"lyrics",
+						"Mi carrito es el mas rapidisi",
+						"AAA, 40"
+					]
+				]
+			],
+			[
+				75300,
+				[
+					[
+						"lyrics",
+						"Mi carrito es el mas rapidisisi",
+						"AAA, 40"
+					]
+				]
+			],
+			[
+				75400,
+				[
+					[
+						"lyrics",
+						"Mi carrito es el mas rapidisisisi",
+						"AAA, 40"
+					]
+				]
+			],
+			[
+				75500,
+				[
+					[
+						"lyrics",
+						"Mi carrito es el mas rapidisisisisi",
+						"AAA, 40"
+					]
+				]
+			],
+			[
+				75600,
+				[
+					[
+						"lyrics",
+						"Mi carrito es el mas rapidisisisisimo",
+						"AAA, 40"
+					]
+				]
+			],
+			[
+				75700,
+				[
+					[
+						"lyrics",
+						"Mi carrito es el mas rapidisisisisimo de",
+						"AAA, 40"
+					]
+				]
+			],
+			[
+				75800,
+				[
+					[
+						"lyrics",
+						"Mi carrito es el mas rapidisisisisimo de todos",
+						"AAA, 40"
+					]
+				]
+			],
+			[
+				76300,
+				[
+					[
+						"lyrics",
+						"",
+						"ffZ999, 40"
+					]
+				]
+			],
+			[
+				76700,
+				[
+					[
+						"Cinematics",
+						"2",
+						"0.5"
+					]
+				]
+			],
+			[
+				83200,
+				[
+					[
+						"LightCam",
+						"",
+						""
+					],
+					[
+						"Cam Boom Speed",
+						"1",
+						"1"
+					]
+				]
+			],
+			[
+				96000,
+				[
+					[
+						"LightCam",
+						"",
+						""
+					]
+				]
+			],
+			[
+				123972.5,
+				[
+					[
+						"Play Animation",
+						"peep",
+						"Dad"
+					]
+				]
+			],
+			[
+				123987.5,
+				[
+					[
+						"Add Camera Zoom",
+						"0.1",
+						"0.050"
+					]
+				]
+			],
+			[
+				124392.5,
+				[
+					[
+						"Play Animation",
+						"peep",
+						"Dad"
+					]
+				]
+			],
+			[
+				124400,
+				[
+					[
+						"Add Camera Zoom",
+						"0.2",
+						"0.1"
+					]
+				]
+			],
+			[
+				130387.5,
+				[
+					[
+						"Play Animation",
+						"peep",
+						"Dad"
+					]
+				]
+			],
+			[
+				130400,
+				[
+					[
+						"Add Camera Zoom",
+						"0.1",
+						"0.050"
+					]
+				]
+			],
+			[
+				130790,
+				[
+					[
+						"Play Animation",
+						"peep",
+						"Dad"
+					]
+				]
+			],
+			[
+				130800,
+				[
+					[
+						"Add Camera Zoom",
+						"0.2",
+						"0.1"
+					]
+				]
+			],
+			[
+				131100,
+				[
+					[
+						"Cinematics",
+						"1",
+						"0.5"
+					]
+				]
+			],
+			[
+				131300,
+				[
+					[
+						"lyrics",
+						"Ahi",
+						"ffD000, 40"
+					]
+				]
+			],
+			[
+				131500,
+				[
+					[
+						"lyrics",
+						"Ahi me",
+						"ffD000, 40"
+					]
+				]
+			],
+			[
+				131700,
+				[
+					[
+						"lyrics",
+						"Ahi me despiertan",
+						"ffD000, 40"
+					]
+				]
+			],
+			[
+				132400,
+				[
+					[
+						"lyrics",
+						"Ahi me despiertan cuando",
+						"ffD000, 40"
+					]
+				]
+			],
+			[
+				132800,
+				[
+					[
+						"lyrics",
+						"Ahi me despiertan cuando lleguen",
+						"ffD000, 40"
+					]
+				]
+			],
+			[
+				133200,
+				[
+					[
+						"lyrics",
+						"Ahi me despiertan cuando lleguen a",
+						"ffD000, 40"
+					]
+				]
+			],
+			[
+				133300,
+				[
+					[
+						"lyrics",
+						"Ahi me despiertan cuando lleguen a la",
+						"ffD000, 40"
+					]
+				]
+			],
+			[
+				133400,
+				[
+					[
+						"lyrics",
+						"Ahi me despiertan cuando lleguen a la meta",
+						"ffD000, 40"
+					]
+				]
+			],
+			[
+				133600,
+				[
+					[
+						"lyrics",
+						"Ahi me despiertan cuando lleguen a la meta eh",
+						"ffD000, 40"
+					]
+				]
+			],
+			[
+				134200,
+				[
+					[
+						"Cinematics",
+						"2",
+						"0.5"
+					]
+				]
+			],
+			[
+				134300,
+				[
+					[
+						"lyrics",
+						"",
+						"ffD000, 40"
+					]
+				]
+			],
+			[
+				144000,
+				[
+					[
+						"Add Camera Zoom",
+						"0.3",
+						"0.025"
+					]
+				]
+			],
+			[
+				144800,
+				[
+					[
+						"Add Camera Zoom",
+						"0.3",
+						"0.025"
+					]
+				]
+			],
+			[
+				145600,
+				[
+					[
+						"Add Camera Zoom",
+						"0.4",
+						"0.025"
+					]
+				]
+			],
+			[
+				146400,
+				[
+					[
+						"Add Camera Zoom",
+						"0.6",
+						"0.050"
+					]
+				]
+			],
+			[
+				148797.5,
+				[
+					[
+						"Cam Boom Speed",
+						"0",
+						"0"
+					],
+					[
+						"LightCam",
+						"",
+						""
+					]
+				]
+			],
+			[
+				148800,
+				[
+					[
+						"Screen Shake",
+						"0.3, 0.02",
+						"0.3, 0.02"
+					]
+				]
+			]
+		]
+	}
+}

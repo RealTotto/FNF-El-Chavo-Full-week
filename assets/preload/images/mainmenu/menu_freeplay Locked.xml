@@ -1,0 +1,4 @@
+<?xml version='1.0' encoding='utf-8'?>
+<TextureAtlas imagePath="menu_freeplay Locked.png"><SubTexture name="freeplay Locked basic0000" x="0" y="0" width="455" height="108" frameX="-97" frameY="-46" frameWidth="600" frameHeight="222" />
+<SubTexture name="freeplay Locked white0000" x="0" y="108" width="455" height="108" frameX="-97" frameY="-46" frameWidth="600" frameHeight="222" />
+</TextureAtlas>

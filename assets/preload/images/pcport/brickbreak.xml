@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="brickbreak.png">
+	<!-- Created with Adobe Animate version 20.0.3.25487 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="brickbreak0000" x="5" y="5" width="300" height="486"/>
+	<SubTexture name="brickbreak0001" x="5" y="5" width="300" height="486"/>
+	<SubTexture name="brickbreak0002" x="5" y="5" width="300" height="486"/>
+	<SubTexture name="brickbreak0003" x="310" y="5" width="300" height="486"/>
+	<SubTexture name="brickbreak0004" x="310" y="5" width="300" height="486"/>
+	<SubTexture name="brickbreak0005" x="310" y="5" width="300" height="486"/>
+	<SubTexture name="brickbreak0006" x="615" y="5" width="300" height="486"/>
+	<SubTexture name="brickbreak0007" x="615" y="5" width="300" height="486"/>
+	<SubTexture name="brickbreak0008" x="615" y="5" width="300" height="486"/>
+	<SubTexture name="brickbreak0009" x="920" y="5" width="300" height="486"/>
+	<SubTexture name="brickbreak0010" x="920" y="5" width="300" height="486"/>
+	<SubTexture name="brickbreak0011" x="920" y="5" width="300" height="486"/>
+	<SubTexture name="brickbreak0012" x="1225" y="5" width="300" height="486"/>
+	<SubTexture name="brickbreak0013" x="1225" y="5" width="300" height="486"/>
+	<SubTexture name="brickbreak0014" x="1225" y="5" width="300" height="486"/>
+	<SubTexture name="brickbreak0015" x="1530" y="5" width="300" height="486"/>
+	<SubTexture name="brickbreak0016" x="1530" y="5" width="300" height="486"/>
+	<SubTexture name="brickbreak0017" x="1530" y="5" width="300" height="486"/>
+	<SubTexture name="brickbreak0018" x="5" y="496" width="300" height="486"/>
+	<SubTexture name="brickbreak0019" x="5" y="496" width="300" height="486"/>
+	<SubTexture name="brickbreak0020" x="5" y="496" width="300" height="486"/>
+	<SubTexture name="brickbreak0021" x="310" y="496" width="300" height="486"/>
+	<SubTexture name="brickbreak0022" x="310" y="496" width="300" height="486"/>
+	<SubTexture name="brickbreak0023" x="310" y="496" width="300" height="486"/>
+	<SubTexture name="brickbreak0024" x="615" y="496" width="300" height="486"/>
+	<SubTexture name="brickbreak0025" x="615" y="496" width="300" height="486"/>
+	<SubTexture name="brickbreak0026" x="615" y="496" width="300" height="486"/>
+	<SubTexture name="brickbreak0027" x="920" y="496" width="300" height="486"/>
+	<SubTexture name="brickbreak0028" x="920" y="496" width="300" height="486"/>
+	<SubTexture name="brickbreak0029" x="920" y="496" width="300" height="486"/>
+	<SubTexture name="brickbreak0030" x="1225" y="496" width="300" height="486"/>
+	<SubTexture name="brickbreak0031" x="1225" y="496" width="300" height="486"/>
+	<SubTexture name="brickbreak0032" x="1225" y="496" width="300" height="486"/>
+</TextureAtlas>

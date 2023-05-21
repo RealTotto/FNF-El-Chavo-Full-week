@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-16"?>
+<TextureAtlas imagePath="road.png">
+	<!-- Created with Adobe Flash CS6 version 12.0.0.481 -->
+	<!-- http://www.adobe.com/products/flash.html -->
+	<SubTexture name="run0000" x="0" y="0" width="1133" height="217"/>
+	<SubTexture name="run0001" x="0" y="0" width="1133" height="217"/>
+	<SubTexture name="run0002" x="0" y="217" width="1133" height="217"/>
+	<SubTexture name="run0003" x="0" y="217" width="1133" height="217"/>
+	<SubTexture name="run0004" x="0" y="434" width="1133" height="217"/>
+	<SubTexture name="run0005" x="0" y="434" width="1133" height="217"/>
+</TextureAtlas>
+

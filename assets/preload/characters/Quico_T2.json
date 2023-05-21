@@ -1,0 +1,133 @@
+{
+	"animations": [
+		{
+			"offsets": [
+				-5,
+				0
+			],
+			"loop": false,
+			"fps": 15,
+			"anim": "idle",
+			"indices": [],
+			"name": "Quico Idle"
+		},
+		{
+			"offsets": [
+				-5,
+				0
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singLEFT",
+			"indices": [],
+			"name": "Quico Left0"
+		},
+		{
+			"offsets": [
+				-9,
+				1
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singDOWN",
+			"indices": [],
+			"name": "Quico Down0"
+		},
+		{
+			"offsets": [
+				-2,
+				-12
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singUP",
+			"indices": [],
+			"name": "Quico Up0"
+		},
+		{
+			"offsets": [
+				2,
+				0
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singRIGHT",
+			"indices": [],
+			"name": "Quico Right0"
+		},
+		{
+			"offsets": [
+				-13,
+				0
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singLEFTmiss",
+			"indices": [],
+			"name": "Quico Left Miss"
+		},
+		{
+			"offsets": [
+				-15,
+				1
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singDOWNmiss",
+			"indices": [],
+			"name": "Quico Down Miss"
+		},
+		{
+			"offsets": [
+				-6,
+				-13
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singUPmiss",
+			"indices": [],
+			"name": "Quico Up Miss"
+		},
+		{
+			"offsets": [
+				-4,
+				-2
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singRIGHTmiss",
+			"indices": [],
+			"name": "Quico Right Miss"
+		},
+		{
+			"offsets": [
+				0,
+				0
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "emote",
+			"indices": [],
+			"name": "Quico hey"
+		}
+	],
+	"no_antialiasing": false,
+	"image": "T2/Quico",
+	"position": [
+		0,
+		350
+	],
+	"healthicon": "quico-T2",
+	"flip_x": false,
+	"healthbar_colors": [
+		233,
+		240,
+		125
+	],
+	"camera_position": [
+		-360,
+		0
+	],
+	"sing_duration": 4,
+	"scale": 1
+}

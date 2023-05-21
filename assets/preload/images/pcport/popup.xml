@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="popup.png">
+	<!-- Created with Adobe Animate version 20.0.3.25487 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="popup0000" x="5" y="5" width="160" height="81"/>
+	<SubTexture name="popup0001" x="170" y="5" width="160" height="81"/>
+	<SubTexture name="popup0002" x="335" y="5" width="160" height="81"/>
+	<SubTexture name="popup0003" x="5" y="91" width="160" height="81"/>
+	<SubTexture name="popup0004" x="170" y="91" width="160" height="81"/>
+</TextureAtlas>

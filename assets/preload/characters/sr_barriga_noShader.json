@@ -1,0 +1,78 @@
+{
+	"animations": [
+		{
+			"offsets": [
+				3,
+				0
+			],
+			"loop": false,
+			"anim": "idle",
+			"fps": 24,
+			"name": "monster idle",
+			"indices": []
+		},
+		{
+			"offsets": [
+				123,
+				106
+			],
+			"loop": false,
+			"anim": "singUP",
+			"fps": 24,
+			"name": "monster up note",
+			"indices": []
+		},
+		{
+			"offsets": [
+				98,
+				0
+			],
+			"loop": false,
+			"anim": "singLEFT",
+			"fps": 24,
+			"name": "Monster left note",
+			"indices": []
+		},
+		{
+			"offsets": [
+				-22,
+				2
+			],
+			"loop": false,
+			"anim": "singRIGHT",
+			"fps": 24,
+			"name": "Monster Right note",
+			"indices": []
+		},
+		{
+			"offsets": [
+				-10,
+				-35
+			],
+			"loop": false,
+			"anim": "singDOWN",
+			"fps": 24,
+			"name": "monster down",
+			"indices": []
+		}
+	],
+	"no_antialiasing": false,
+	"image": "Full_week/Sr_Barriga_NoShader_Assets",
+	"position": [
+		-260,
+		-50
+	],
+	"healthicon": "sr-barriga",
+	"flip_x": false,
+	"healthbar_colors": [
+		215,
+		18,
+		63
+	],
+	"camera_position": [
+		-98,
+		-13
+	],
+	"sing_duration": 4,
+	"scale": 1
+}

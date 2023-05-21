@@ -1,0 +1,78 @@
+{
+	"animations": [
+		{
+			"loop": false,
+			"offsets": [
+				-5,
+				0
+			],
+			"anim": "idle",
+			"fps": 15,
+			"name": "Chavo2 Idle",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-9,
+				1
+			],
+			"anim": "singDOWN",
+			"fps": 24,
+			"name": "Chavo2 Down",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-2,
+				-12
+			],
+			"anim": "singUP",
+			"fps": 24,
+			"name": "Chavo2 Up",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-5,
+				0
+			],
+			"anim": "singLEFT",
+			"fps": 24,
+			"name": "Chavo2 Left",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				2,
+				0
+			],
+			"anim": "singRIGHT",
+			"fps": 24,
+			"name": "Chavo2 Right",
+			"indices": []
+		}
+	],
+	"no_antialiasing": false,
+	"image": "T2/Chavo2",
+	"position": [
+		-450,
+		-20
+	],
+	"healthicon": "chavo-T2",
+	"flip_x": false,
+	"healthbar_colors": [
+		183,
+		217,
+		84
+	],
+	"camera_position": [
+		-130,
+		-190
+	],
+	"sing_duration": 4,
+	"scale": 1
+}

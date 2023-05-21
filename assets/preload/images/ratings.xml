@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="ratings.png">
+	<!-- Created with Adobe Animate version 20.0.3.25487 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="bowser0000" x="5" y="5" width="8" height="8"/>
+	<SubTexture name="coin0000" x="18" y="5" width="8" height="8"/>
+	<SubTexture name="crown0000" x="31" y="5" width="8" height="7"/>
+	<SubTexture name="flower0000" x="44" y="5" width="8" height="8"/>
+	<SubTexture name="mushroom0000" x="5" y="18" width="8" height="8"/>
+	<SubTexture name="poison0000" x="18" y="18" width="8" height="8"/>
+	<SubTexture name="star0000" x="31" y="18" width="8" height="8"/>
+</TextureAtlas>

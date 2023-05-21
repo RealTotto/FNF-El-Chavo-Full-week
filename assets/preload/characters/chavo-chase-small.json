@@ -1,0 +1,103 @@
+{
+	"animations": [
+		{
+			"offsets": [
+				-116,
+				-118
+			],
+			"loop": false,
+			"fps": 30,
+			"anim": "singLEFT",
+			"indices": [],
+			"name": "left"
+		},
+		{
+			"offsets": [
+				-116,
+				-117
+			],
+			"loop": false,
+			"fps": 30,
+			"anim": "singDOWN",
+			"indices": [],
+			"name": "down"
+		},
+		{
+			"offsets": [
+				-116,
+				-118
+			],
+			"loop": false,
+			"fps": 30,
+			"anim": "singUP",
+			"indices": [],
+			"name": "up"
+		},
+		{
+			"offsets": [
+				-116,
+				-118
+			],
+			"loop": false,
+			"fps": 30,
+			"anim": "singRIGHT",
+			"indices": [],
+			"name": "right"
+		},
+		{
+			"offsets": [
+				-116,
+				-110
+			],
+			"loop": true,
+			"fps": 30,
+			"anim": "idle",
+			"indices": [],
+			"name": "idle"
+		},
+		{
+			"offsets": [
+				-116,
+				-118
+			],
+			"loop": false,
+			"fps": 30,
+			"anim": "idle-j",
+			"indices": [],
+			"name": "jump"
+		},
+		{
+			"loop": true,
+			"offsets": [
+				-116,
+				-118
+			],
+			"anim": "pause",
+			"fps": 30,
+			"name": "idle",
+			"indices": [
+				0,
+				0
+			]
+		}
+	],
+	"no_antialiasing": true,
+	"image": "Full_week/chavo-chase-small",
+	"position": [
+		0,
+		0
+	],
+	"healthicon": "face",
+	"flip_x": true,
+	"healthbar_colors": [
+		161,
+		161,
+		161
+	],
+	"camera_position": [
+		0,
+		0
+	],
+	"sing_duration": 6.1,
+	"scale": 6.00000000000001
+}

@@ -1,0 +1,1061 @@
+--change the txt format to lua to be able to work the modchart
+
+thecool={ [true]=-0.7, [false]=0.7 }
+thecool2={ [true]=0, [false]=180 }
+lastConductorPos = 0
+function onSongStart()
+ogposx0 = getPropertyFromGroup('opponentStrums', 0, 'x')
+ogposy0 = getPropertyFromGroup('opponentStrums', 0, 'y');
+ogposx1 = getPropertyFromGroup('opponentStrums', 1, 'x')
+ogposy1 = getPropertyFromGroup('opponentStrums', 1, 'y');
+	ogposx2 = getPropertyFromGroup('opponentStrums', 2, 'x');
+	ogposy2 = getPropertyFromGroup('opponentStrums', 2, 'y');
+	ogposx3 = getPropertyFromGroup('opponentStrums', 3, 'x');
+	ogposy3 = getPropertyFromGroup('opponentStrums', 3, 'y');
+	ogposx4 = getPropertyFromGroup('playerStrums', 0, 'x');
+	ogposy4 = getPropertyFromGroup('playerStrums', 0, 'y');
+	ogposx5 = getPropertyFromGroup('playerStrums', 1, 'x');
+	ogposy5 = getPropertyFromGroup('playerStrums', 1, 'y');
+	ogposx6 = getPropertyFromGroup('playerStrums', 2, 'x');
+	ogposy6 = getPropertyFromGroup('playerStrums', 2, 'y');
+	ogposx7 = getPropertyFromGroup('playerStrums', 3, 'x');
+	ogposy7 = getPropertyFromGroup('playerStrums', 3, 'y');
+end
+function onUpdate(elapsed)
+
+	ballssimulatorroblox = getSongPosition();
+notetime = 100169.90625 * 0.5
+if notetime <= ballssimulatorroblox + 3 then
+if notetime >= lastconductorpos then
+noteTweenX('balls01', 0, ogposx0 + 0, 0.323804, 'backIn')
+noteTweenY('balls02', 0, ogposy0 + (500 * (thecool[downscroll] / 0.7)), 0.323804, 'backIn')
+noteTweenAngle('balls03', 0, 0 * (thecool[downscroll] / 0.7), 0.323804, 'backIn')
+noteTweenDirection('balls04', 0, (270 * (-thecool[downscroll]) / 0.7) + thecool2[downscroll], 0.323804, 'backIn')
+noteTweenAlpha('balls05', 0, 1, 0.323804, 'backIn')
+end
+end
+notetime = 100169.90625 * 0.5
+if notetime <= ballssimulatorroblox + 3 then
+if notetime >= lastconductorpos then
+noteTweenX('balls11', 1, ogposx1 + 0, 0.323804, 'backIn')
+noteTweenY('balls12', 1, ogposy1 + (500 * (thecool[downscroll] / 0.7)), 0.323804, 'backIn')
+noteTweenAngle('balls13', 1, 0 * (thecool[downscroll] / 0.7), 0.323804, 'backIn')
+noteTweenDirection('balls14', 1, (270 * (-thecool[downscroll]) / 0.7) + thecool2[downscroll], 0.323804, 'backIn')
+noteTweenAlpha('balls15', 1, 1, 0.323804, 'backIn')
+end
+end
+notetime = 100169.90625 * 0.5
+if notetime <= ballssimulatorroblox + 3 then
+if notetime >= lastconductorpos then
+noteTweenX('balls21', 2, ogposx2 + 0, 0.323804, 'backIn')
+noteTweenY('balls22', 2, ogposy2 + (500 * (thecool[downscroll] / 0.7)), 0.323804, 'backIn')
+noteTweenAngle('balls23', 2, 0 * (thecool[downscroll] / 0.7), 0.323804, 'backIn')
+noteTweenDirection('balls24', 2, (270 * (-thecool[downscroll]) / 0.7) + thecool2[downscroll], 0.323804, 'backIn')
+noteTweenAlpha('balls25', 2, 1, 0.323804, 'backIn')
+end
+end
+notetime = 100169.90625 * 0.5
+if notetime <= ballssimulatorroblox + 3 then
+if notetime >= lastconductorpos then
+noteTweenX('balls31', 3, ogposx3 + 0, 0.323804, 'backIn')
+noteTweenY('balls32', 3, ogposy3 + (500 * (thecool[downscroll] / 0.7)), 0.323804, 'backIn')
+noteTweenAngle('balls33', 3, 0 * (thecool[downscroll] / 0.7), 0.323804, 'backIn')
+noteTweenDirection('balls34', 3, (270 * (-thecool[downscroll]) / 0.7) + thecool2[downscroll], 0.323804, 'backIn')
+noteTweenAlpha('balls35', 3, 1, 0.323804, 'backIn')
+end
+end
+notetime = 100169.90625 * 0.5
+if notetime <= ballssimulatorroblox + 3 then
+if notetime >= lastconductorpos then
+noteTweenX('balls41', 4, ogposx4 + 0, 0.323804, 'backIn')
+noteTweenY('balls42', 4, ogposy4 + (500 * (thecool[downscroll] / 0.7)), 0.323804, 'backIn')
+noteTweenAngle('balls43', 4, 0 * (thecool[downscroll] / 0.7), 0.323804, 'backIn')
+noteTweenDirection('balls44', 4, (270 * (-thecool[downscroll]) / 0.7) + thecool2[downscroll], 0.323804, 'backIn')
+noteTweenAlpha('balls45', 4, 1, 0.323804, 'backIn')
+end
+end
+notetime = 100169.90625 * 0.5
+if notetime <= ballssimulatorroblox + 3 then
+if notetime >= lastconductorpos then
+noteTweenX('balls51', 5, ogposx5 + 0, 0.323804, 'backIn')
+noteTweenY('balls52', 5, ogposy5 + (500 * (thecool[downscroll] / 0.7)), 0.323804, 'backIn')
+noteTweenAngle('balls53', 5, 0 * (thecool[downscroll] / 0.7), 0.323804, 'backIn')
+noteTweenDirection('balls54', 5, (270 * (-thecool[downscroll]) / 0.7) + thecool2[downscroll], 0.323804, 'backIn')
+noteTweenAlpha('balls55', 5, 1, 0.323804, 'backIn')
+end
+end
+notetime = 100169.90625 * 0.5
+if notetime <= ballssimulatorroblox + 3 then
+if notetime >= lastconductorpos then
+noteTweenX('balls61', 6, ogposx6 + 0, 0.323804, 'backIn')
+noteTweenY('balls62', 6, ogposy6 + (500 * (thecool[downscroll] / 0.7)), 0.323804, 'backIn')
+noteTweenAngle('balls63', 6, 0 * (thecool[downscroll] / 0.7), 0.323804, 'backIn')
+noteTweenDirection('balls64', 6, (270 * (-thecool[downscroll]) / 0.7) + thecool2[downscroll], 0.323804, 'backIn')
+noteTweenAlpha('balls65', 6, 1, 0.323804, 'backIn')
+end
+end
+notetime = 100169.90625 * 0.5
+if notetime <= ballssimulatorroblox + 3 then
+if notetime >= lastconductorpos then
+noteTweenX('balls71', 7, ogposx7 + 0, 0.323804, 'backIn')
+noteTweenY('balls72', 7, ogposy7 + (500 * (thecool[downscroll] / 0.7)), 0.323804, 'backIn')
+noteTweenAngle('balls73', 7, 0 * (thecool[downscroll] / 0.7), 0.323804, 'backIn')
+noteTweenDirection('balls74', 7, (270 * (-thecool[downscroll]) / 0.7) + thecool2[downscroll], 0.323804, 'backIn')
+noteTweenAlpha('balls75', 7, 1, 0.323804, 'backIn')
+end
+end
+notetime = 133561.21875 * 0.5
+if notetime <= ballssimulatorroblox + 3 then
+if notetime >= lastconductorpos then
+noteTweenX('balls01', 0, ogposx0 + 0, 0.162988, 'sineInOut')
+noteTweenY('balls02', 0, ogposy0 + (0 * (thecool[downscroll] / 0.7)), 0.162988, 'sineInOut')
+noteTweenAngle('balls03', 0, 0 * (thecool[downscroll] / 0.7), 0.162988, 'sineInOut')
+noteTweenDirection('balls04', 0, (90 * (-thecool[downscroll]) / 0.7) + thecool2[downscroll], 0.162988, 'sineInOut')
+noteTweenAlpha('balls05', 0, 1, 0.162988, 'sineInOut')
+end
+end
+notetime = 133561.21875 * 0.5
+if notetime <= ballssimulatorroblox + 3 then
+if notetime >= lastconductorpos then
+noteTweenX('balls11', 1, ogposx1 + 0, 0.162988, 'sineInOut')
+noteTweenY('balls12', 1, ogposy1 + (0 * (thecool[downscroll] / 0.7)), 0.162988, 'sineInOut')
+noteTweenAngle('balls13', 1, 0 * (thecool[downscroll] / 0.7), 0.162988, 'sineInOut')
+noteTweenDirection('balls14', 1, (90 * (-thecool[downscroll]) / 0.7) + thecool2[downscroll], 0.162988, 'sineInOut')
+noteTweenAlpha('balls15', 1, 1, 0.162988, 'sineInOut')
+end
+end
+notetime = 133561.21875 * 0.5
+if notetime <= ballssimulatorroblox + 3 then
+if notetime >= lastconductorpos then
+noteTweenX('balls21', 2, ogposx2 + 0, 0.162988, 'sineInOut')
+noteTweenY('balls22', 2, ogposy2 + (0 * (thecool[downscroll] / 0.7)), 0.162988, 'sineInOut')
+noteTweenAngle('balls23', 2, 0 * (thecool[downscroll] / 0.7), 0.162988, 'sineInOut')
+noteTweenDirection('balls24', 2, (90 * (-thecool[downscroll]) / 0.7) + thecool2[downscroll], 0.162988, 'sineInOut')
+noteTweenAlpha('balls25', 2, 1, 0.162988, 'sineInOut')
+end
+end
+notetime = 133561.21875 * 0.5
+if notetime <= ballssimulatorroblox + 3 then
+if notetime >= lastconductorpos then
+noteTweenX('balls31', 3, ogposx3 + 0, 0.162988, 'sineInOut')
+noteTweenY('balls32', 3, ogposy3 + (0 * (thecool[downscroll] / 0.7)), 0.162988, 'sineInOut')
+noteTweenAngle('balls33', 3, 0 * (thecool[downscroll] / 0.7), 0.162988, 'sineInOut')
+noteTweenDirection('balls34', 3, (90 * (-thecool[downscroll]) / 0.7) + thecool2[downscroll], 0.162988, 'sineInOut')
+noteTweenAlpha('balls35', 3, 1, 0.162988, 'sineInOut')
+end
+end
+notetime = 133561.21875 * 0.5
+if notetime <= ballssimulatorroblox + 3 then
+if notetime >= lastconductorpos then
+noteTweenX('balls41', 4, ogposx4 + 0, 0.162988, 'sineInOut')
+noteTweenY('balls42', 4, ogposy4 + (0 * (thecool[downscroll] / 0.7)), 0.162988, 'sineInOut')
+noteTweenAngle('balls43', 4, 0 * (thecool[downscroll] / 0.7), 0.162988, 'sineInOut')
+noteTweenDirection('balls44', 4, (90 * (-thecool[downscroll]) / 0.7) + thecool2[downscroll], 0.162988, 'sineInOut')
+noteTweenAlpha('balls45', 4, 1, 0.162988, 'sineInOut')
+end
+end
+notetime = 133561.21875 * 0.5
+if notetime <= ballssimulatorroblox + 3 then
+if notetime >= lastconductorpos then
+noteTweenX('balls51', 5, ogposx5 + 0, 0.162988, 'sineInOut')
+noteTweenY('balls52', 5, ogposy5 + (0 * (thecool[downscroll] / 0.7)), 0.162988, 'sineInOut')
+noteTweenAngle('balls53', 5, 0 * (thecool[downscroll] / 0.7), 0.162988, 'sineInOut')
+noteTweenDirection('balls54', 5, (90 * (-thecool[downscroll]) / 0.7) + thecool2[downscroll], 0.162988, 'sineInOut')
+noteTweenAlpha('balls55', 5, 1, 0.162988, 'sineInOut')
+end
+end
+notetime = 133561.21875 * 0.5
+if notetime <= ballssimulatorroblox + 3 then
+if notetime >= lastconductorpos then
+noteTweenX('balls61', 6, ogposx6 + 0, 0.162988, 'sineInOut')
+noteTweenY('balls62', 6, ogposy6 + (0 * (thecool[downscroll] / 0.7)), 0.162988, 'sineInOut')
+noteTweenAngle('balls63', 6, 0 * (thecool[downscroll] / 0.7), 0.162988, 'sineInOut')
+noteTweenDirection('balls64', 6, (90 * (-thecool[downscroll]) / 0.7) + thecool2[downscroll], 0.162988, 'sineInOut')
+noteTweenAlpha('balls65', 6, 1, 0.162988, 'sineInOut')
+end
+end
+notetime = 133561.21875 * 0.5
+if notetime <= ballssimulatorroblox + 3 then
+if notetime >= lastconductorpos then
+noteTweenX('balls71', 7, ogposx7 + 0, 0.162988, 'sineInOut')
+noteTweenY('balls72', 7, ogposy7 + (0 * (thecool[downscroll] / 0.7)), 0.162988, 'sineInOut')
+noteTweenAngle('balls73', 7, 0 * (thecool[downscroll] / 0.7), 0.162988, 'sineInOut')
+noteTweenDirection('balls74', 7, (90 * (-thecool[downscroll]) / 0.7) + thecool2[downscroll], 0.162988, 'sineInOut')
+noteTweenAlpha('balls75', 7, 1, 0.162988, 'sineInOut')
+end
+end
+notetime = 134082.953125 * 0.5
+if notetime <= ballssimulatorroblox + 3 then
+if notetime >= lastconductorpos then
+noteTweenX('balls71', 7, ogposx7 + 0, 0.166904, 'sineInOut')
+noteTweenY('balls72', 7, ogposy7 + (500 * (thecool[downscroll] / 0.7)), 0.166904, 'sineInOut')
+noteTweenAngle('balls73', 7, 0 * (thecool[downscroll] / 0.7), 0.166904, 'sineInOut')
+noteTweenDirection('balls74', 7, (270 * (-thecool[downscroll]) / 0.7) + thecool2[downscroll], 0.166904, 'sineInOut')
+noteTweenAlpha('balls75', 7, 1, 0.166904, 'sineInOut')
+end
+end
+notetime = 134082.953125 * 0.5
+if notetime <= ballssimulatorroblox + 3 then
+if notetime >= lastconductorpos then
+noteTweenX('balls11', 1, ogposx1 + 0, 0.166904, 'sineInOut')
+noteTweenY('balls12', 1, ogposy1 + (500 * (thecool[downscroll] / 0.7)), 0.166904, 'sineInOut')
+noteTweenAngle('balls13', 1, 0 * (thecool[downscroll] / 0.7), 0.166904, 'sineInOut')
+noteTweenDirection('balls14', 1, (270 * (-thecool[downscroll]) / 0.7) + thecool2[downscroll], 0.166904, 'sineInOut')
+noteTweenAlpha('balls15', 1, 1, 0.166904, 'sineInOut')
+end
+end
+notetime = 134082.953125 * 0.5
+if notetime <= ballssimulatorroblox + 3 then
+if notetime >= lastconductorpos then
+noteTweenX('balls61', 6, ogposx6 + 0, 0.166904, 'sineInOut')
+noteTweenY('balls62', 6, ogposy6 + (500 * (thecool[downscroll] / 0.7)), 0.166904, 'sineInOut')
+noteTweenAngle('balls63', 6, 0 * (thecool[downscroll] / 0.7), 0.166904, 'sineInOut')
+noteTweenDirection('balls64', 6, (270 * (-thecool[downscroll]) / 0.7) + thecool2[downscroll], 0.166904, 'sineInOut')
+noteTweenAlpha('balls65', 6, 1, 0.166904, 'sineInOut')
+end
+end
+notetime = 134082.953125 * 0.5
+if notetime <= ballssimulatorroblox + 3 then
+if notetime >= lastconductorpos then
+noteTweenX('balls01', 0, ogposx0 + 0, 0.166904, 'sineInOut')
+noteTweenY('balls02', 0, ogposy0 + (500 * (thecool[downscroll] / 0.7)), 0.166904, 'sineInOut')
+noteTweenAngle('balls03', 0, 0 * (thecool[downscroll] / 0.7), 0.166904, 'sineInOut')
+noteTweenDirection('balls04', 0, (270 * (-thecool[downscroll]) / 0.7) + thecool2[downscroll], 0.166904, 'sineInOut')
+noteTweenAlpha('balls05', 0, 1, 0.166904, 'sineInOut')
+end
+end
+notetime = 134082.953125 * 0.5
+if notetime <= ballssimulatorroblox + 3 then
+if notetime >= lastconductorpos then
+noteTweenX('balls41', 4, ogposx4 + 0, 0.166904, 'sineInOut')
+noteTweenY('balls42', 4, ogposy4 + (500 * (thecool[downscroll] / 0.7)), 0.166904, 'sineInOut')
+noteTweenAngle('balls43', 4, 0 * (thecool[downscroll] / 0.7), 0.166904, 'sineInOut')
+noteTweenDirection('balls44', 4, (270 * (-thecool[downscroll]) / 0.7) + thecool2[downscroll], 0.166904, 'sineInOut')
+noteTweenAlpha('balls45', 4, 1, 0.166904, 'sineInOut')
+end
+end
+notetime = 134082.953125 * 0.5
+if notetime <= ballssimulatorroblox + 3 then
+if notetime >= lastconductorpos then
+noteTweenX('balls51', 5, ogposx5 + 0, 0.166904, 'sineInOut')
+noteTweenY('balls52', 5, ogposy5 + (500 * (thecool[downscroll] / 0.7)), 0.166904, 'sineInOut')
+noteTweenAngle('balls53', 5, 0 * (thecool[downscroll] / 0.7), 0.166904, 'sineInOut')
+noteTweenDirection('balls54', 5, (270 * (-thecool[downscroll]) / 0.7) + thecool2[downscroll], 0.166904, 'sineInOut')
+noteTweenAlpha('balls55', 5, 1, 0.166904, 'sineInOut')
+end
+end
+notetime = 134082.953125 * 0.5
+if notetime <= ballssimulatorroblox + 3 then
+if notetime >= lastconductorpos then
+noteTweenX('balls31', 3, ogposx3 + 0, 0.161904, 'sineInOut')
+noteTweenY('balls32', 3, ogposy3 + (500 * (thecool[downscroll] / 0.7)), 0.161904, 'sineInOut')
+noteTweenAngle('balls33', 3, 0 * (thecool[downscroll] / 0.7), 0.161904, 'sineInOut')
+noteTweenDirection('balls34', 3, (270 * (-thecool[downscroll]) / 0.7) + thecool2[downscroll], 0.161904, 'sineInOut')
+noteTweenAlpha('balls35', 3, 1, 0.161904, 'sineInOut')
+end
+end
+notetime = 134082.953125 * 0.5
+if notetime <= ballssimulatorroblox + 3 then
+if notetime >= lastconductorpos then
+noteTweenX('balls21', 2, ogposx2 + 0, 0.166904, 'sineInOut')
+noteTweenY('balls22', 2, ogposy2 + (500 * (thecool[downscroll] / 0.7)), 0.166904, 'sineInOut')
+noteTweenAngle('balls23', 2, 0 * (thecool[downscroll] / 0.7), 0.166904, 'sineInOut')
+noteTweenDirection('balls24', 2, (270 * (-thecool[downscroll]) / 0.7) + thecool2[downscroll], 0.166904, 'sineInOut')
+noteTweenAlpha('balls25', 2, 1, 0.166904, 'sineInOut')
+end
+end
+notetime = 134604.703125 * 0.5
+if notetime <= ballssimulatorroblox + 3 then
+if notetime >= lastconductorpos then
+noteTweenX('balls71', 7, ogposx7 + 0, 0.160811, 'sineInOut')
+noteTweenY('balls72', 7, ogposy7 + (0 * (thecool[downscroll] / 0.7)), 0.160811, 'sineInOut')
+noteTweenAngle('balls73', 7, 0 * (thecool[downscroll] / 0.7), 0.160811, 'sineInOut')
+noteTweenDirection('balls74', 7, (90 * (-thecool[downscroll]) / 0.7) + thecool2[downscroll], 0.160811, 'sineInOut')
+noteTweenAlpha('balls75', 7, 1, 0.160811, 'sineInOut')
+end
+end
+notetime = 134604.703125 * 0.5
+if notetime <= ballssimulatorroblox + 3 then
+if notetime >= lastconductorpos then
+noteTweenX('balls11', 1, ogposx1 + 0, 0.160811, 'sineInOut')
+noteTweenY('balls12', 1, ogposy1 + (0 * (thecool[downscroll] / 0.7)), 0.160811, 'sineInOut')
+noteTweenAngle('balls13', 1, 0 * (thecool[downscroll] / 0.7), 0.160811, 'sineInOut')
+noteTweenDirection('balls14', 1, (90 * (-thecool[downscroll]) / 0.7) + thecool2[downscroll], 0.160811, 'sineInOut')
+noteTweenAlpha('balls15', 1, 1, 0.160811, 'sineInOut')
+end
+end
+notetime = 134604.703125 * 0.5
+if notetime <= ballssimulatorroblox + 3 then
+if notetime >= lastconductorpos then
+noteTweenX('balls61', 6, ogposx6 + 0, 0.160811, 'sineInOut')
+noteTweenY('balls62', 6, ogposy6 + (0 * (thecool[downscroll] / 0.7)), 0.160811, 'sineInOut')
+noteTweenAngle('balls63', 6, 0 * (thecool[downscroll] / 0.7), 0.160811, 'sineInOut')
+noteTweenDirection('balls64', 6, (90 * (-thecool[downscroll]) / 0.7) + thecool2[downscroll], 0.160811, 'sineInOut')
+noteTweenAlpha('balls65', 6, 1, 0.160811, 'sineInOut')
+end
+end
+notetime = 134604.703125 * 0.5
+if notetime <= ballssimulatorroblox + 3 then
+if notetime >= lastconductorpos then
+noteTweenX('balls01', 0, ogposx0 + 0, 0.160811, 'sineInOut')
+noteTweenY('balls02', 0, ogposy0 + (0 * (thecool[downscroll] / 0.7)), 0.160811, 'sineInOut')
+noteTweenAngle('balls03', 0, 0 * (thecool[downscroll] / 0.7), 0.160811, 'sineInOut')
+noteTweenDirection('balls04', 0, (90 * (-thecool[downscroll]) / 0.7) + thecool2[downscroll], 0.160811, 'sineInOut')
+noteTweenAlpha('balls05', 0, 1, 0.160811, 'sineInOut')
+end
+end
+notetime = 134604.703125 * 0.5
+if notetime <= ballssimulatorroblox + 3 then
+if notetime >= lastconductorpos then
+noteTweenX('balls41', 4, ogposx4 + 0, 0.160811, 'sineInOut')
+noteTweenY('balls42', 4, ogposy4 + (0 * (thecool[downscroll] / 0.7)), 0.160811, 'sineInOut')
+noteTweenAngle('balls43', 4, 0 * (thecool[downscroll] / 0.7), 0.160811, 'sineInOut')
+noteTweenDirection('balls44', 4, (90 * (-thecool[downscroll]) / 0.7) + thecool2[downscroll], 0.160811, 'sineInOut')
+noteTweenAlpha('balls45', 4, 1, 0.160811, 'sineInOut')
+end
+end
+notetime = 134604.703125 * 0.5
+if notetime <= ballssimulatorroblox + 3 then
+if notetime >= lastconductorpos then
+noteTweenX('balls51', 5, ogposx5 + 0, 0.160811, 'sineInOut')
+noteTweenY('balls52', 5, ogposy5 + (0 * (thecool[downscroll] / 0.7)), 0.160811, 'sineInOut')
+noteTweenAngle('balls53', 5, 0 * (thecool[downscroll] / 0.7), 0.160811, 'sineInOut')
+noteTweenDirection('balls54', 5, (90 * (-thecool[downscroll]) / 0.7) + thecool2[downscroll], 0.160811, 'sineInOut')
+noteTweenAlpha('balls55', 5, 1, 0.160811, 'sineInOut')
+end
+end
+notetime = 134604.703125 * 0.5
+if notetime <= ballssimulatorroblox + 3 then
+if notetime >= lastconductorpos then
+noteTweenX('balls31', 3, ogposx3 + 0, 0.160811, 'sineInOut')
+noteTweenY('balls32', 3, ogposy3 + (0 * (thecool[downscroll] / 0.7)), 0.160811, 'sineInOut')
+noteTweenAngle('balls33', 3, 0 * (thecool[downscroll] / 0.7), 0.160811, 'sineInOut')
+noteTweenDirection('balls34', 3, (90 * (-thecool[downscroll]) / 0.7) + thecool2[downscroll], 0.160811, 'sineInOut')
+noteTweenAlpha('balls35', 3, 1, 0.160811, 'sineInOut')
+end
+end
+notetime = 134604.703125 * 0.5
+if notetime <= ballssimulatorroblox + 3 then
+if notetime >= lastconductorpos then
+noteTweenX('balls21', 2, ogposx2 + 0, 0.160811, 'sineInOut')
+noteTweenY('balls22', 2, ogposy2 + (0 * (thecool[downscroll] / 0.7)), 0.160811, 'sineInOut')
+noteTweenAngle('balls23', 2, 0 * (thecool[downscroll] / 0.7), 0.160811, 'sineInOut')
+noteTweenDirection('balls24', 2, (90 * (-thecool[downscroll]) / 0.7) + thecool2[downscroll], 0.160811, 'sineInOut')
+noteTweenAlpha('balls25', 2, 1, 0.160811, 'sineInOut')
+end
+end
+notetime = 135126.4375 * 0.5
+if notetime <= ballssimulatorroblox + 3 then
+if notetime >= lastconductorpos then
+noteTweenX('balls71', 7, ogposx7 + 0, 0.159727, 'sineInOut')
+noteTweenY('balls72', 7, ogposy7 + (500 * (thecool[downscroll] / 0.7)), 0.159727, 'sineInOut')
+noteTweenAngle('balls73', 7, 0 * (thecool[downscroll] / 0.7), 0.159727, 'sineInOut')
+noteTweenDirection('balls74', 7, (270 * (-thecool[downscroll]) / 0.7) + thecool2[downscroll], 0.159727, 'sineInOut')
+noteTweenAlpha('balls75', 7, 1, 0.159727, 'sineInOut')
+end
+end
+notetime = 135126.4375 * 0.5
+if notetime <= ballssimulatorroblox + 3 then
+if notetime >= lastconductorpos then
+noteTweenX('balls11', 1, ogposx1 + 0, 0.159727, 'sineInOut')
+noteTweenY('balls12', 1, ogposy1 + (500 * (thecool[downscroll] / 0.7)), 0.159727, 'sineInOut')
+noteTweenAngle('balls13', 1, 0 * (thecool[downscroll] / 0.7), 0.159727, 'sineInOut')
+noteTweenDirection('balls14', 1, (270 * (-thecool[downscroll]) / 0.7) + thecool2[downscroll], 0.159727, 'sineInOut')
+noteTweenAlpha('balls15', 1, 1, 0.159727, 'sineInOut')
+end
+end
+notetime = 135126.4375 * 0.5
+if notetime <= ballssimulatorroblox + 3 then
+if notetime >= lastconductorpos then
+noteTweenX('balls61', 6, ogposx6 + 0, 0.159727, 'sineInOut')
+noteTweenY('balls62', 6, ogposy6 + (500 * (thecool[downscroll] / 0.7)), 0.159727, 'sineInOut')
+noteTweenAngle('balls63', 6, 0 * (thecool[downscroll] / 0.7), 0.159727, 'sineInOut')
+noteTweenDirection('balls64', 6, (270 * (-thecool[downscroll]) / 0.7) + thecool2[downscroll], 0.159727, 'sineInOut')
+noteTweenAlpha('balls65', 6, 1, 0.159727, 'sineInOut')
+end
+end
+notetime = 135126.4375 * 0.5
+if notetime <= ballssimulatorroblox + 3 then
+if notetime >= lastconductorpos then
+noteTweenX('balls01', 0, ogposx0 + 0, 0.159727, 'sineInOut')
+noteTweenY('balls02', 0, ogposy0 + (500 * (thecool[downscroll] / 0.7)), 0.159727, 'sineInOut')
+noteTweenAngle('balls03', 0, 0 * (thecool[downscroll] / 0.7), 0.159727, 'sineInOut')
+noteTweenDirection('balls04', 0, (270 * (-thecool[downscroll]) / 0.7) + thecool2[downscroll], 0.159727, 'sineInOut')
+noteTweenAlpha('balls05', 0, 1, 0.159727, 'sineInOut')
+end
+end
+notetime = 135126.4375 * 0.5
+if notetime <= ballssimulatorroblox + 3 then
+if notetime >= lastconductorpos then
+noteTweenX('balls41', 4, ogposx4 + 0, 0.159727, 'sineInOut')
+noteTweenY('balls42', 4, ogposy4 + (500 * (thecool[downscroll] / 0.7)), 0.159727, 'sineInOut')
+noteTweenAngle('balls43', 4, 0 * (thecool[downscroll] / 0.7), 0.159727, 'sineInOut')
+noteTweenDirection('balls44', 4, (270 * (-thecool[downscroll]) / 0.7) + thecool2[downscroll], 0.159727, 'sineInOut')
+noteTweenAlpha('balls45', 4, 1, 0.159727, 'sineInOut')
+end
+end
+notetime = 135126.4375 * 0.5
+if notetime <= ballssimulatorroblox + 3 then
+if notetime >= lastconductorpos then
+noteTweenX('balls51', 5, ogposx5 + 0, 0.159727, 'sineInOut')
+noteTweenY('balls52', 5, ogposy5 + (500 * (thecool[downscroll] / 0.7)), 0.159727, 'sineInOut')
+noteTweenAngle('balls53', 5, 0 * (thecool[downscroll] / 0.7), 0.159727, 'sineInOut')
+noteTweenDirection('balls54', 5, (270 * (-thecool[downscroll]) / 0.7) + thecool2[downscroll], 0.159727, 'sineInOut')
+noteTweenAlpha('balls55', 5, 1, 0.159727, 'sineInOut')
+end
+end
+notetime = 135126.4375 * 0.5
+if notetime <= ballssimulatorroblox + 3 then
+if notetime >= lastconductorpos then
+noteTweenX('balls31', 3, ogposx3 + 0, 0.159727, 'sineInOut')
+noteTweenY('balls32', 3, ogposy3 + (500 * (thecool[downscroll] / 0.7)), 0.159727, 'sineInOut')
+noteTweenAngle('balls33', 3, 0 * (thecool[downscroll] / 0.7), 0.159727, 'sineInOut')
+noteTweenDirection('balls34', 3, (270 * (-thecool[downscroll]) / 0.7) + thecool2[downscroll], 0.159727, 'sineInOut')
+noteTweenAlpha('balls35', 3, 1, 0.159727, 'sineInOut')
+end
+end
+notetime = 135126.4375 * 0.5
+if notetime <= ballssimulatorroblox + 3 then
+if notetime >= lastconductorpos then
+noteTweenX('balls21', 2, ogposx2 + 0, 0.159727, 'sineInOut')
+noteTweenY('balls22', 2, ogposy2 + (500 * (thecool[downscroll] / 0.7)), 0.159727, 'sineInOut')
+noteTweenAngle('balls23', 2, 0 * (thecool[downscroll] / 0.7), 0.159727, 'sineInOut')
+noteTweenDirection('balls24', 2, (270 * (-thecool[downscroll]) / 0.7) + thecool2[downscroll], 0.159727, 'sineInOut')
+noteTweenAlpha('balls25', 2, 1, 0.159727, 'sineInOut')
+end
+end
+notetime = 135648.171875 * 0.5
+if notetime <= ballssimulatorroblox + 3 then
+if notetime >= lastconductorpos then
+noteTweenX('balls71', 7, ogposx7 + 0, 0.161143, 'sineInOut')
+noteTweenY('balls72', 7, ogposy7 + (0 * (thecool[downscroll] / 0.7)), 0.161143, 'sineInOut')
+noteTweenAngle('balls73', 7, 0 * (thecool[downscroll] / 0.7), 0.161143, 'sineInOut')
+noteTweenDirection('balls74', 7, (90 * (-thecool[downscroll]) / 0.7) + thecool2[downscroll], 0.161143, 'sineInOut')
+noteTweenAlpha('balls75', 7, 1, 0.161143, 'sineInOut')
+end
+end
+notetime = 135648.171875 * 0.5
+if notetime <= ballssimulatorroblox + 3 then
+if notetime >= lastconductorpos then
+noteTweenX('balls11', 1, ogposx1 + 0, 0.161143, 'sineInOut')
+noteTweenY('balls12', 1, ogposy1 + (0 * (thecool[downscroll] / 0.7)), 0.161143, 'sineInOut')
+noteTweenAngle('balls13', 1, 0 * (thecool[downscroll] / 0.7), 0.161143, 'sineInOut')
+noteTweenDirection('balls14', 1, (90 * (-thecool[downscroll]) / 0.7) + thecool2[downscroll], 0.161143, 'sineInOut')
+noteTweenAlpha('balls15', 1, 1, 0.161143, 'sineInOut')
+end
+end
+notetime = 135648.171875 * 0.5
+if notetime <= ballssimulatorroblox + 3 then
+if notetime >= lastconductorpos then
+noteTweenX('balls61', 6, ogposx6 + 0, 0.161143, 'sineInOut')
+noteTweenY('balls62', 6, ogposy6 + (0 * (thecool[downscroll] / 0.7)), 0.161143, 'sineInOut')
+noteTweenAngle('balls63', 6, 0 * (thecool[downscroll] / 0.7), 0.161143, 'sineInOut')
+noteTweenDirection('balls64', 6, (90 * (-thecool[downscroll]) / 0.7) + thecool2[downscroll], 0.161143, 'sineInOut')
+noteTweenAlpha('balls65', 6, 1, 0.161143, 'sineInOut')
+end
+end
+notetime = 135648.171875 * 0.5
+if notetime <= ballssimulatorroblox + 3 then
+if notetime >= lastconductorpos then
+noteTweenX('balls01', 0, ogposx0 + 0, 0.161143, 'sineInOut')
+noteTweenY('balls02', 0, ogposy0 + (0 * (thecool[downscroll] / 0.7)), 0.161143, 'sineInOut')
+noteTweenAngle('balls03', 0, 0 * (thecool[downscroll] / 0.7), 0.161143, 'sineInOut')
+noteTweenDirection('balls04', 0, (90 * (-thecool[downscroll]) / 0.7) + thecool2[downscroll], 0.161143, 'sineInOut')
+noteTweenAlpha('balls05', 0, 1, 0.161143, 'sineInOut')
+end
+end
+notetime = 135648.171875 * 0.5
+if notetime <= ballssimulatorroblox + 3 then
+if notetime >= lastconductorpos then
+noteTweenX('balls41', 4, ogposx4 + 0, 0.161143, 'sineInOut')
+noteTweenY('balls42', 4, ogposy4 + (0 * (thecool[downscroll] / 0.7)), 0.161143, 'sineInOut')
+noteTweenAngle('balls43', 4, 0 * (thecool[downscroll] / 0.7), 0.161143, 'sineInOut')
+noteTweenDirection('balls44', 4, (90 * (-thecool[downscroll]) / 0.7) + thecool2[downscroll], 0.161143, 'sineInOut')
+noteTweenAlpha('balls45', 4, 1, 0.161143, 'sineInOut')
+end
+end
+notetime = 135648.171875 * 0.5
+if notetime <= ballssimulatorroblox + 3 then
+if notetime >= lastconductorpos then
+noteTweenX('balls51', 5, ogposx5 + 0, 0.161143, 'sineInOut')
+noteTweenY('balls52', 5, ogposy5 + (0 * (thecool[downscroll] / 0.7)), 0.161143, 'sineInOut')
+noteTweenAngle('balls53', 5, 0 * (thecool[downscroll] / 0.7), 0.161143, 'sineInOut')
+noteTweenDirection('balls54', 5, (90 * (-thecool[downscroll]) / 0.7) + thecool2[downscroll], 0.161143, 'sineInOut')
+noteTweenAlpha('balls55', 5, 1, 0.161143, 'sineInOut')
+end
+end
+notetime = 135648.171875 * 0.5
+if notetime <= ballssimulatorroblox + 3 then
+if notetime >= lastconductorpos then
+noteTweenX('balls31', 3, ogposx3 + 0, 0.161143, 'sineInOut')
+noteTweenY('balls32', 3, ogposy3 + (0 * (thecool[downscroll] / 0.7)), 0.161143, 'sineInOut')
+noteTweenAngle('balls33', 3, 0 * (thecool[downscroll] / 0.7), 0.161143, 'sineInOut')
+noteTweenDirection('balls34', 3, (90 * (-thecool[downscroll]) / 0.7) + thecool2[downscroll], 0.161143, 'sineInOut')
+noteTweenAlpha('balls35', 3, 1, 0.161143, 'sineInOut')
+end
+end
+notetime = 135648.171875 * 0.5
+if notetime <= ballssimulatorroblox + 3 then
+if notetime >= lastconductorpos then
+noteTweenX('balls21', 2, ogposx2 + 0, 0.161143, 'sineInOut')
+noteTweenY('balls22', 2, ogposy2 + (0 * (thecool[downscroll] / 0.7)), 0.161143, 'sineInOut')
+noteTweenAngle('balls23', 2, 0 * (thecool[downscroll] / 0.7), 0.161143, 'sineInOut')
+noteTweenDirection('balls24', 2, (90 * (-thecool[downscroll]) / 0.7) + thecool2[downscroll], 0.161143, 'sineInOut')
+noteTweenAlpha('balls25', 2, 1, 0.161143, 'sineInOut')
+end
+end
+notetime = 136169.90625 * 0.5
+if notetime <= ballssimulatorroblox + 3 then
+if notetime >= lastconductorpos then
+noteTweenX('balls71', 7, ogposx7 + 0, 0.165059, 'sineInOut')
+noteTweenY('balls72', 7, ogposy7 + (500 * (thecool[downscroll] / 0.7)), 0.165059, 'sineInOut')
+noteTweenAngle('balls73', 7, 0 * (thecool[downscroll] / 0.7), 0.165059, 'sineInOut')
+noteTweenDirection('balls74', 7, (270 * (-thecool[downscroll]) / 0.7) + thecool2[downscroll], 0.165059, 'sineInOut')
+noteTweenAlpha('balls75', 7, 1, 0.165059, 'sineInOut')
+end
+end
+notetime = 136169.90625 * 0.5
+if notetime <= ballssimulatorroblox + 3 then
+if notetime >= lastconductorpos then
+noteTweenX('balls11', 1, ogposx1 + 0, 0.165059, 'sineInOut')
+noteTweenY('balls12', 1, ogposy1 + (500 * (thecool[downscroll] / 0.7)), 0.165059, 'sineInOut')
+noteTweenAngle('balls13', 1, 0 * (thecool[downscroll] / 0.7), 0.165059, 'sineInOut')
+noteTweenDirection('balls14', 1, (270 * (-thecool[downscroll]) / 0.7) + thecool2[downscroll], 0.165059, 'sineInOut')
+noteTweenAlpha('balls15', 1, 1, 0.165059, 'sineInOut')
+end
+end
+notetime = 136169.90625 * 0.5
+if notetime <= ballssimulatorroblox + 3 then
+if notetime >= lastconductorpos then
+noteTweenX('balls61', 6, ogposx6 + 0, 0.165059, 'sineInOut')
+noteTweenY('balls62', 6, ogposy6 + (500 * (thecool[downscroll] / 0.7)), 0.165059, 'sineInOut')
+noteTweenAngle('balls63', 6, 0 * (thecool[downscroll] / 0.7), 0.165059, 'sineInOut')
+noteTweenDirection('balls64', 6, (270 * (-thecool[downscroll]) / 0.7) + thecool2[downscroll], 0.165059, 'sineInOut')
+noteTweenAlpha('balls65', 6, 1, 0.165059, 'sineInOut')
+end
+end
+notetime = 136169.90625 * 0.5
+if notetime <= ballssimulatorroblox + 3 then
+if notetime >= lastconductorpos then
+noteTweenX('balls01', 0, ogposx0 + 0, 0.165059, 'sineInOut')
+noteTweenY('balls02', 0, ogposy0 + (500 * (thecool[downscroll] / 0.7)), 0.165059, 'sineInOut')
+noteTweenAngle('balls03', 0, 0 * (thecool[downscroll] / 0.7), 0.165059, 'sineInOut')
+noteTweenDirection('balls04', 0, (270 * (-thecool[downscroll]) / 0.7) + thecool2[downscroll], 0.165059, 'sineInOut')
+noteTweenAlpha('balls05', 0, 1, 0.165059, 'sineInOut')
+end
+end
+notetime = 136169.90625 * 0.5
+if notetime <= ballssimulatorroblox + 3 then
+if notetime >= lastconductorpos then
+noteTweenX('balls41', 4, ogposx4 + 0, 0.165059, 'sineInOut')
+noteTweenY('balls42', 4, ogposy4 + (500 * (thecool[downscroll] / 0.7)), 0.165059, 'sineInOut')
+noteTweenAngle('balls43', 4, 0 * (thecool[downscroll] / 0.7), 0.165059, 'sineInOut')
+noteTweenDirection('balls44', 4, (270 * (-thecool[downscroll]) / 0.7) + thecool2[downscroll], 0.165059, 'sineInOut')
+noteTweenAlpha('balls45', 4, 1, 0.165059, 'sineInOut')
+end
+end
+notetime = 136169.90625 * 0.5
+if notetime <= ballssimulatorroblox + 3 then
+if notetime >= lastconductorpos then
+noteTweenX('balls51', 5, ogposx5 + 0, 0.165059, 'sineInOut')
+noteTweenY('balls52', 5, ogposy5 + (500 * (thecool[downscroll] / 0.7)), 0.165059, 'sineInOut')
+noteTweenAngle('balls53', 5, 0 * (thecool[downscroll] / 0.7), 0.165059, 'sineInOut')
+noteTweenDirection('balls54', 5, (270 * (-thecool[downscroll]) / 0.7) + thecool2[downscroll], 0.165059, 'sineInOut')
+noteTweenAlpha('balls55', 5, 1, 0.165059, 'sineInOut')
+end
+end
+notetime = 136169.90625 * 0.5
+if notetime <= ballssimulatorroblox + 3 then
+if notetime >= lastconductorpos then
+noteTweenX('balls31', 3, ogposx3 + 0, 0.165059, 'sineInOut')
+noteTweenY('balls32', 3, ogposy3 + (500 * (thecool[downscroll] / 0.7)), 0.165059, 'sineInOut')
+noteTweenAngle('balls33', 3, 0 * (thecool[downscroll] / 0.7), 0.165059, 'sineInOut')
+noteTweenDirection('balls34', 3, (270 * (-thecool[downscroll]) / 0.7) + thecool2[downscroll], 0.165059, 'sineInOut')
+noteTweenAlpha('balls35', 3, 1, 0.165059, 'sineInOut')
+end
+end
+notetime = 136169.90625 * 0.5
+if notetime <= ballssimulatorroblox + 3 then
+if notetime >= lastconductorpos then
+noteTweenX('balls21', 2, ogposx2 + 0, 0.165059, 'sineInOut')
+noteTweenY('balls22', 2, ogposy2 + (500 * (thecool[downscroll] / 0.7)), 0.165059, 'sineInOut')
+noteTweenAngle('balls23', 2, 0 * (thecool[downscroll] / 0.7), 0.165059, 'sineInOut')
+noteTweenDirection('balls24', 2, (270 * (-thecool[downscroll]) / 0.7) + thecool2[downscroll], 0.165059, 'sineInOut')
+noteTweenAlpha('balls25', 2, 1, 0.165059, 'sineInOut')
+end
+end
+notetime = 136691.65625 * 0.5
+if notetime <= ballssimulatorroblox + 3 then
+if notetime >= lastconductorpos then
+noteTweenX('balls71', 7, ogposx7 + 0, 0.163965, 'sineInOut')
+noteTweenY('balls72', 7, ogposy7 + (0 * (thecool[downscroll] / 0.7)), 0.163965, 'sineInOut')
+noteTweenAngle('balls73', 7, 0 * (thecool[downscroll] / 0.7), 0.163965, 'sineInOut')
+noteTweenDirection('balls74', 7, (90 * (-thecool[downscroll]) / 0.7) + thecool2[downscroll], 0.163965, 'sineInOut')
+noteTweenAlpha('balls75', 7, 1, 0.163965, 'sineInOut')
+end
+end
+notetime = 136691.65625 * 0.5
+if notetime <= ballssimulatorroblox + 3 then
+if notetime >= lastconductorpos then
+noteTweenX('balls11', 1, ogposx1 + 0, 0.163965, 'sineInOut')
+noteTweenY('balls12', 1, ogposy1 + (0 * (thecool[downscroll] / 0.7)), 0.163965, 'sineInOut')
+noteTweenAngle('balls13', 1, 0 * (thecool[downscroll] / 0.7), 0.163965, 'sineInOut')
+noteTweenDirection('balls14', 1, (90 * (-thecool[downscroll]) / 0.7) + thecool2[downscroll], 0.163965, 'sineInOut')
+noteTweenAlpha('balls15', 1, 1, 0.163965, 'sineInOut')
+end
+end
+notetime = 136691.65625 * 0.5
+if notetime <= ballssimulatorroblox + 3 then
+if notetime >= lastconductorpos then
+noteTweenX('balls61', 6, ogposx6 + 0, 0.163965, 'sineInOut')
+noteTweenY('balls62', 6, ogposy6 + (0 * (thecool[downscroll] / 0.7)), 0.163965, 'sineInOut')
+noteTweenAngle('balls63', 6, 0 * (thecool[downscroll] / 0.7), 0.163965, 'sineInOut')
+noteTweenDirection('balls64', 6, (90 * (-thecool[downscroll]) / 0.7) + thecool2[downscroll], 0.163965, 'sineInOut')
+noteTweenAlpha('balls65', 6, 1, 0.163965, 'sineInOut')
+end
+end
+notetime = 136691.65625 * 0.5
+if notetime <= ballssimulatorroblox + 3 then
+if notetime >= lastconductorpos then
+noteTweenX('balls01', 0, ogposx0 + 0, 0.163965, 'sineInOut')
+noteTweenY('balls02', 0, ogposy0 + (0 * (thecool[downscroll] / 0.7)), 0.163965, 'sineInOut')
+noteTweenAngle('balls03', 0, 0 * (thecool[downscroll] / 0.7), 0.163965, 'sineInOut')
+noteTweenDirection('balls04', 0, (90 * (-thecool[downscroll]) / 0.7) + thecool2[downscroll], 0.163965, 'sineInOut')
+noteTweenAlpha('balls05', 0, 1, 0.163965, 'sineInOut')
+end
+end
+notetime = 136691.65625 * 0.5
+if notetime <= ballssimulatorroblox + 3 then
+if notetime >= lastconductorpos then
+noteTweenX('balls41', 4, ogposx4 + 0, 0.163965, 'sineInOut')
+noteTweenY('balls42', 4, ogposy4 + (0 * (thecool[downscroll] / 0.7)), 0.163965, 'sineInOut')
+noteTweenAngle('balls43', 4, 0 * (thecool[downscroll] / 0.7), 0.163965, 'sineInOut')
+noteTweenDirection('balls44', 4, (90 * (-thecool[downscroll]) / 0.7) + thecool2[downscroll], 0.163965, 'sineInOut')
+noteTweenAlpha('balls45', 4, 1, 0.163965, 'sineInOut')
+end
+end
+notetime = 136691.65625 * 0.5
+if notetime <= ballssimulatorroblox + 3 then
+if notetime >= lastconductorpos then
+noteTweenX('balls51', 5, ogposx5 + 0, 0.163965, 'sineInOut')
+noteTweenY('balls52', 5, ogposy5 + (0 * (thecool[downscroll] / 0.7)), 0.163965, 'sineInOut')
+noteTweenAngle('balls53', 5, 0 * (thecool[downscroll] / 0.7), 0.163965, 'sineInOut')
+noteTweenDirection('balls54', 5, (90 * (-thecool[downscroll]) / 0.7) + thecool2[downscroll], 0.163965, 'sineInOut')
+noteTweenAlpha('balls55', 5, 1, 0.163965, 'sineInOut')
+end
+end
+notetime = 136691.65625 * 0.5
+if notetime <= ballssimulatorroblox + 3 then
+if notetime >= lastconductorpos then
+noteTweenX('balls31', 3, ogposx3 + 0, 0.163965, 'sineInOut')
+noteTweenY('balls32', 3, ogposy3 + (0 * (thecool[downscroll] / 0.7)), 0.163965, 'sineInOut')
+noteTweenAngle('balls33', 3, 0 * (thecool[downscroll] / 0.7), 0.163965, 'sineInOut')
+noteTweenDirection('balls34', 3, (90 * (-thecool[downscroll]) / 0.7) + thecool2[downscroll], 0.163965, 'sineInOut')
+noteTweenAlpha('balls35', 3, 1, 0.163965, 'sineInOut')
+end
+end
+notetime = 136691.65625 * 0.5
+if notetime <= ballssimulatorroblox + 3 then
+if notetime >= lastconductorpos then
+noteTweenX('balls21', 2, ogposx2 + 0, 0.163965, 'sineInOut')
+noteTweenY('balls22', 2, ogposy2 + (0 * (thecool[downscroll] / 0.7)), 0.163965, 'sineInOut')
+noteTweenAngle('balls23', 2, 0 * (thecool[downscroll] / 0.7), 0.163965, 'sineInOut')
+noteTweenDirection('balls24', 2, (90 * (-thecool[downscroll]) / 0.7) + thecool2[downscroll], 0.163965, 'sineInOut')
+noteTweenAlpha('balls25', 2, 1, 0.163965, 'sineInOut')
+end
+end
+notetime = 137213.390625 * 0.5
+if notetime <= ballssimulatorroblox + 3 then
+if notetime >= lastconductorpos then
+noteTweenX('balls71', 7, ogposx7 + 0, 0.162881, 'sineInOut')
+noteTweenY('balls72', 7, ogposy7 + (500 * (thecool[downscroll] / 0.7)), 0.162881, 'sineInOut')
+noteTweenAngle('balls73', 7, 0 * (thecool[downscroll] / 0.7), 0.162881, 'sineInOut')
+noteTweenDirection('balls74', 7, (270 * (-thecool[downscroll]) / 0.7) + thecool2[downscroll], 0.162881, 'sineInOut')
+noteTweenAlpha('balls75', 7, 1, 0.162881, 'sineInOut')
+end
+end
+notetime = 137213.390625 * 0.5
+if notetime <= ballssimulatorroblox + 3 then
+if notetime >= lastconductorpos then
+noteTweenX('balls11', 1, ogposx1 + 0, 0.162881, 'sineInOut')
+noteTweenY('balls12', 1, ogposy1 + (500 * (thecool[downscroll] / 0.7)), 0.162881, 'sineInOut')
+noteTweenAngle('balls13', 1, 0 * (thecool[downscroll] / 0.7), 0.162881, 'sineInOut')
+noteTweenDirection('balls14', 1, (270 * (-thecool[downscroll]) / 0.7) + thecool2[downscroll], 0.162881, 'sineInOut')
+noteTweenAlpha('balls15', 1, 1, 0.162881, 'sineInOut')
+end
+end
+notetime = 137213.390625 * 0.5
+if notetime <= ballssimulatorroblox + 3 then
+if notetime >= lastconductorpos then
+noteTweenX('balls61', 6, ogposx6 + 0, 0.162881, 'sineInOut')
+noteTweenY('balls62', 6, ogposy6 + (500 * (thecool[downscroll] / 0.7)), 0.162881, 'sineInOut')
+noteTweenAngle('balls63', 6, 0 * (thecool[downscroll] / 0.7), 0.162881, 'sineInOut')
+noteTweenDirection('balls64', 6, (270 * (-thecool[downscroll]) / 0.7) + thecool2[downscroll], 0.162881, 'sineInOut')
+noteTweenAlpha('balls65', 6, 1, 0.162881, 'sineInOut')
+end
+end
+notetime = 137213.390625 * 0.5
+if notetime <= ballssimulatorroblox + 3 then
+if notetime >= lastconductorpos then
+noteTweenX('balls01', 0, ogposx0 + 0, 0.162881, 'sineInOut')
+noteTweenY('balls02', 0, ogposy0 + (500 * (thecool[downscroll] / 0.7)), 0.162881, 'sineInOut')
+noteTweenAngle('balls03', 0, 0 * (thecool[downscroll] / 0.7), 0.162881, 'sineInOut')
+noteTweenDirection('balls04', 0, (270 * (-thecool[downscroll]) / 0.7) + thecool2[downscroll], 0.162881, 'sineInOut')
+noteTweenAlpha('balls05', 0, 1, 0.162881, 'sineInOut')
+end
+end
+notetime = 137213.390625 * 0.5
+if notetime <= ballssimulatorroblox + 3 then
+if notetime >= lastconductorpos then
+noteTweenX('balls41', 4, ogposx4 + 0, 0.162881, 'sineInOut')
+noteTweenY('balls42', 4, ogposy4 + (500 * (thecool[downscroll] / 0.7)), 0.162881, 'sineInOut')
+noteTweenAngle('balls43', 4, 0 * (thecool[downscroll] / 0.7), 0.162881, 'sineInOut')
+noteTweenDirection('balls44', 4, (270 * (-thecool[downscroll]) / 0.7) + thecool2[downscroll], 0.162881, 'sineInOut')
+noteTweenAlpha('balls45', 4, 1, 0.162881, 'sineInOut')
+end
+end
+notetime = 137213.390625 * 0.5
+if notetime <= ballssimulatorroblox + 3 then
+if notetime >= lastconductorpos then
+noteTweenX('balls51', 5, ogposx5 + 0, 0.162881, 'sineInOut')
+noteTweenY('balls52', 5, ogposy5 + (500 * (thecool[downscroll] / 0.7)), 0.162881, 'sineInOut')
+noteTweenAngle('balls53', 5, 0 * (thecool[downscroll] / 0.7), 0.162881, 'sineInOut')
+noteTweenDirection('balls54', 5, (270 * (-thecool[downscroll]) / 0.7) + thecool2[downscroll], 0.162881, 'sineInOut')
+noteTweenAlpha('balls55', 5, 1, 0.162881, 'sineInOut')
+end
+end
+notetime = 137213.390625 * 0.5
+if notetime <= ballssimulatorroblox + 3 then
+if notetime >= lastconductorpos then
+noteTweenX('balls31', 3, ogposx3 + 0, 0.162881, 'sineInOut')
+noteTweenY('balls32', 3, ogposy3 + (500 * (thecool[downscroll] / 0.7)), 0.162881, 'sineInOut')
+noteTweenAngle('balls33', 3, 0 * (thecool[downscroll] / 0.7), 0.162881, 'sineInOut')
+noteTweenDirection('balls34', 3, (270 * (-thecool[downscroll]) / 0.7) + thecool2[downscroll], 0.162881, 'sineInOut')
+noteTweenAlpha('balls35', 3, 1, 0.162881, 'sineInOut')
+end
+end
+notetime = 137213.390625 * 0.5
+if notetime <= ballssimulatorroblox + 3 then
+if notetime >= lastconductorpos then
+noteTweenX('balls21', 2, ogposx2 + 0, 0.162881, 'sineInOut')
+noteTweenY('balls22', 2, ogposy2 + (500 * (thecool[downscroll] / 0.7)), 0.162881, 'sineInOut')
+noteTweenAngle('balls23', 2, 0 * (thecool[downscroll] / 0.7), 0.162881, 'sineInOut')
+noteTweenDirection('balls24', 2, (270 * (-thecool[downscroll]) / 0.7) + thecool2[downscroll], 0.162881, 'sineInOut')
+noteTweenAlpha('balls25', 2, 1, 0.162881, 'sineInOut')
+end
+end
+notetime = 166952.515625 * 0.5
+if notetime <= ballssimulatorroblox + 3 then
+if notetime >= lastconductorpos then
+noteTweenX('balls01', 0, ogposx0 + 0, 0.320928, 'backIn')
+noteTweenY('balls02', 0, ogposy0 + (0 * (thecool[downscroll] / 0.7)), 0.320928, 'backIn')
+noteTweenAngle('balls03', 0, 0 * (thecool[downscroll] / 0.7), 0.320928, 'backIn')
+noteTweenDirection('balls04', 0, (90 * (-thecool[downscroll]) / 0.7) + thecool2[downscroll], 0.320928, 'backIn')
+noteTweenAlpha('balls05', 0, 1, 0.320928, 'backIn')
+end
+end
+notetime = 166952.515625 * 0.5
+if notetime <= ballssimulatorroblox + 3 then
+if notetime >= lastconductorpos then
+noteTweenX('balls11', 1, ogposx1 + 0, 0.320928, 'backIn')
+noteTweenY('balls12', 1, ogposy1 + (0 * (thecool[downscroll] / 0.7)), 0.320928, 'backIn')
+noteTweenAngle('balls13', 1, 0 * (thecool[downscroll] / 0.7), 0.320928, 'backIn')
+noteTweenDirection('balls14', 1, (90 * (-thecool[downscroll]) / 0.7) + thecool2[downscroll], 0.320928, 'backIn')
+noteTweenAlpha('balls15', 1, 1, 0.320928, 'backIn')
+end
+end
+notetime = 166952.515625 * 0.5
+if notetime <= ballssimulatorroblox + 3 then
+if notetime >= lastconductorpos then
+noteTweenX('balls21', 2, ogposx2 + 0, 0.320928, 'backIn')
+noteTweenY('balls22', 2, ogposy2 + (0 * (thecool[downscroll] / 0.7)), 0.320928, 'backIn')
+noteTweenAngle('balls23', 2, 0 * (thecool[downscroll] / 0.7), 0.320928, 'backIn')
+noteTweenDirection('balls24', 2, (90 * (-thecool[downscroll]) / 0.7) + thecool2[downscroll], 0.320928, 'backIn')
+noteTweenAlpha('balls25', 2, 1, 0.320928, 'backIn')
+end
+end
+notetime = 166952.515625 * 0.5
+if notetime <= ballssimulatorroblox + 3 then
+if notetime >= lastconductorpos then
+noteTweenX('balls31', 3, ogposx3 + 0, 0.320928, 'backIn')
+noteTweenY('balls32', 3, ogposy3 + (0 * (thecool[downscroll] / 0.7)), 0.320928, 'backIn')
+noteTweenAngle('balls33', 3, 0 * (thecool[downscroll] / 0.7), 0.320928, 'backIn')
+noteTweenDirection('balls34', 3, (90 * (-thecool[downscroll]) / 0.7) + thecool2[downscroll], 0.320928, 'backIn')
+noteTweenAlpha('balls35', 3, 1, 0.320928, 'backIn')
+end
+end
+notetime = 166952.515625 * 0.5
+if notetime <= ballssimulatorroblox + 3 then
+if notetime >= lastconductorpos then
+noteTweenX('balls41', 4, ogposx4 + 0, 0.320928, 'backIn')
+noteTweenY('balls42', 4, ogposy4 + (0 * (thecool[downscroll] / 0.7)), 0.320928, 'backIn')
+noteTweenAngle('balls43', 4, 0 * (thecool[downscroll] / 0.7), 0.320928, 'backIn')
+noteTweenDirection('balls44', 4, (90 * (-thecool[downscroll]) / 0.7) + thecool2[downscroll], 0.320928, 'backIn')
+noteTweenAlpha('balls45', 4, 1, 0.320928, 'backIn')
+end
+end
+notetime = 166952.515625 * 0.5
+if notetime <= ballssimulatorroblox + 3 then
+if notetime >= lastconductorpos then
+noteTweenX('balls51', 5, ogposx5 + 0, 0.320928, 'backIn')
+noteTweenY('balls52', 5, ogposy5 + (0 * (thecool[downscroll] / 0.7)), 0.320928, 'backIn')
+noteTweenAngle('balls53', 5, 0 * (thecool[downscroll] / 0.7), 0.320928, 'backIn')
+noteTweenDirection('balls54', 5, (90 * (-thecool[downscroll]) / 0.7) + thecool2[downscroll], 0.320928, 'backIn')
+noteTweenAlpha('balls55', 5, 1, 0.320928, 'backIn')
+end
+end
+notetime = 166952.515625 * 0.5
+if notetime <= ballssimulatorroblox + 3 then
+if notetime >= lastconductorpos then
+noteTweenX('balls61', 6, ogposx6 + 0, 0.320928, 'backIn')
+noteTweenY('balls62', 6, ogposy6 + (0 * (thecool[downscroll] / 0.7)), 0.320928, 'backIn')
+noteTweenAngle('balls63', 6, 0 * (thecool[downscroll] / 0.7), 0.320928, 'backIn')
+noteTweenDirection('balls64', 6, (90 * (-thecool[downscroll]) / 0.7) + thecool2[downscroll], 0.320928, 'backIn')
+noteTweenAlpha('balls65', 6, 1, 0.320928, 'backIn')
+end
+end
+notetime = 166952.515625 * 0.5
+if notetime <= ballssimulatorroblox + 3 then
+if notetime >= lastconductorpos then
+noteTweenX('balls71', 7, ogposx7 + 0, 0.320928, 'backIn')
+noteTweenY('balls72', 7, ogposy7 + (0 * (thecool[downscroll] / 0.7)), 0.320928, 'backIn')
+noteTweenAngle('balls73', 7, 0 * (thecool[downscroll] / 0.7), 0.320928, 'backIn')
+noteTweenDirection('balls74', 7, (90 * (-thecool[downscroll]) / 0.7) + thecool2[downscroll], 0.320928, 'backIn')
+noteTweenAlpha('balls75', 7, 1, 0.320928, 'backIn')
+end
+end
+notetime = 233735.125 * 0.5
+if notetime <= ballssimulatorroblox + 3 then
+if notetime >= lastconductorpos then
+noteTweenX('balls01', 0, ogposx0 + 0, 0.325547, 'backIn')
+noteTweenY('balls02', 0, ogposy0 + (500 * (thecool[downscroll] / 0.7)), 0.325547, 'backIn')
+noteTweenAngle('balls03', 0, 0 * (thecool[downscroll] / 0.7), 0.325547, 'backIn')
+noteTweenDirection('balls04', 0, (270 * (-thecool[downscroll]) / 0.7) + thecool2[downscroll], 0.325547, 'backIn')
+noteTweenAlpha('balls05', 0, 1, 0.325547, 'backIn')
+end
+end
+notetime = 233735.125 * 0.5
+if notetime <= ballssimulatorroblox + 3 then
+if notetime >= lastconductorpos then
+noteTweenX('balls11', 1, ogposx1 + 0, 0.325547, 'backIn')
+noteTweenY('balls12', 1, ogposy1 + (500 * (thecool[downscroll] / 0.7)), 0.325547, 'backIn')
+noteTweenAngle('balls13', 1, 0 * (thecool[downscroll] / 0.7), 0.325547, 'backIn')
+noteTweenDirection('balls14', 1, (270 * (-thecool[downscroll]) / 0.7) + thecool2[downscroll], 0.325547, 'backIn')
+noteTweenAlpha('balls15', 1, 1, 0.325547, 'backIn')
+end
+end
+notetime = 233735.125 * 0.5
+if notetime <= ballssimulatorroblox + 3 then
+if notetime >= lastconductorpos then
+noteTweenX('balls21', 2, ogposx2 + 0, 0.325547, 'backIn')
+noteTweenY('balls22', 2, ogposy2 + (500 * (thecool[downscroll] / 0.7)), 0.325547, 'backIn')
+noteTweenAngle('balls23', 2, 0 * (thecool[downscroll] / 0.7), 0.325547, 'backIn')
+noteTweenDirection('balls24', 2, (270 * (-thecool[downscroll]) / 0.7) + thecool2[downscroll], 0.325547, 'backIn')
+noteTweenAlpha('balls25', 2, 1, 0.325547, 'backIn')
+end
+end
+notetime = 233735.125 * 0.5
+if notetime <= ballssimulatorroblox + 3 then
+if notetime >= lastconductorpos then
+noteTweenX('balls31', 3, ogposx3 + 0, 0.325547, 'backIn')
+noteTweenY('balls32', 3, ogposy3 + (500 * (thecool[downscroll] / 0.7)), 0.325547, 'backIn')
+noteTweenAngle('balls33', 3, 0 * (thecool[downscroll] / 0.7), 0.325547, 'backIn')
+noteTweenDirection('balls34', 3, (270 * (-thecool[downscroll]) / 0.7) + thecool2[downscroll], 0.325547, 'backIn')
+noteTweenAlpha('balls35', 3, 1, 0.325547, 'backIn')
+end
+end
+notetime = 233735.125 * 0.5
+if notetime <= ballssimulatorroblox + 3 then
+if notetime >= lastconductorpos then
+noteTweenX('balls41', 4, ogposx4 + 0, 0.325547, 'backIn')
+noteTweenY('balls42', 4, ogposy4 + (500 * (thecool[downscroll] / 0.7)), 0.325547, 'backIn')
+noteTweenAngle('balls43', 4, 0 * (thecool[downscroll] / 0.7), 0.325547, 'backIn')
+noteTweenDirection('balls44', 4, (270 * (-thecool[downscroll]) / 0.7) + thecool2[downscroll], 0.325547, 'backIn')
+noteTweenAlpha('balls45', 4, 1, 0.325547, 'backIn')
+end
+end
+notetime = 233735.125 * 0.5
+if notetime <= ballssimulatorroblox + 3 then
+if notetime >= lastconductorpos then
+noteTweenX('balls51', 5, ogposx5 + 0, 0.325547, 'backIn')
+noteTweenY('balls52', 5, ogposy5 + (500 * (thecool[downscroll] / 0.7)), 0.325547, 'backIn')
+noteTweenAngle('balls53', 5, 0 * (thecool[downscroll] / 0.7), 0.325547, 'backIn')
+noteTweenDirection('balls54', 5, (270 * (-thecool[downscroll]) / 0.7) + thecool2[downscroll], 0.325547, 'backIn')
+noteTweenAlpha('balls55', 5, 1, 0.325547, 'backIn')
+end
+end
+notetime = 233735.125 * 0.5
+if notetime <= ballssimulatorroblox + 3 then
+if notetime >= lastconductorpos then
+noteTweenX('balls61', 6, ogposx6 + 0, 0.325547, 'backIn')
+noteTweenY('balls62', 6, ogposy6 + (500 * (thecool[downscroll] / 0.7)), 0.325547, 'backIn')
+noteTweenAngle('balls63', 6, 0 * (thecool[downscroll] / 0.7), 0.325547, 'backIn')
+noteTweenDirection('balls64', 6, (270 * (-thecool[downscroll]) / 0.7) + thecool2[downscroll], 0.325547, 'backIn')
+noteTweenAlpha('balls65', 6, 1, 0.325547, 'backIn')
+end
+end
+notetime = 233735.125 * 0.5
+if notetime <= ballssimulatorroblox + 3 then
+if notetime >= lastconductorpos then
+noteTweenX('balls71', 7, ogposx7 + 0, 0.325547, 'backIn')
+noteTweenY('balls72', 7, ogposy7 + (500 * (thecool[downscroll] / 0.7)), 0.325547, 'backIn')
+noteTweenAngle('balls73', 7, 0 * (thecool[downscroll] / 0.7), 0.325547, 'backIn')
+noteTweenDirection('balls74', 7, (270 * (-thecool[downscroll]) / 0.7) + thecool2[downscroll], 0.325547, 'backIn')
+noteTweenAlpha('balls75', 7, 1, 0.325547, 'backIn')
+end
+end
+notetime = 300517.75 * 0.5
+if notetime <= ballssimulatorroblox + 3 then
+if notetime >= lastconductorpos then
+noteTweenX('balls01', 0, ogposx0 + 0, 0.326406, 'backIn')
+noteTweenY('balls02', 0, ogposy0 + (0 * (thecool[downscroll] / 0.7)), 0.326406, 'backIn')
+noteTweenAngle('balls03', 0, 0 * (thecool[downscroll] / 0.7), 0.326406, 'backIn')
+noteTweenDirection('balls04', 0, (90 * (-thecool[downscroll]) / 0.7) + thecool2[downscroll], 0.326406, 'backIn')
+noteTweenAlpha('balls05', 0, 1, 0.326406, 'backIn')
+end
+end
+notetime = 300517.75 * 0.5
+if notetime <= ballssimulatorroblox + 3 then
+if notetime >= lastconductorpos then
+noteTweenX('balls11', 1, ogposx1 + 0, 0.326406, 'backIn')
+noteTweenY('balls12', 1, ogposy1 + (0 * (thecool[downscroll] / 0.7)), 0.326406, 'backIn')
+noteTweenAngle('balls13', 1, 0 * (thecool[downscroll] / 0.7), 0.326406, 'backIn')
+noteTweenDirection('balls14', 1, (90 * (-thecool[downscroll]) / 0.7) + thecool2[downscroll], 0.326406, 'backIn')
+noteTweenAlpha('balls15', 1, 1, 0.326406, 'backIn')
+end
+end
+notetime = 300517.75 * 0.5
+if notetime <= ballssimulatorroblox + 3 then
+if notetime >= lastconductorpos then
+noteTweenX('balls21', 2, ogposx2 + 0, 0.326406, 'backIn')
+noteTweenY('balls22', 2, ogposy2 + (0 * (thecool[downscroll] / 0.7)), 0.326406, 'backIn')
+noteTweenAngle('balls23', 2, 0 * (thecool[downscroll] / 0.7), 0.326406, 'backIn')
+noteTweenDirection('balls24', 2, (90 * (-thecool[downscroll]) / 0.7) + thecool2[downscroll], 0.326406, 'backIn')
+noteTweenAlpha('balls25', 2, 1, 0.326406, 'backIn')
+end
+end
+notetime = 300517.75 * 0.5
+if notetime <= ballssimulatorroblox + 3 then
+if notetime >= lastconductorpos then
+noteTweenX('balls31', 3, ogposx3 + 0, 0.326406, 'backIn')
+noteTweenY('balls32', 3, ogposy3 + (0 * (thecool[downscroll] / 0.7)), 0.326406, 'backIn')
+noteTweenAngle('balls33', 3, 0 * (thecool[downscroll] / 0.7), 0.326406, 'backIn')
+noteTweenDirection('balls34', 3, (90 * (-thecool[downscroll]) / 0.7) + thecool2[downscroll], 0.326406, 'backIn')
+noteTweenAlpha('balls35', 3, 1, 0.326406, 'backIn')
+end
+end
+notetime = 300517.75 * 0.5
+if notetime <= ballssimulatorroblox + 3 then
+if notetime >= lastconductorpos then
+noteTweenX('balls41', 4, ogposx4 + 0, 0.326406, 'backIn')
+noteTweenY('balls42', 4, ogposy4 + (0 * (thecool[downscroll] / 0.7)), 0.326406, 'backIn')
+noteTweenAngle('balls43', 4, 0 * (thecool[downscroll] / 0.7), 0.326406, 'backIn')
+noteTweenDirection('balls44', 4, (90 * (-thecool[downscroll]) / 0.7) + thecool2[downscroll], 0.326406, 'backIn')
+noteTweenAlpha('balls45', 4, 1, 0.326406, 'backIn')
+end
+end
+notetime = 300517.75 * 0.5
+if notetime <= ballssimulatorroblox + 3 then
+if notetime >= lastconductorpos then
+noteTweenX('balls51', 5, ogposx5 + 0, 0.326406, 'backIn')
+noteTweenY('balls52', 5, ogposy5 + (0 * (thecool[downscroll] / 0.7)), 0.326406, 'backIn')
+noteTweenAngle('balls53', 5, 0 * (thecool[downscroll] / 0.7), 0.326406, 'backIn')
+noteTweenDirection('balls54', 5, (90 * (-thecool[downscroll]) / 0.7) + thecool2[downscroll], 0.326406, 'backIn')
+noteTweenAlpha('balls55', 5, 1, 0.326406, 'backIn')
+end
+end
+notetime = 300517.75 * 0.5
+if notetime <= ballssimulatorroblox + 3 then
+if notetime >= lastconductorpos then
+noteTweenX('balls61', 6, ogposx6 + 0, 0.326406, 'backIn')
+noteTweenY('balls62', 6, ogposy6 + (0 * (thecool[downscroll] / 0.7)), 0.326406, 'backIn')
+noteTweenAngle('balls63', 6, 0 * (thecool[downscroll] / 0.7), 0.326406, 'backIn')
+noteTweenDirection('balls64', 6, (90 * (-thecool[downscroll]) / 0.7) + thecool2[downscroll], 0.326406, 'backIn')
+noteTweenAlpha('balls65', 6, 1, 0.326406, 'backIn')
+end
+end
+notetime = 300517.75 * 0.5
+if notetime <= ballssimulatorroblox + 3 then
+if notetime >= lastconductorpos then
+noteTweenX('balls71', 7, ogposx7 + 0, 0.326406, 'backIn')
+noteTweenY('balls72', 7, ogposy7 + (0 * (thecool[downscroll] / 0.7)), 0.326406, 'backIn')
+noteTweenAngle('balls73', 7, 0 * (thecool[downscroll] / 0.7), 0.326406, 'backIn')
+noteTweenDirection('balls74', 7, (90 * (-thecool[downscroll]) / 0.7) + thecool2[downscroll], 0.326406, 'backIn')
+noteTweenAlpha('balls75', 7, 1, 0.326406, 'backIn')
+end
+end
+lastconductorpos = ballssimulatorroblox
+end
+function onCreatePost()
+addHaxeLibrary("FlxRect", "flixel.math")
+addHaxeLibrary("FlxCamera", "flixel")
+luaDebugMode = false --oopsies
+runHaxeCode([[
+strumHUD = new FlxCamera();
+strumHUD.bgColor = 0x00000000;
+for (i in 0...8) {
+game.strumLineNotes.members[i].cameras = [strumHUD];
+}
+FlxG.cameras.add(strumHUD,false);
+]])
+end
+time = 0
+function onUpdatePost(elapsed)
+notelength = getProperty("notes.length")
+for i = 0, notelength-1 do
+noteData = getPropertyFromGroup("notes", i, "noteData")
+setPropertyFromGroup("notes", i, "clipRect", nil)
+if (getPropertyFromGroup("notes", i, "mustPress")) and (getPropertyFromGroup("notes", i, "isSustainNote")) then
+setPropertyFromGroup("notes", i, "angle", getPropertyFromGroup("playerStrums", noteData, "direction") - 90)
+elseif (getPropertyFromGroup("notes", i, "isSustainNote")) then
+setPropertyFromGroup("notes", i, "angle", getPropertyFromGroup("opponentStrums", noteData, "direction") - 90)
+end
+if (noteData >= 4) and (not getPropertyFromGroup("notes", i, "isSustainNote")) then
+setPropertyFromGroup("notes", i, "angle", getPropertyFromGroup("playerStrums", noteData, "angle"))
+elseif (not getPropertyFromGroup("notes", i, "isSustainNote")) then
+setPropertyFromGroup("notes", i, "angle", getPropertyFromGroup("opponentStrums", noteData, "angle"))
+end
+if not (getPropertyFromGroup("notes", i, "isSustainNote")) then
+runHaxeCode([[
+if (!game.notes.members[]]..i..[[].isSustainNote && game.notes.members[]]..i..[[].cameras != [strumHUD]) {
+game.notes.members[]]..i..[[].cameras = [strumHUD];
+}
+]])
+end
+end
+if downscroll then
+runHaxeCode([[
+game.notes.forEachAlive(function(daNote) {
+if(daNote.distance > 0 && daNote.wasGoodHit)
+{
+strumGroup = game.playerStrums;
+if(!daNote.mustPress) strumGroup = game.opponentStrums;
+strumY = strumGroup.members[daNote.noteData].y - (daNote.swagWidth / 2);
+swagRect = new FlxRect(0, 0, daNote.frameWidth, daNote.frameHeight);
+swagRect.height = (50 + (-daNote.distance)) / daNote.scale.y;
+swagRect.y = daNote.frameHeight - swagRect.height;
+daNote.clipRect = swagRect;
+trace(swagRect);
+}
+});
+]])
+else
+runHaxeCode([[
+game.notes.forEachAlive(function(daNote) {
+if(daNote.distance < 0 && daNote.wasGoodHit)
+{
+strumGroup = game.playerStrums;
+if(!daNote.mustPress) strumGroup = game.opponentStrums;
+strumY = strumGroup.members[daNote.noteData].y + (daNote.swagWidth / 2);
+swagRect = new FlxRect(0, 0, daNote.width / daNote.scale.x, daNote.height / daNote.scale.y);
+swagRect.y = (50 - daNote.distance) / daNote.scale.y;
+swagRect.height -= swagRect.y;
+daNote.clipRect = swagRect;
+trace(swagRect);
+}
+});
+]])
+end
+end--generated by methewhenmethes modchart editor
+
+--By StarLuz

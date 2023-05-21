@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="pipebreak.png">
+	<!-- Created with Adobe Animate version 20.0.3.25487 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="pipebreak0000" x="5" y="5" width="702" height="486"/>
+	<SubTexture name="pipebreak0001" x="5" y="5" width="702" height="486"/>
+	<SubTexture name="pipebreak0002" x="5" y="5" width="702" height="486"/>
+	<SubTexture name="pipebreak0003" x="712" y="5" width="702" height="486"/>
+	<SubTexture name="pipebreak0004" x="712" y="5" width="702" height="486"/>
+	<SubTexture name="pipebreak0005" x="712" y="5" width="702" height="486"/>
+	<SubTexture name="pipebreak0006" x="1419" y="5" width="702" height="486"/>
+	<SubTexture name="pipebreak0007" x="1419" y="5" width="702" height="486"/>
+	<SubTexture name="pipebreak0008" x="1419" y="5" width="702" height="486"/>
+	<SubTexture name="pipebreak0009" x="2126" y="5" width="702" height="486"/>
+	<SubTexture name="pipebreak0010" x="2126" y="5" width="702" height="486"/>
+	<SubTexture name="pipebreak0011" x="2126" y="5" width="702" height="486"/>
+	<SubTexture name="pipebreak0012" x="2833" y="5" width="702" height="486"/>
+	<SubTexture name="pipebreak0013" x="2833" y="5" width="702" height="486"/>
+	<SubTexture name="pipebreak0014" x="2833" y="5" width="702" height="486"/>
+	<SubTexture name="pipebreak0015" x="5" y="496" width="702" height="486"/>
+	<SubTexture name="pipebreak0016" x="5" y="496" width="702" height="486"/>
+	<SubTexture name="pipebreak0017" x="5" y="496" width="702" height="486"/>
+	<SubTexture name="pipebreak0018" x="712" y="496" width="702" height="486"/>
+	<SubTexture name="pipebreak0019" x="712" y="496" width="702" height="486"/>
+	<SubTexture name="pipebreak0020" x="712" y="496" width="702" height="486"/>
+	<SubTexture name="pipebreak0021" x="1419" y="496" width="702" height="486"/>
+	<SubTexture name="pipebreak0022" x="1419" y="496" width="702" height="486"/>
+	<SubTexture name="pipebreak0023" x="1419" y="496" width="702" height="486"/>
+	<SubTexture name="pipebreak0024" x="2126" y="496" width="702" height="486"/>
+	<SubTexture name="pipebreak0025" x="2126" y="496" width="702" height="486"/>
+	<SubTexture name="pipebreak0026" x="2126" y="496" width="702" height="486"/>
+	<SubTexture name="pipebreak0027" x="2833" y="496" width="702" height="486"/>
+	<SubTexture name="pipebreak0028" x="2833" y="496" width="702" height="486"/>
+</TextureAtlas>

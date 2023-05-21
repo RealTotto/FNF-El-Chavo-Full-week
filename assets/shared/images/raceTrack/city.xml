@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-16"?>
+<TextureAtlas imagePath="city.png">
+	<!-- Created with Adobe Flash CS6 version 12.0.0.481 -->
+	<!-- http://www.adobe.com/products/flash.html -->
+	<SubTexture name="dance0000" x="0" y="0" width="1127" height="574"/>
+	<SubTexture name="dance0001" x="0" y="0" width="1127" height="574"/>
+	<SubTexture name="dance0002" x="0" y="574" width="1127" height="574"/>
+	<SubTexture name="dance0003" x="0" y="574" width="1127" height="574"/>
+	<SubTexture name="dance0004" x="0" y="1148" width="1127" height="574"/>
+	<SubTexture name="dance0005" x="0" y="1148" width="1127" height="574"/>
+	<SubTexture name="dance0006" x="0" y="1148" width="1127" height="574"/>
+	<SubTexture name="dance0007" x="0" y="1148" width="1127" height="574"/>
+	<SubTexture name="dance0008" x="0" y="1148" width="1127" height="574"/>
+	<SubTexture name="dance0009" x="0" y="1148" width="1127" height="574"/>
+	<SubTexture name="dance0010" x="0" y="574" width="1127" height="574"/>
+	<SubTexture name="dance0011" x="0" y="574" width="1127" height="574"/>
+</TextureAtlas>
+

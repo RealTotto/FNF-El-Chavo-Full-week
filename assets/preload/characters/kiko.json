@@ -1,0 +1,122 @@
+{
+	"animations": [
+		{
+			"loop": false,
+			"offsets": [
+				-1,
+				-9
+			],
+			"anim": "danceLeft",
+			"fps": 17,
+			"name": "k_idle",
+			"indices": [
+				30,
+				0,
+				1,
+				2,
+				3,
+				4,
+				5,
+				6,
+				7,
+				8,
+				9,
+				10,
+				11,
+				12,
+				13,
+				14
+			]
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-1,
+				-9
+			],
+			"anim": "danceRight",
+			"fps": 17,
+			"name": "k_idle",
+			"indices": [
+				15,
+				16,
+				17,
+				18,
+				19,
+				20,
+				21,
+				22,
+				23,
+				24,
+				25,
+				26,
+				27,
+				28,
+				29
+			]
+		},
+		{
+			"loop": false,
+			"offsets": [
+				12,
+				-11
+			],
+			"anim": "singLEFT",
+			"fps": 17,
+			"name": "k_left",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				3,
+				-11
+			],
+			"anim": "singDOWN",
+			"fps": 17,
+			"name": "k_down",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				1,
+				1
+			],
+			"anim": "singUP",
+			"fps": 17,
+			"name": "k_up",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-7,
+				-3
+			],
+			"anim": "singRIGHT",
+			"fps": 17,
+			"name": "k_right",
+			"indices": []
+		}
+	],
+	"no_antialiasing": false,
+	"image": "Full_week/Kiko_Assets",
+	"position": [
+		120,
+		170
+	],
+	"healthicon": "kiko",
+	"flip_x": true,
+	"healthbar_colors": [
+		249,
+		198,
+		146
+	],
+	"camera_position": [
+		-270,
+		-120
+	],
+	"sing_duration": 4,
+	"scale": 1.8
+}

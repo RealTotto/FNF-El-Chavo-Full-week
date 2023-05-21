@@ -1,0 +1,167 @@
+{
+	"animations": [
+		{
+			"offsets": [
+				146,
+				-10
+			],
+			"loop": true,
+			"fps": 24,
+			"anim": "idle",
+			"indices": [],
+			"name": "idle"
+		},
+		{
+			"loop": true,
+			"offsets": [
+				146,
+				-11
+			],
+			"anim": "normal",
+			"fps": 24,
+			"name": "normal",
+			"indices": []
+		},
+		{
+			"offsets": [
+				146,
+				-11
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "quico",
+			"indices": [],
+			"name": "quico"
+		},
+		{
+			"offsets": [
+				157,
+				-58
+			],
+			"loop": true,
+			"fps": 24,
+			"anim": "derrape",
+			"indices": [],
+			"name": "derrape"
+		},
+		{
+			"loop": true,
+			"offsets": [
+				146,
+				-15
+			],
+			"anim": "singLEFT-loop",
+			"fps": 19,
+			"name": "left",
+			"indices": [
+				9,
+				10
+			]
+		},
+		{
+			"loop": true,
+			"offsets": [
+				160,
+				86
+			],
+			"anim": "singUP-loop",
+			"fps": 15,
+			"name": "up",
+			"indices": [
+				9,
+				10
+			]
+		},
+		{
+			"loop": true,
+			"offsets": [
+				146,
+				-11
+			],
+			"anim": "singRIGHT-loop",
+			"fps": 15,
+			"name": "right",
+			"indices": [
+				9,
+				10
+			]
+		},
+		{
+			"loop": true,
+			"offsets": [
+				167,
+				-47
+			],
+			"anim": "singDOWN-loop",
+			"fps": 15,
+			"name": "down",
+			"indices": [
+				9,
+				10
+			]
+		},
+		{
+			"offsets": [
+				167,
+				-47
+			],
+			"indices": [],
+			"fps": 15,
+			"anim": "singDOWN",
+			"loop": false,
+			"name": "down"
+		},
+		{
+			"offsets": [
+				146,
+				-11
+			],
+			"indices": [],
+			"fps": 15,
+			"anim": "singRIGHT",
+			"loop": false,
+			"name": "right"
+		},
+		{
+			"offsets": [
+				146,
+				-15
+			],
+			"indices": [],
+			"fps": 19,
+			"anim": "singLEFT",
+			"loop": false,
+			"name": "left"
+		},
+		{
+			"offsets": [
+				160,
+				86
+			],
+			"indices": [],
+			"fps": 15,
+			"anim": "singUP",
+			"loop": false,
+			"name": "up"
+		}
+	],
+	"no_antialiasing": false,
+	"image": "Full_week/Chavo_kart",
+	"position": [
+		70,
+		270
+	],
+	"healthicon": "chavoKart",
+	"flip_x": true,
+	"healthbar_colors": [
+		255,
+		211,
+		30
+	],
+	"camera_position": [
+		450,
+		30
+	],
+	"sing_duration": 4,
+	"scale": 1.3
+}

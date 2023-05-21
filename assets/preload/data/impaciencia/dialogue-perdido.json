@@ -1,0 +1,140 @@
+{
+	"dialogue": [
+		{
+			"sound": "",
+			"speed": 0.05,
+			"portrait": "chavo",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "Pipipipipipipipi..."
+		},
+		{
+			"sound": "",
+			"speed": 0.05,
+			"portrait": "don-ramon",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "..."
+		},
+		{
+			"sound": "",
+			"speed": 0.05,
+			"portrait": "chavo",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "Pipipipipi..."
+		},
+		{
+			"sound": "",
+			"speed": 0.05,
+			"portrait": "don-ramon",
+			"boxState": "angry",
+			"expression": "talk",
+			"text": "ME LLEVA EL CHANFLE, ME LLEVA EL CHANFLE, ME LLEVA EL CHANFLE"
+		},
+		{
+			"sound": "",
+			"speed": 0.045,
+			"portrait": "don-ramon",
+			"boxState": "angry",
+			"expression": "talk",
+			"text": "TENIA QUE SER EL CHAVO"
+		},
+		{
+			"sound": "",
+			"speed": 0.05,
+			"portrait": "chavo",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "Pipipi..-¿huh?"
+		},
+		{
+			"sound": "",
+			"speed": 0.055,
+			"portrait": "don-ramon",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "EN ESTA VECINDAD NO CABEMOS LOS DOS"
+		},
+		{
+			"sound": "",
+			"speed": 0.05,
+			"portrait": "chavo",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "Ron Damon-"
+		},
+		{
+			"sound": "",
+			"speed": 0.05,
+			"portrait": "don-ramon",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "TE VAS TU"
+		},
+		{
+			"sound": "",
+			"speed": 0.05,
+			"portrait": "don-ramon",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "O ME VOY YO"
+		},
+		{
+			"sound": "",
+			"speed": 0.05,
+			"portrait": "chavo",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "Esta bien"
+		},
+		{
+			"sound": "",
+			"speed": 0.05,
+			"portrait": "chavo",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "..."
+		},
+		{
+			"sound": "",
+			"speed": 0.05,
+			"portrait": "chavo",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "¿Necesita dinero para el taxi?"
+		},
+		{
+			"sound": "",
+			"speed": 0.04,
+			"portrait": "don-ramon",
+			"boxState": "angry",
+			"expression": "talk",
+			"text": "Y NO TE DOY OTRA NOMAS PORQUE...-"
+		},
+		{
+			"sound": "",
+			"speed": 0.06,
+			"portrait": "don-ramon",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "ESTO SIGNIFICA PELIGRO"
+		},
+		{
+			"sound": "",
+			"speed": 0.05,
+			"portrait": "don-ramon",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "UN PELIGRO PARA TI, CHAVITO"
+		},
+		{
+			"sound": "",
+			"speed": 0.05,
+			"portrait": "chavo",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "Es que no me tienen paciencia"
+		}
+	]
+}

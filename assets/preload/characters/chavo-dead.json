@@ -1,0 +1,56 @@
+{
+	"animations": [
+		{
+			"loop": false,
+			"offsets": [
+				0,
+				0
+			],
+			"fps": 12,
+			"anim": "deathConfirm",
+			"indices": [],
+			"name": "dead0"
+		},
+		{
+			"loop": true,
+			"offsets": [
+				0,
+				0
+			],
+			"fps": 12,
+			"anim": "deathLoop",
+			"indices": [],
+			"name": "dead0"
+		},
+		{
+			"loop": false,
+			"offsets": [
+				0,
+				0
+			],
+			"fps": 12,
+			"anim": "firstDeath",
+			"indices": [],
+			"name": "dead0"
+		}
+	],
+	"no_antialiasing": true,
+	"image": "Full_week/chavo-dead",
+	"position": [
+		55,
+		61
+	],
+	"healthicon": "face",
+	"flip_x": true,
+	"healthbar_colors": [
+		60,
+		188,
+		252
+	],
+	"camera_position": [
+		0,
+		0
+	],
+	"sing_duration": 4,
+	"scale": 6
+}

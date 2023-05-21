@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TextureAtlas imagePath="efectoLluvia.png" width="3774" height="2270">
+  <SubTexture name="rainforBfezz0000" x="0" y="1135"  width="1901" height="1135" frameX="-7" frameY="-0" frameWidth="1948" frameHeight="1135"/>
+  <SubTexture name="rainforBfezz0001" x="1901" y="1135"  width="1873" height="1135" frameX="-4" frameY="-0" frameWidth="1948" frameHeight="1135"/>
+  <SubTexture name="rainforBfezz0002" x="0" y="0"  width="1946" height="1135" frameX="-0" frameY="-0" frameWidth="1948" frameHeight="1135"/>
+</TextureAtlas>

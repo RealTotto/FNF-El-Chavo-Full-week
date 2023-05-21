@@ -1,0 +1,54 @@
+{
+	"animations": [
+		{
+			"loop": false,
+			"offsets": [
+				35,
+				10
+			],
+			"anim": "mami",
+			"fps": 26,
+			"name": "QuicoMami mami",
+			"indices": []
+		},
+		{
+			"loop": true,
+			"offsets": [
+				35,
+				10
+			],
+			"anim": "idle",
+			"fps": 15,
+			"name": "QuicoMami mami",
+			"indices": [
+				1,
+				1,
+				1,
+				1,
+				1,
+				1,
+				1,
+				1
+			]
+		}
+	],
+	"no_antialiasing": false,
+	"image": "T2/QuicoMami",
+	"position": [
+		-185,
+		270
+	],
+	"healthicon": "quico-T2",
+	"flip_x": false,
+	"healthbar_colors": [
+		233,
+		240,
+		125
+	],
+	"camera_position": [
+		0,
+		0
+	],
+	"sing_duration": 4,
+	"scale": 1
+}

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="menu_instrumental.png">
+	<!-- Created with Adobe Animate version 21.0.1.37179 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+    <SubTexture name="instrumental basic0000" x="0" y="0" width="556" height="97" frameX="-7" frameY="-45" frameWidth="600" frameHeight="222" />
+    <SubTexture name="instrumental white0000" x="0" y="97" width="556" height="97" frameX="-7" frameY="-45" frameWidth="600" frameHeight="222" />
+</TextureAtlas>

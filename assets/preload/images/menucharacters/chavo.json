@@ -1,0 +1,11 @@
+{
+	"idle_anim": "Menu_Chavo",
+	"image": "Menu_Chavo",
+	"position": [
+		80,
+		13
+	],
+	"flipX": false,
+	"scale": 0.85,
+	"confirm_anim": "HEY_Chavo"
+}

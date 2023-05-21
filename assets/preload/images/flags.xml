@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="flags.png">
+	<!-- Created with Adobe Animate version 20.0.3.25487 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="check0000" x="5" y="5" width="7" height="8"/>
+	<SubTexture name="minus0000" x="17" y="5" width="7" height="8"/>
+	<SubTexture name="plus0000" x="5" y="18" width="7" height="8"/>
+</TextureAtlas>

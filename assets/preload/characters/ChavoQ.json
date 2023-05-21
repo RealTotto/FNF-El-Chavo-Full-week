@@ -1,0 +1,120 @@
+{
+	"animations": [
+		{
+			"loop": false,
+			"offsets": [
+				0,
+				0
+			],
+			"anim": "emote",
+			"fps": 24,
+			"name": "Chavo Hey",
+			"indices": []
+		},
+		{
+			"offsets": [
+				-5,
+				0
+			],
+			"loop": true,
+			"fps": 15,
+			"anim": "idle",
+			"indices": [],
+			"name": "Chavo Idle"
+		},
+		{
+			"offsets": [
+				-5,
+				0
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singRIGHT",
+			"indices": [
+				20,
+				20,
+				20,
+				20
+			],
+			"name": "Chavo Idle"
+		},
+		{
+			"offsets": [
+				-5,
+				0
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singUP",
+			"indices": [
+				20,
+				20,
+				20,
+				20
+			],
+			"name": "Chavo Idle"
+		},
+		{
+			"offsets": [
+				-5,
+				0
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singLEFT",
+			"indices": [
+				20,
+				20,
+				20,
+				20
+			],
+			"name": "Chavo Idle"
+		},
+		{
+			"loop": true,
+			"offsets": [
+				-5,
+				0
+			],
+			"anim": "singDOWN",
+			"fps": 15,
+			"name": "Chavo Idle",
+			"indices": [
+				20,
+				20,
+				20,
+				20
+			]
+		},
+		{
+			"offsets": [
+				-5,
+				0
+			],
+			"indices": [],
+			"fps": 15,
+			"anim": "idle-alt",
+			"loop": true,
+			"name": "Chavo Idle"
+		}
+	],
+	"no_antialiasing": false,
+	"image": "T2/Chavo",
+	"position": [
+		60,
+		350
+	],
+	"healthicon": "quico-T2",
+	"flip_x": true,
+	"healthbar_colors": [
+		233,
+		240,
+		125
+	],
+	"camera_position": [
+		0,
+		0
+	],
+	"sing_duration": 4,
+	"scale": 1
+}

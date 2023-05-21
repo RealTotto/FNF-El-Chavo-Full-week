@@ -1,0 +1,78 @@
+{
+	"animations": [
+		{
+			"loop": false,
+			"offsets": [
+				-5,
+				0
+			],
+			"anim": "idle",
+			"fps": 15,
+			"name": "BF_Asustado Idle",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-4,
+				0
+			],
+			"anim": "singLEFT",
+			"fps": 24,
+			"name": "BF_Asustado Left",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-9,
+				1
+			],
+			"anim": "singDOWN",
+			"fps": 24,
+			"name": "BF_Asustado Down",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-2,
+				-12
+			],
+			"anim": "singUP",
+			"fps": 24,
+			"name": "BF_Asustado Up",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				2,
+				0
+			],
+			"anim": "singRIGHT",
+			"fps": 24,
+			"name": "BF_Asustado Right",
+			"indices": []
+		}
+	],
+	"no_antialiasing": false,
+	"image": "T2/BF_Asustado",
+	"position": [
+		-170,
+		290
+	],
+	"healthicon": "bf_luigi",
+	"flip_x": true,
+	"healthbar_colors": [
+		49,
+		176,
+		209
+	],
+	"camera_position": [
+		0,
+		0
+	],
+	"sing_duration": 4,
+	"scale": 1
+}
