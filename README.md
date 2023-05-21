@@ -2,22 +2,13 @@
 # FNF El Chavo Full week
 
 ## Installation:
-You must have [the most up-to-date version of Haxe](https://haxe.org/download/), seriously, stop using 4.1.5, it misses some stuff.
+Go to the Official Page of OS Engine to know about the installation(https://github.com/notweuz/FNF-OSEngine/tree/1.5.1)
 
-Follow a Friday Night Funkin' source code compilation tutorial, after this you will need to install LuaJIT.
-
-To install LuaJIT do this: `haxelib git linc_luajit https://github.com/nebulazorua/linc_luajit` on a Command prompt/PowerShell
-
-...Or if you don't want your mod to be able to run .lua scripts, delete the "LUA_ALLOWED" line on Project.xml
-
-If you get an error about StatePointer when using Lua, run `haxelib remove linc_luajit` into Command Prompt/PowerShell, then re-install linc_luajit.
-
-If you want video support on your mod, simply do `haxelib install hxCodec` on a Command prompt/PowerShell
-
-## OS Engine Credits:
-* [weuz_](https://github.com/notweuz) - Coding
-* [nelifs](https://github.com/nelifs) - Coding and Design
-* [Cooljer](https://github.com/cooljer) - Arts
+## Full week Credits:
+* [Eso Marx](https://www.youtube.com/@esomarx3074) - Mod Creator
+* [KoichiM4](https://twitter.com/m4_koi) - Mod Composer T2
+* [Real Totto](https://youtube.com/@RealTotto_D) - Mod Programmer
+* [StarLuz](https://www.youtube.com/channel/UC4qtZUhwN0S_d-Wj2X4mO6A) - Mod Programmer
 
 ### OS Engine Special Thanks
 * [jonnycat](https://github.com/McJonnycat) - Fixing bugs in Engine <3.
