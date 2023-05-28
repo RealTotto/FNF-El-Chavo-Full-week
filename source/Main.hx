@@ -10,6 +10,7 @@ import openfl.Assets;
 import openfl.Lib;
 import openfl.display.FPS;
 import openfl.display.Sprite;
+import flixel.input.keyboard.FlxKey;
 import openfl.events.Event;
 import openfl.display.StageScaleMode;
 
@@ -35,7 +36,12 @@ class Main extends Sprite
 	var zoom:Float = -1; // If -1, zoom is automatically calculated to fit the window dimensions.
 	var framerate:Int = 60; // How many frames per second the game should run at.
 	var skipSplash:Bool = false; // Whether to skip the flixel splash screen that appears in release mode.
-	var startFullscreen:Bool = false; // Whether to start the game in fullscreen on desktop targets
+	var iniFullscreen:Bool = false; // Whether to start the game in fullscreen on desktop targets
+
+	public static var preFullScreen:Bool = false; // Will be set true in Init to make sure everything is ready
+
+	public static var keysFull:Array<Null<FlxKey>>;
+	
 	public static var skipCache:Class<FlxState> = TitleState; 
 	public static var fpsVar:FPS;
 	public static var gjToastManager:GJToastManager;	
@@ -71,6 +77,32 @@ class Main extends Sprite
 		setupGame();
 	}
 
+	public function update(e:Event)
+	{
+		if (FlxG.keys == null)
+			return;
+
+		if (preFullScreen && keysFull != null)
+		{
+			var lastPressed:FlxKey = FlxG.keys.firstJustPressed();
+
+			if (!keysFull.contains(lastPressed))
+				return;
+
+			for (key in keysFull)
+			{
+				if (key == null || key == FlxKey.NONE)
+					continue;
+
+				if (key == lastPressed)
+				{
+					FlxG.fullscreen = !FlxG.fullscreen;
+					break;
+				}
+			}
+		}
+	}		
+
 	private function setupGame():Void
 	{
 		var stageWidth:Int = Lib.current.stage.stageWidth;
@@ -90,7 +122,7 @@ class Main extends Sprite
 		#end			
 	
 		ClientPrefs.loadDefaultKeys();
-		addChild(new FlxGame(gameWidth, gameHeight, initialState, zoom, framerate, framerate, skipSplash, startFullscreen));
+		addChild(new FlxGame(gameWidth, gameHeight, initialState, zoom, framerate, framerate, skipSplash, iniFullscreen));
 
 		#if !mobile
 		fpsVar = new FPS(10, 3, 0xFFFFFF);

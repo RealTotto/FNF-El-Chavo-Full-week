@@ -4055,12 +4055,12 @@ class PlayState extends MusicBeatState
 		/*if (FlxG.keys.justPressed.NINE)
 		{
 			iconP1.swapOldIcon();
-		}*/
+		}
 		if (FlxG.keys.justPressed.F)
 		{
 			FlxG.fullscreen = !FlxG.fullscreen;
 		}
-		/*if (FlxG.keys.justPressed.B)
+		if (FlxG.keys.justPressed.B)
 		{
 			cpuControlled = true;
 		}
@@ -7037,9 +7037,9 @@ class PlayState extends MusicBeatState
 		iconP1.updateHitbox();
 		iconP2.updateHitbox();
 
-		if (ClientPrefs.fullscreen) {
+		/*if (ClientPrefs.fullscreen) {
 			FlxG.fullscreen = !FlxG.fullscreen;
-		}	
+		}*/	
 
 		if (gf != null && curBeat % Math.round(gfSpeed * gf.danceEveryNumBeats) == 0 && gf.animation.curAnim != null && !gf.animation.curAnim.name.startsWith("sing") && !gf.stunned)
 		{

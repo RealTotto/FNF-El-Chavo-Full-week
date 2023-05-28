@@ -32,7 +32,6 @@ class ClientPrefs {
 	public static var ghostTapping:Bool = true;
 	public static var timeBarType:String = 'Time Left';
 	public static var iconbops:String = 'OS';
-	public static var fullscreen:Bool = false;
 	public static var colorblindMode:String = 'None';
 	public static var opponentStrums:Bool = false;
 	public static var scoreZoom:Bool = true;
@@ -108,7 +107,9 @@ class ClientPrefs {
 		'volume_down'	=> [NUMPADMINUS, MINUS],
 		
 		'debug_1'		=> [SEVEN, NONE],
-		'debug_2'		=> [EIGHT, NONE]
+		'debug_2'		=> [EIGHT, NONE],
+
+		'fullscreen' => [F11, NONE]
 	];
 	public static var defaultKeys:Map<String, Array<FlxKey>> = null;
 
@@ -154,7 +155,6 @@ class ClientPrefs {
 		FlxG.save.data.themedmainmenubg = themedmainmenubg;
 		FlxG.save.data.autotitleskip = autotitleskip;
 		FlxG.save.data.iconbops = iconbops;
-		FlxG.save.data.fullscreen = fullscreen;
 
 		FlxG.save.data.ratingOffset = ratingOffset;
 		FlxG.save.data.showcaseMode = showcaseMode;
@@ -238,10 +238,7 @@ class ClientPrefs {
 		}
 		if(FlxG.save.data.iconbops != null) {
 			iconbops = FlxG.save.data.iconbops;
-		}
-		if(FlxG.save.data.fullscreen != null) {
-			fullscreen = FlxG.save.data.fullscreen;
-		}		
+		}	
 		if(FlxG.save.data.autosaveInterval != null) {
 			autosaveInterval = FlxG.save.data.autosaveInterval;
 		}
@@ -408,6 +405,7 @@ class ClientPrefs {
 		TitleState.muteKeys = copyKey(keyBinds.get('volume_mute'));
 		TitleState.volumeDownKeys = copyKey(keyBinds.get('volume_down'));
 		TitleState.volumeUpKeys = copyKey(keyBinds.get('volume_up'));
+		Main.keysFull = copyKey(keyBinds.get('fullscreen'));
 		FlxG.sound.muteKeys = TitleState.muteKeys;
 		FlxG.sound.volumeDownKeys = TitleState.volumeDownKeys;
 		FlxG.sound.volumeUpKeys = TitleState.volumeUpKeys;
