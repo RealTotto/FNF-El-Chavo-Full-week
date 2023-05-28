@@ -20,7 +20,6 @@ import lime.utils.Assets;
 import flixel.system.FlxSound;
 import openfl.utils.Assets as OpenFlAssets;
 import WeekData;
-//import SeasonData;
 #if MODS_ALLOWED
 import sys.FileSystem;
 #end
@@ -64,7 +63,6 @@ class FreeplayState extends MusicBeatState
 		PlayState.isStoryMode = false;
 		PlayState.isFreeplay = false;
 		WeekData.reloadWeekFiles(false);
-		//SeasonData.reloadWeekFiles(false);
 
 		#if desktop
 		// Updating Discord Rich Presence
@@ -95,33 +93,7 @@ class FreeplayState extends MusicBeatState
 				addSong(song[0], i, song[1], FlxColor.fromRGB(colors[0], colors[1], colors[2]));
 			}
 		}
-		WeekData.loadTheFirstEnabledMod();
-
-		/*for (i in 0...SeasonData.weeksList.length) {
-			if(seasonIsLocked(SeasonData.weeksList[i])) continue;
-
-			var leWeek:SeasonData = SeasonData.weeksLoaded.get(SeasonData.weeksList[i]);
-			var leSongs:Array<String> = [];
-			var leChars:Array<String> = [];
-
-			for (j in 0...leWeek.songs.length)
-			{
-				leSongs.push(leWeek.songs[j][0]);
-				leChars.push(leWeek.songs[j][1]);
-			}
-
-			SeasonData.setDirectoryFromWeek(leWeek);
-			for (song in leWeek.songs)
-			{
-				var colors:Array<Int> = song[2];
-				if(colors == null || colors.length < 3)
-				{
-					colors = [146, 113, 253];
-				}
-				addSong(song[0], i, song[1], FlxColor.fromRGB(colors[0], colors[1], colors[2]));
-			}
-		}
-		SeasonData.loadTheFirstEnabledMod();*/		
+		WeekData.loadTheFirstEnabledMod();		
 
 		/*		//KIND OF BROKEN NOW AND ALSO PRETTY USELESS//
 
@@ -180,7 +152,6 @@ class FreeplayState extends MusicBeatState
 			songText.screenCenter(X);
 		}
 		WeekData.setDirectoryFromWeek();
-		SeasonData.setDirectoryFromWeek();
 
 		scoreText = new FlxText(FlxG.width * 0.7, 5, 0, "", 32);
 		scoreText.setFormat(Paths.font("vcr.ttf"), 32, FlxColor.WHITE, RIGHT);
@@ -259,12 +230,7 @@ class FreeplayState extends MusicBeatState
 	function weekIsLocked(name:String):Bool {
 		var leWeek:WeekData = WeekData.weeksLoaded.get(name);
 		return (!leWeek.startUnlocked && leWeek.weekBefore.length > 0 && (!StoryMenuState.weekCompleted.exists(leWeek.weekBefore) || !StoryMenuState.weekCompleted.get(leWeek.weekBefore)));
-	}
-
-	function seasonIsLocked(name:String):Bool {
-		var leWeek:SeasonData = SeasonData.weeksLoaded.get(name);
-		return (!leWeek.startUnlocked && leWeek.weekBefore.length > 0 && (!SeasonTwoState.seasonCompleted.exists(leWeek.weekBefore) || !SeasonTwoState.seasonCompleted.get(leWeek.weekBefore)));
-	}		
+	}	
 
 	/*public function addWeek(songs:Array<String>, weekNum:Int, weekColor:Int, ?songCharacters:Array<String>)
 	{
