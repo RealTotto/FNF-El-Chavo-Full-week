@@ -1,0 +1,9 @@
+It got removed in 6.0 so I remade it!
+
+Value 1: 0 = Turn off, 1 = Blue, 2 = Green
+3 = Pink, 4 = Red, 5 = Orange, Anything else = Random
+
+it also comes included with color changes in the time bar
+
+(Made by Wubbzyfan)
+(color changes in the time bar made by Real Totto_D)

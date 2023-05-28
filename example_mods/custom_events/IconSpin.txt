@@ -1,0 +1,2 @@
+value 1: icon bf = P2, icon dad = P1, both icons = both
+value 2: duration

@@ -330,8 +330,7 @@ function onCreatePost()
 	camAngle = realCamAngle
 	camZoom = realCamZoom
 end
-
-
+		
 local bfShift = {x = 0, y = 0}
 local dadShift = {x = 0, y = 0}
 
@@ -429,5 +428,90 @@ function onUpdatePost(dt)
 		setCamProperty("zoom", camZoom)
 	end
 end
+
+local settings = {
+	showNoteCombo = true, -- disable this if its annoying lmao
+	noteComboX = 311,
+	noteComboY = 223,
+}
+
+function onCreate()
+	precacheImage("NoteCombo")
+	
+	precacheSound("NoteComboExecute")
+	
+	--prevComboOffset = getPropertyFromClass("ClientPrefs", "comboOffset")
+end
+
+function onCreatePost()
+	if (settings.showNoteCombo) then
+		makeAnimatedLuaSprite("ntCombo", "NoteCombo", 0, 0)
+		addAnimationByPrefix("ntCombo", "anim", " NoteComboTextAppearAndDisappear", 24, false)
+		scaleObject("ntCombo", .56, .56)
+		
+		setObjectCamera("ntCombo", "hud")
+	end
+end
+
+function onStepHit()
+	local thing = curBpm <= 140 and math.snap(((-curBpm + 140) / 2.5), 8) + 8 or 8
+	
+	if (settings.showNoteCombo and math.fmod(curStep, thing) == 0) then
+		local combo = getProperty("combo")
+		
+		wowCombo = math.clamp(combo - prevCombo, 0, 100)
+		
+		if (wowCombo >= 5 and not dontPlayCombo) then
+			local canPlay = false
+			
+			local n = 0
+			local songPos = getSongPosition() - (gDt * 1000)
+			local et = songPos + (stepCrochet * thing)
+			for i = 0, getProperty("notes.length") - 1 do
+				local pos = getPropertyFromGroup("notes", i, "strumTime")
+				if (
+					getPropertyFromGroup("notes", i, "mustPress")
+					and not getPropertyFromGroup("notes", i, "isSustainNote")
+					and pos >= songPos and pos < et
+				) then
+					n = n + 1
+				end
+			end
+			
+			canPlay = n <= 0
+			
+			if (canPlay) then
+				objectPlayAnimation("ntCombo", "anim", true, 13)
+				setProperty("ntCombo.animation.curAnim.reversed", true)
+				playSound("NoteComboExecute", 1)
+				
+				setProperty("ntCombo.x", settings.noteComboX - 42)
+				setProperty("ntCombo.y", settings.noteComboY + 21)
+				
+				doTweenX("ntComboX", "ntCombo", settings.noteComboX, .12, "quadout")
+				doTweenY("ntComboY", "ntCombo", settings.noteComboY, .12, "quadout")
+				
+				addLuaSprite("ntCombo")
+				runTimer("ntCombo", 14 / 24)
+				
+				dontPlayCombo = true
+				
+				prevCombo = combo
+			end
+		end
+		
+		if (combo < prevCombo) then
+			prevCombo = combo
+		end
+	end
+end
+
+function onTimerCompleted(t)
+	if (t == "ntCombo") then
+		dontPlayCombo = false
+		removeLuaSprite("ntCombo", false)
+	end
+end
+
 
 

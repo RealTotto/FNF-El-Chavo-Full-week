@@ -1,0 +1,6 @@
+Value 1: 0 = Turn off, 1 = Blue, 2 = Green
+3 = Pink, 4 = Red, 5 = Orange
+
+Value 2: Color change in time bar timer
+
+(Made by Real Totto_D)

@@ -146,7 +146,6 @@ class PlayState extends MusicBeatState
 	public static var isStepmania:Bool = false;
 	public static var SONG:SwagSong = null;
 	public static var isStoryMode:Bool = false;
-	public static var isSeasonTwo:Bool = false;
 	public static var isFreeplay:Bool = false;
 	public static var storyWeek:Int = 0;
 	public static var storyPlaylist:Array<String> = [];
@@ -1997,7 +1996,7 @@ class PlayState extends MusicBeatState
 		#end
 
 		var daSong:String = Paths.formatToSongPath(curSong);
-		if (isStoryMode && isSeasonTwo && !seenCutscene)
+		if (isStoryMode && !seenCutscene)
 		{
 			switch (daSong)
 			{
@@ -3881,7 +3880,7 @@ class PlayState extends MusicBeatState
 
 			var babyArrow:StrumNote = new StrumNote(ClientPrefs.middleScroll ? STRUM_X_MIDDLESCROLL : STRUM_X, strumLine.y, i, player);
 			babyArrow.downScroll = ClientPrefs.downScroll;
-			if (!isStoryMode && !isSeasonTwo && !skipArrowStartTween)
+			if (!isStoryMode && !skipArrowStartTween)
 			{
 				//babyArrow.y -= 10;
 				babyArrow.alpha = 0;
@@ -4141,7 +4140,6 @@ class PlayState extends MusicBeatState
 				PlayState.SONG = Song.loadFromJson('infinite-cakes-hard', 'infinite-cakes');
 				FlxG.save.data.songInsertRar = true;
 				PlayState.isStoryMode = false;
-				PlayState.isSeasonTwo = false;
 				PlayState.isFreeplay = true;
 				PlayState.storyDifficulty = 0;
 				LoadingState.loadAndSwitchState(new PlayState());
@@ -5490,56 +5488,6 @@ class PlayState extends MusicBeatState
 				openChartEditor();
 				return;
 			}
-
-			if (isSeasonTwo)
-			{
-				campaignScore += songScore;
-				campaignMisses += songMisses;
-
-				seasonPlaylist.remove(seasonPlaylist[0]);
-
-				if (seasonPlaylist.length <= 0)
-				{
-					SeasonData.loadTheFirstEnabledMod();
-					FlxG.sound.playMusic(Paths.music('freakyMenu'));
-
-					cancelMusicFadeTween();
-					if(FlxTransitionableState.skipNextTransIn) {
-						CustomFadeTransition.nextCamera = null;
-					}
-					MusicBeatState.switchState(new SeasonTwoState());
-
-					// if ()
-					if(!ClientPrefs.getGameplaySetting('practice', false) && !ClientPrefs.getGameplaySetting('botplay', false)) {
-						SeasonTwoState.seasonCompleted.set(SeasonData.weeksList[storyWeek], true);
-
-						if (SONG.validScore)
-						{
-							Highscore.saveWeekScore(SeasonData.getWeekFileName(), campaignScore, storyDifficulty);
-						}
-
-						FlxG.save.data.seasonCompleted = SeasonTwoState.seasonCompleted;
-						FlxG.save.flush();
-					}
-					changedDifficulty = false;										
-				}
-				else
-				{
-					var difficulty:String = CoolUtil.getDifficultyFilePath();
-
-					trace('LOADING NEXT SONG');
-					trace(Paths.formatToSongPath(PlayState.seasonPlaylist[0]) + difficulty);
-
-					FlxTransitionableState.skipNextTransIn = true;
-					FlxTransitionableState.skipNextTransOut = true;
-
-					prevCamFollow = camFollow;
-					prevCamFollowPos = camFollowPos;
-
-					PlayState.SONG = Song.loadFromJson(PlayState.seasonPlaylist[0] + difficulty, PlayState.seasonPlaylist[0]);
-					FlxG.sound.music.stop();
-				}
-			}			
 
 			if (isStoryMode)
 			{

@@ -1,4 +1,5 @@
 function onCreate()
+	if not lowQuality then
     	makeAnimatedLuaSprite('missStatic', 'exep3/hitStatic', 0, 0)
     	addAnimationByPrefix('missStatic', 'missed', 'staticANIMATION', 24, false)
     	setGraphicSize('missStatic', 1366, 768) --getProperty('missStatic.width') * 4
@@ -6,13 +7,24 @@ function onCreate()
     	setProperty('missStatic.visible', false)
     	addLuaSprite('missStatic', true)
     	setObjectCamera('missStatic', 'other')
+	end	
 
-	for i = 0, getProperty('unspawnNotes.length')-1 do
-		if getPropertyFromGroup('unspawnNotes', i, 'noteType') == 'Static Note' then
-			setPropertyFromGroup('unspawnNotes', i, 'texture', 'STATIC_assets');
-			setPropertyFromGroup('unspawnNotes', i, 'hitCausesMiss', false);
+	if not lowQuality then
+		for i = 0, getProperty('unspawnNotes.length')-1 do
+			if getPropertyFromGroup('unspawnNotes', i, 'noteType') == 'Static Note' then
+				setPropertyFromGroup('unspawnNotes', i, 'texture', 'STATIC_assets');
+				setPropertyFromGroup('unspawnNotes', i, 'hitCausesMiss', false);
+			end
 		end
 	end
+	if lowQuality then
+		for i = 0, getProperty('unspawnNotes.length')-1 do
+			if getPropertyFromGroup('unspawnNotes', i, 'noteType') == 'Static Note' then
+				setPropertyFromGroup('unspawnNotes', i, 'texture', 'NOTET2_assets');
+				setPropertyFromGroup('unspawnNotes', i, 'hitCausesMiss', false);
+			end
+		end
+	end	
 end
 
 function noteMiss(id, noteData, noteType, isSustainNote)

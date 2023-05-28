@@ -62,7 +62,6 @@ class FreeplayState extends MusicBeatState
 		
 		persistentUpdate = true;
 		PlayState.isStoryMode = false;
-		PlayState.isSeasonTwo = false;
 		PlayState.isFreeplay = false;
 		WeekData.reloadWeekFiles(false);
 		//SeasonData.reloadWeekFiles(false);
@@ -470,7 +469,6 @@ class FreeplayState extends MusicBeatState
 
 		PlayState.SONG = Song.loadFromJson(poop, songLowercase);
 		PlayState.isStoryMode = false;
-		PlayState.isSeasonTwo = false;
 		PlayState.isFreeplay = false;
 		PlayState.storyDifficulty = curDifficulty;	
 		

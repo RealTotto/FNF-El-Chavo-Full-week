@@ -1,12 +1,14 @@
 function onEvent(name, value1, value2)
-	if name == "Image Flash" then
-		makeLuaSprite('image', value1, 0, 0);
-		addLuaSprite('image', true);
-		doTweenColor('hello', 'image', 'FFFFFFFF', 0.5, 'quartIn');
-		setObjectCamera('image', 'other');
-		runTimer('wait', value2);
+	if not lowQuality then
+		if name == "Image Flash" then
+			makeLuaSprite('image', value1, 0, 0);
+			addLuaSprite('image', true);
+			doTweenColor('hello', 'image', 'FFFFFFFF', 0.5, 'quartIn');
+			setObjectCamera('image', 'other');
+			runTimer('wait', value2);
+		end
 	end
-end
+end	
 
 function onTimerCompleted(tag, loops, loopsleft)
 	if tag == 'wait' then
