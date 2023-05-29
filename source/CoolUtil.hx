@@ -34,6 +34,11 @@ class CoolUtil
 		trace(snap);
 		return (m / snap);
 	}
+
+	public static function precacheImage(image:String, ?library:String = null):Void
+	{
+		precacheImageFile(Paths.image(image, library));
+	}	
 	
 	public static function getDifficultyFilePath(num:Null<Int> = null)
 	{
@@ -148,4 +153,10 @@ class CoolUtil
 		FlxG.openURL(site);
 		#end
 	}
+	
+	private static function precacheImageFile(file:Dynamic):Void
+	{
+		if (Assets.exists(file, IMAGE))
+			LimeAssets.getImage(file, true);
+	}	
 }

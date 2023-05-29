@@ -36,11 +36,8 @@ class Main extends Sprite
 	var zoom:Float = -1; // If -1, zoom is automatically calculated to fit the window dimensions.
 	var framerate:Int = 60; // How many frames per second the game should run at.
 	var skipSplash:Bool = false; // Whether to skip the flixel splash screen that appears in release mode.
-	var iniFullscreen:Bool = false; // Whether to start the game in fullscreen on desktop targets
 
-	public static var preFullScreen:Bool = false; // Will be set true in Init to make sure everything is ready
-
-	public static var keysFull:Array<Null<FlxKey>>;
+	public static var keysFull:Array<FlxKey>;
 	
 	public static var skipCache:Class<FlxState> = TitleState; 
 	public static var fpsVar:FPS;
@@ -75,32 +72,18 @@ class Main extends Sprite
 		}
 
 		setupGame();
+
+		addEventListener(Event.ENTER_FRAME, update);
 	}
 
 	public function update(e:Event)
 	{
-		if (FlxG.keys == null)
-			return;
-
-		if (preFullScreen && keysFull != null)
+        keysFull = ClientPrefs.copyKey(ClientPrefs.keyBinds.get('fullscreen'));	
+			
+        if (FlxG.keys.anyJustPressed(keysFull))
 		{
-			var lastPressed:FlxKey = FlxG.keys.firstJustPressed();
-
-			if (!keysFull.contains(lastPressed))
-				return;
-
-			for (key in keysFull)
-			{
-				if (key == null || key == FlxKey.NONE)
-					continue;
-
-				if (key == lastPressed)
-				{
-					FlxG.fullscreen = !FlxG.fullscreen;
-					break;
-				}
-			}
-		}
+            FlxG.fullscreen = !FlxG.fullscreen;
+		}		
 	}		
 
 	private function setupGame():Void
@@ -121,8 +104,7 @@ class Main extends Sprite
 		initialState = Cache;
 		#end			
 	
-		ClientPrefs.loadDefaultKeys();
-		addChild(new FlxGame(gameWidth, gameHeight, initialState, zoom, framerate, framerate, skipSplash, iniFullscreen));
+		addChild(new FlxGame(gameWidth, gameHeight, initialState, zoom, framerate, framerate, skipSplash));
 
 		#if !mobile
 		fpsVar = new FPS(10, 3, 0xFFFFFF);

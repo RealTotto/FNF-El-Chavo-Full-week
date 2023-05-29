@@ -45,10 +45,7 @@ class MusicBeatState extends FlxUIState
 		var oldStep:Int = curStep;
 
 		updateCurStep();
-		updateBeat();
-
-		if (FlxG.save.data != null)
-			FlxG.save.data.fullscreen = FlxG.fullscreen;		
+		updateBeat();	
 
 		if (oldStep != curStep)
 		{
@@ -63,6 +60,9 @@ class MusicBeatState extends FlxUIState
 					rollbackSection();
 			}
 		}
+
+		if (FlxG.save.data != null)
+			FlxG.save.data.fullscreen = FlxG.fullscreen;			
 
 		super.update(elapsed);
 	}
