@@ -405,7 +405,6 @@ class ClientPrefs {
 		TitleState.muteKeys = copyKey(keyBinds.get('volume_mute'));
 		TitleState.volumeDownKeys = copyKey(keyBinds.get('volume_down'));
 		TitleState.volumeUpKeys = copyKey(keyBinds.get('volume_up'));
-		Main.keysFull = copyKey(keyBinds.get('fullscreen'));
 		FlxG.sound.muteKeys = TitleState.muteKeys;
 		FlxG.sound.volumeDownKeys = TitleState.volumeDownKeys;
 		FlxG.sound.volumeUpKeys = TitleState.volumeUpKeys;

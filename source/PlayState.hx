@@ -2070,6 +2070,16 @@ class PlayState extends MusicBeatState
 		}
 		RecalculateRating();
 
+		if (isStoryMode && WeekData.getCurrentWeek().songs[0][0] != curSong) // Makes sure it isnt the first song
+			setWeekProgress(curSong);
+
+		if (GameProgression.weekProgress.exists(WeekData.getWeekFileName())
+			&& WeekData.getCurrentWeek().songs[0][0] == curSong) // Clear week progress if start over
+		{
+			GameProgression.weekProgress.remove(WeekData.getWeekFileName());
+			GameProgression.save();
+		}		
+
 		//PRECACHING MISS SOUNDS BECAUSE I THINK THEY CAN LAG PEOPLE AND FUCK THEM UP IDK HOW HAXE WORKS
 		if(ClientPrefs.hitsoundVolume > 0) precacheList.set('hitsound', 'sound');
 		precacheList.set('missnote1', 'sound');
@@ -2449,7 +2459,14 @@ class PlayState extends MusicBeatState
 				remove(daSTAT);
 			});	
 		}			
-	}   	
+	}  
+
+	function setWeekProgress(song:String)
+	{
+		GameProgression.weekProgress.set(WeekData.getWeekFileName(), {song: song});
+
+		GameProgression.save();
+	}	 	
 	
 	function set_songSpeed(value:Float):Float
 	{
@@ -5505,6 +5522,12 @@ class PlayState extends MusicBeatState
 						CustomFadeTransition.nextCamera = null;
 					}
 					MusicBeatState.switchState(new StoryMenuState());
+
+					if (GameProgression.weekProgress.exists(WeekData.getWeekFileName()))
+					{
+						GameProgression.weekProgress.remove(WeekData.getWeekFileName());
+						GameProgression.save();
+					}						
 
 					// if ()
 					if(!ClientPrefs.getGameplaySetting('practice', false) && !ClientPrefs.getGameplaySetting('botplay', false)) {

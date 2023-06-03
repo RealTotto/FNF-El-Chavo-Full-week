@@ -37,7 +37,7 @@ class Main extends Sprite
 	var framerate:Int = 60; // How many frames per second the game should run at.
 	var skipSplash:Bool = false; // Whether to skip the flixel splash screen that appears in release mode.
 
-	public static var keysFull:Array<FlxKey>;
+	private var keysFull:Array<FlxKey>;
 	
 	public static var skipCache:Class<FlxState> = TitleState; 
 	public static var fpsVar:FPS;
