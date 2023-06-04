@@ -11,12 +11,12 @@ class GameProgression
 		if (FlxG.save.data.weekProgress != null)
 		{
 			weekProgress = FlxG.save.data.weekProgress;
-		}
+		}	
 	}
 
 	public static function save()
 	{
-		FlxG.save.data.weekProgress = weekProgress;
+		FlxG.save.data.weekProgress = weekProgress;	
 
 		FlxG.save.flush();
 	}

@@ -5527,6 +5527,9 @@ class PlayState extends MusicBeatState
 					{
 						GameProgression.weekProgress.remove(WeekData.getWeekFileName());
 						GameProgression.save();
+
+						FlxG.save.data.weekProgress = GameProgression.weekProgress;
+						FlxG.save.flush();						
 					}						
 
 					// if ()

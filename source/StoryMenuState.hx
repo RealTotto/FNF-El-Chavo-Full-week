@@ -292,6 +292,42 @@ class StoryMenuState extends MusicBeatState
 
 	function selectWeek()
 	{
+		// We can't use Dynamic Array .copy() because that crashes HTML5, here's a workaround.
+		var songArray:Array<String> = [];
+		var leWeek:Array<Dynamic> = loadedWeeks[curWeek].songs;
+		for (i in 0...leWeek.length) {
+			songArray.push(leWeek[i][0]);
+		}
+
+		if (GameProgression.weekProgress.exists(WeekData.weeksList[curWeek]))
+		{
+			persistentUpdate = false;
+			openSubState(new SongsProgression(function()
+			{
+				playSong(songArray);
+			}, function()
+			{
+				var resumeInfo = GameProgression.weekProgress.get(WeekData.weeksList[curWeek]);
+
+				if (!songArray.contains(resumeInfo.song))
+					songArray[songArray.length] = resumeInfo.song;
+
+				songArray = songArray.slice(songArray.indexOf(resumeInfo.song));
+
+				playSong(songArray);
+			}, function()
+			{
+				selectedWeek = false;
+			}));
+		}
+		else
+		{
+			playSong(songArray);
+		}
+	}	
+
+    function playSong(songs:Array<String>)	
+	{
 		if (!weekIsLocked(loadedWeeks[curWeek].fileName))
 		{
 			if (stopspamming == false)
@@ -305,20 +341,13 @@ class StoryMenuState extends MusicBeatState
 				stopspamming = true;*/
 			}
 
-			// We can't use Dynamic Array .copy() because that crashes HTML5, here's a workaround.
-			var songArray:Array<String> = [];
-			var leWeek:Array<Dynamic> = loadedWeeks[curWeek].songs;
-			for (i in 0...leWeek.length) {
-				songArray.push(leWeek[i][0]);
-			}
-
-			// Nevermind that's stupid lmao
-			PlayState.storyPlaylist = songArray;
+			PlayState.storyPlaylist = songs;
 			PlayState.isStoryMode = true;
 			selectedWeek = true;
 
 			var diffic = CoolUtil.getDifficultyFilePath(curDifficulty);
-			if(diffic == null) diffic = '';
+			if (diffic == null)
+				diffic = '';
 
 			PlayState.storyDifficulty = curDifficulty;
 
@@ -332,7 +361,7 @@ class StoryMenuState extends MusicBeatState
 			});
 		} else {
 			FlxG.sound.play(Paths.sound('cancelMenu'));
-		}
+		}			
 	}
 
 	var tweenDifficulty:FlxTween;
