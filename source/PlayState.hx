@@ -2070,11 +2070,11 @@ class PlayState extends MusicBeatState
 		}
 		RecalculateRating();
 
-		if (isStoryMode && WeekData.getCurrentWeek().songs[0][0] != curSong) // Makes sure it isnt the first song
+		if (isStoryMode && WeekData.getCurrentWeek().songs[0][0] != curSong)
 			setWeekProgress(curSong);
 
 		if (GameProgression.weekProgress.exists(WeekData.getWeekFileName())
-			&& WeekData.getCurrentWeek().songs[0][0] == curSong) // Clear week progress if start over
+			&& WeekData.getCurrentWeek().songs[0][0] == curSong)
 		{
 			GameProgression.weekProgress.remove(WeekData.getWeekFileName());
 			GameProgression.save();
