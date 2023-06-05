@@ -72,6 +72,14 @@ class VisualsUISubState extends BaseOptionsMenu
 		addOption(option);
 		*/
 
+		var option:Option = new Option('Hud Style',
+		    'What CamHUD style do you want to use?',
+			'hudStyle',
+			'string', 
+			'Default', 
+			['Full week', 'Default']);
+		addOption(option);		
+
 		var option:Option = new Option('Hide Score Text',
 			'If checked, hides score, accuracy and misses text under health bar in song',
 			'hideScoreText',

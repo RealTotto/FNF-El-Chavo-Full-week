@@ -298,6 +298,7 @@ class PlayState extends MusicBeatState
 	public var songHits:Int = 0;
 	public var songMisses:Int = 0;
 	public var scoreTxt:FlxText;
+	public var scoreFullweek:FlxText;
 	public var songTxt:FlxText;
 	public var realTottoTxt:FlxText;
 
@@ -1602,38 +1603,12 @@ class PlayState extends MusicBeatState
 		  }
 	  	add(laneunderlay);
 
-		var showTime:Bool = (ClientPrefs.timeBarType != 'Disabled');
-		timeTxt = new FlxText(STRUM_X + (FlxG.width / 2) - 248, 19, 400, "", 32);
-		timeTxt.setFormat(Paths.font("GROBOLD.ttf"), 32, FlxColor.WHITE, CENTER, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
-		timeTxt.scrollFactor.set();
-		timeTxt.alpha = 0;
-		timeTxt.borderSize = 2;
-		timeTxt.visible = showTime;
-		if(ClientPrefs.downScroll) timeTxt.y = FlxG.height - 44;
-
-		if(ClientPrefs.timeBarType == 'Song Name')
-		{
-			timeTxt.text = SONG.song;
-		}
-		updateTime = showTime;
-
-		timeBarBG = new AttachedSprite('timeBar');
-		timeBarBG.x = timeTxt.x;
-		timeBarBG.y = timeTxt.y + (timeTxt.height / 4);
-		timeBarBG.scrollFactor.set();
-		timeBarBG.alpha = 0;
-		timeBarBG.visible = showTime;
-		timeBarBG.color = FlxColor.BLACK;
-		timeBarBG.xAdd = -4;
-		timeBarBG.yAdd = -4;
-		add(timeBarBG);
-
-		timeBar = new FlxBar(timeBarBG.x + 4, timeBarBG.y + 4, LEFT_TO_RIGHT, Std.int(timeBarBG.width - 8), Std.int(timeBarBG.height - 8), this,
-			'songPercent', 0, 1);
-		timeBar.scrollFactor.set();
+		strumLineNotes = new FlxTypedGroup<StrumNote>();
+		add(strumLineNotes);
+		add(grpNoteSplashes);		
 
         // Time Bar Colors
- 		switch (curStage)
+ 		/*switch (curStage)
 		{
 			case 'Vecindad_Lluviosa':
 				timeBar.createFilledBar(0x00CE002C, 0xFFCE002C);
@@ -1655,38 +1630,7 @@ class PlayState extends MusicBeatState
 				timeBar.updateBar();	
 			default:
 				timeBar.createFilledBar(0x00FF0000, 0xFFFF0000);																											
-		}			
-		timeBar.createFilledBar(0xFF000000, 0xFFFFFFFF);
-		timeBar.numDivisions = 800; //How much lag this causes?? Should i tone it down to idk, 400 or 200?
-		timeBar.alpha = 0;
-		timeBar.visible = showTime;
-		add(timeBar);
-		add(timeTxt);
-		timeBarBG.sprTracker = timeBar;
-
-		msTimeTxt = new FlxText(0, 0, 400, "", 32);
-		msTimeTxt.setFormat(Paths.font('GROBOLD.ttf'), 32, 0xFFAC75FF, CENTER, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
-		msTimeTxt.scrollFactor.set();
-		msTimeTxt.alpha = 0;
-		msTimeTxt.visible = true;
-		msTimeTxt.borderSize = 2;
-		add(msTimeTxt);
-
-		strumLineNotes = new FlxTypedGroup<StrumNote>();
-		add(strumLineNotes);
-		add(grpNoteSplashes);
-
-		if(ClientPrefs.timeBarType == 'Song Name')
-		{
-			timeTxt.size = 24;
-			timeTxt.y += 3;
-		}
-
-		if (ClientPrefs.timeBarType != 'Disabled' && ClientPrefs.timeBarType == "OS Time Left") {
-			timeBar.visible = false;
-			timeBarBG.visible = false;
-		}
-
+		}*/			
 		var splash:NoteSplash = new NoteSplash(100, 100, 0);
 		grpNoteSplashes.add(splash);
 		splash.alpha = 0.0;
@@ -1812,23 +1756,6 @@ class PlayState extends MusicBeatState
 		healthBarOverlay.antialiasing = ClientPrefs.globalAntialiasing;
 		add(healthBarOverlay); healthBarOverlay.alpha = ClientPrefs.healthBarAlpha; if(ClientPrefs.downScroll) healthBarOverlay.y = 0.11 * FlxG.height;
 
-		judgementCounter = new FlxText(20, 0, 0, "", 20);
-		judgementCounter.setFormat(Paths.font("GROBOLD.ttf"), 20, FlxColor.WHITE, FlxTextAlign.LEFT, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
-		judgementCounter.borderSize = 2;
-		judgementCounter.scrollFactor.set();
-		judgementCounter.screenCenter(Y);
-		judgementCounter.text = 'Chanfle: ${perfects}\nSick: ${sicks}\nGood: ${goods}\nBad: ${bads}\nShit: ${shits}\nMisses: ${songMisses}';
-		if (!ClientPrefs.hideScoreText && !ClientPrefs.hideHud) {
-			judgementCounter.visible = true;
-		} else {
-			judgementCounter.visible = false;
-		}		
-		if (PlayState.isStepmania) {
-            judgementCounter.visible = false;
-		}					
-		
-		add(judgementCounter);
-
 		/*healthtext = new FlxText(20, 0, 0, "", 20);
 		healthtext.setFormat(Paths.font("GROBOLD.ttf"), 20, FlxColor.WHITE, FlxTextAlign.LEFT, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
 		healthtext.borderSize = 2;
@@ -1858,47 +1785,13 @@ class PlayState extends MusicBeatState
 		add(iconP2);
 		reloadHealthBarColors();
 
+        styleHUD(hudStyle);		
+
 		pressRar = new FlxText(0, 500, 0, "Press \"X\" To Use The Ham Cake", 32);
 		pressRar.setFormat(Paths.font("GROBOLD.ttf"), 32, FlxColor.WHITE, CENTER, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
 		pressRar.screenCenter();
 		pressRar.visible = false;
 		add(pressRar);		
-
-		scoreTxt = new FlxText(0, healthBarBG.y + 28, FlxG.width, "", 16);
-		scoreTxt.setFormat(Paths.font("GROBOLD.ttf"), 16, FlxColor.WHITE, CENTER, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
-		scoreTxt.scrollFactor.set();
-		scoreTxt.borderSize = 1.2;
-		if (!ClientPrefs.hideScoreText && !ClientPrefs.hideHud) {
-			scoreTxt.visible = true;
-		} else {
-			scoreTxt.visible = false;
-		}
-		add(scoreTxt);
-
-		songTxt = new FlxText(12, FlxG.height - 24, 0, "", 8);
-		songTxt.setFormat(Paths.font("vcr.ttf"), 16, FlxColor.WHITE, CENTER, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
-		songTxt.scrollFactor.set();
-		songTxt.borderSize = 1;
-		if (!ClientPrefs.hideWatermark && !ClientPrefs.hideHud) {
-			songTxt.visible = true;
-		} else {
-			songTxt.visible = false;
-		}
-        if (ClientPrefs.hideScoreText) {	
-			songTxt.text = curSong + " (" + storyDifficultyText + ") " + "| OS " + MainMenuState.osEngineVersion;
-		}		
-		add(songTxt);
-		songTxt.text = curSong + " (" + ratingName + ") " + "| OS " + MainMenuState.osEngineVersion;
-
-		botplayTxt = new FlxText(400, timeBarBG.y + 55, FlxG.width - 800, "AUTOPLAY", 32);
-		botplayTxt.setFormat(Paths.font("GROBOLD.ttf"), 32, FlxColor.WHITE, CENTER, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
-		botplayTxt.scrollFactor.set();
-		botplayTxt.borderSize = 1.25;
-		botplayTxt.visible = cpuControlled;
-		add(botplayTxt);
-		if(ClientPrefs.downScroll) {
-			botplayTxt.y = timeBarBG.y - 78;
-		}
 
 		strumLineNotes.cameras = [camHUD];
 		grpNoteSplashes.cameras = [camHUD];
@@ -1908,14 +1801,6 @@ class PlayState extends MusicBeatState
 		healthBarOverlay.cameras = [camHUD];
 		iconP1.cameras = [camHUD];
 		iconP2.cameras = [camHUD];
-		scoreTxt.cameras = [camHUD];
-		songTxt.cameras = [camHUD];	
-		botplayTxt.cameras = [camHUD];
-		timeBar.cameras = [camHUD];
-		msTimeTxt.cameras = [camHUD];
-		timeBarBG.cameras = [camHUD];
-		judgementCounter.cameras = [camHUD];		
-		timeTxt.cameras = [camHUD];
 		//healthtext.cameras = [camHUD];
 		doof.cameras = [camHUD];
 		laneunderlay.cameras = [camHUD];
@@ -2466,7 +2351,223 @@ class PlayState extends MusicBeatState
 		GameProgression.weekProgress.set(WeekData.getWeekFileName(), {song: song});
 
 		GameProgression.save();
-	}	 	
+	}	 
+
+	function styleHUD(style:String)
+	{
+		switch (style)
+		{
+			case "Full week":
+				var showTime:Bool = (ClientPrefs.timeBarType != 'Disabled');
+				timeTxt = new FlxText(STRUM_X + (FlxG.width / 2) - 248, 19, 400, "", 32);
+				timeTxt.setFormat(Paths.font("GROBOLD.ttf"), 32, FlxColor.WHITE, CENTER, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
+				timeTxt.scrollFactor.set();
+				timeTxt.alpha = 0;
+				timeTxt.borderSize = 2;
+				timeTxt.visible = showTime;
+				if(ClientPrefs.downScroll) timeTxt.y = FlxG.height - 44;
+
+				if(ClientPrefs.timeBarType == 'Song Name')
+				{
+					timeTxt.text = SONG.song;
+				}
+				updateTime = showTime;
+
+				timeBarBG = new AttachedSprite('timeBar');
+				timeBarBG.x = timeTxt.x;
+				timeBarBG.y = timeTxt.y + (timeTxt.height / 4);
+				timeBarBG.scrollFactor.set();
+				timeBarBG.alpha = 0;
+				timeBarBG.visible = showTime;
+				timeBarBG.color = FlxColor.BLACK;
+				timeBarBG.xAdd = -4;
+				timeBarBG.yAdd = -4;
+				add(timeBarBG);
+
+				timeBar = new FlxBar(timeBarBG.x + 4, timeBarBG.y + 4, LEFT_TO_RIGHT, Std.int(timeBarBG.width - 8), Std.int(timeBarBG.height - 8), this,
+					'songPercent', 0, 1);
+				timeBar.scrollFactor.set();	
+
+				timeBar.createFilledBar(0xFF000000, 0xFFFFFFFF);
+				timeBar.numDivisions = 800; //How much lag this causes?? Should i tone it down to idk, 400 or 200?
+				timeBar.alpha = 0;
+				timeBar.visible = showTime;
+				add(timeBar);
+				add(timeTxt);
+				timeBarBG.sprTracker = timeBar;
+
+				if(ClientPrefs.timeBarType == 'Song Name')
+				{
+					timeTxt.size = 24;
+					timeTxt.y += 3;
+				}
+
+				if (ClientPrefs.timeBarType != 'Disabled' && ClientPrefs.timeBarType == "OS Time Left") {
+					timeBar.visible = false;
+					timeBarBG.visible = false;
+				}
+
+				judgementCounter = new FlxText(20, 0, 0, "", 20);
+				judgementCounter.setFormat(Paths.font("GROBOLD.ttf"), 20, FlxColor.WHITE, FlxTextAlign.LEFT, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
+				judgementCounter.borderSize = 2;
+				judgementCounter.scrollFactor.set();
+				judgementCounter.screenCenter(Y);
+				judgementCounter.text = 'Chanfle: ${perfects}\nSick: ${sicks}\nGood: ${goods}\nBad: ${bads}\nShit: ${shits}\nMisses: ${songMisses}';
+				if (!ClientPrefs.hideScoreText && !ClientPrefs.hideHud) {
+					judgementCounter.visible = true;
+				} else {
+					judgementCounter.visible = false;
+				}		
+				if (PlayState.isStepmania) {
+					judgementCounter.visible = false;
+				}					
+				
+				add(judgementCounter);
+
+				scoreFullweek = new FlxText(0, healthBarBG.y + 36, FlxG.width, "", 20);
+				scoreFullweek.setFormat(Paths.font("GROBOLD.ttf"), 20, FlxColor.WHITE, CENTER, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
+				scoreFullweek.scrollFactor.set();
+				scoreFullweek.borderSize = 1.25;
+				add(scoreFullweek);					
+
+				songTxt = new FlxText(12, FlxG.height - 24, 0, "", 8);
+				songTxt.setFormat(Paths.font("vcr.ttf"), 16, FlxColor.WHITE, CENTER, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
+				songTxt.scrollFactor.set();
+				songTxt.borderSize = 1;
+				if (!ClientPrefs.hideWatermark && !ClientPrefs.hideHud) {
+					songTxt.visible = true;
+				} else {
+					songTxt.visible = false;
+				}	
+				add(songTxt);
+				songTxt.text = curSong + " (" + ratingName + ") " + "| OS " + MainMenuState.osEngineVersion;
+
+				msTimeTxt = new FlxText(0, 0, 400, "", 32);
+				msTimeTxt.setFormat(Paths.font('GROBOLD.ttf'), 32, 0xFFAC75FF, CENTER, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
+				msTimeTxt.scrollFactor.set();
+				msTimeTxt.alpha = 0;
+				msTimeTxt.visible = true;
+				msTimeTxt.borderSize = 2;
+				add(msTimeTxt);		
+
+				botplayTxt = new FlxText(400, timeBarBG.y + 55, FlxG.width - 800, "AUTOPLAY", 32);
+				botplayTxt.setFormat(Paths.font("GROBOLD.ttf"), 32, FlxColor.WHITE, CENTER, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
+				botplayTxt.scrollFactor.set();
+				botplayTxt.borderSize = 1.25;
+				botplayTxt.visible = cpuControlled;
+				add(botplayTxt);
+				if(ClientPrefs.downScroll) {
+					botplayTxt.y = timeBarBG.y - 78;
+				}						
+
+				judgementCounter.cameras = [camHUD];
+				scoreFullweek.cameras = [camHUD];
+				songTxt.cameras = [camHUD];
+				botplayTxt.cameras = [camHUD];
+				timeBar.cameras = [camHUD];
+				msTimeTxt.cameras = [camHUD];
+				timeBarBG.cameras = [camHUD];
+				timeTxt.cameras = [camHUD];
+			default:
+				var showTime:Bool = (ClientPrefs.timeBarType != 'Disabled');
+				timeTxt = new FlxText(STRUM_X + (FlxG.width / 2) - 248, 19, 400, "", 32);
+				timeTxt.setFormat(Paths.font("vcr.ttf"), 32, FlxColor.WHITE, CENTER, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
+				timeTxt.scrollFactor.set();
+				timeTxt.alpha = 0;
+				timeTxt.borderSize = 2;
+				timeTxt.visible = showTime;
+				if(ClientPrefs.downScroll) timeTxt.y = FlxG.height - 44;
+
+				if(ClientPrefs.timeBarType == 'Song Name')
+				{
+					timeTxt.text = SONG.song;
+				}
+				updateTime = showTime;
+
+				timeBarBG = new AttachedSprite('timeBar');
+				timeBarBG.x = timeTxt.x;
+				timeBarBG.y = timeTxt.y + (timeTxt.height / 4);
+				timeBarBG.scrollFactor.set();
+				timeBarBG.alpha = 0;
+				timeBarBG.visible = showTime;
+				timeBarBG.color = FlxColor.BLACK;
+				timeBarBG.xAdd = -4;
+				timeBarBG.yAdd = -4;
+				add(timeBarBG);
+
+				timeBar = new FlxBar(timeBarBG.x + 4, timeBarBG.y + 4, LEFT_TO_RIGHT, Std.int(timeBarBG.width - 8), Std.int(timeBarBG.height - 8), this,
+					'songPercent', 0, 1);
+				timeBar.scrollFactor.set();	
+
+				timeBar.createFilledBar(0xFF000000, 0xFFFFFFFF);
+				timeBar.numDivisions = 800; //How much lag this causes?? Should i tone it down to idk, 400 or 200?
+				timeBar.alpha = 0;
+				timeBar.visible = showTime;
+				add(timeBar);
+				add(timeTxt);
+				timeBarBG.sprTracker = timeBar;
+
+				if(ClientPrefs.timeBarType == 'Song Name')
+				{
+					timeTxt.size = 24;
+					timeTxt.y += 3;
+				}
+
+				if (ClientPrefs.timeBarType != 'Disabled' && ClientPrefs.timeBarType == "OS Time Left") {
+					timeBar.visible = false;
+					timeBarBG.visible = false;
+				}			
+
+				scoreTxt = new FlxText(0, healthBarBG.y + 28, FlxG.width, "", 16);
+				scoreTxt.setFormat(Paths.font("vcr.ttf"), 16, FlxColor.WHITE, CENTER, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
+				scoreTxt.scrollFactor.set();
+				scoreTxt.borderSize = 1.2;
+				if (!ClientPrefs.hideScoreText && !ClientPrefs.hideHud) {
+					scoreTxt.visible = true;
+				} else {
+					scoreTxt.visible = false;
+				}		
+				add(scoreTxt);	
+
+				songTxt = new FlxText(12, FlxG.height - 24, 0, "", 8);
+				songTxt.setFormat(Paths.font("vcr.ttf"), 16, FlxColor.WHITE, CENTER, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
+				songTxt.scrollFactor.set();
+				songTxt.borderSize = 1;
+				if (!ClientPrefs.hideWatermark && !ClientPrefs.hideHud) {
+					songTxt.visible = true;
+				} else {
+					songTxt.visible = false;
+				}	
+				add(songTxt);
+				songTxt.text = curSong + " (" + storyDifficultyText + ") " + "| OS " + MainMenuState.osEngineVersion;
+
+				msTimeTxt = new FlxText(0, 0, 400, "", 32);
+				msTimeTxt.setFormat(Paths.font('vcr.ttf'), 32, 0xFFAC75FF, CENTER, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
+				msTimeTxt.scrollFactor.set();
+				msTimeTxt.alpha = 0;
+				msTimeTxt.visible = true;
+				msTimeTxt.borderSize = 2;
+				add(msTimeTxt);
+
+				botplayTxt = new FlxText(400, timeBarBG.y + 55, FlxG.width - 800, "BOTPLAY", 32);
+				botplayTxt.setFormat(Paths.font("vcr.ttf"), 32, FlxColor.WHITE, CENTER, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
+				botplayTxt.scrollFactor.set();
+				botplayTxt.borderSize = 1.25;
+				botplayTxt.visible = cpuControlled;
+				add(botplayTxt);
+				if(ClientPrefs.downScroll) {
+					botplayTxt.y = timeBarBG.y - 78;
+				}														
+
+				scoreTxt.cameras = [camHUD];
+				songTxt.cameras = [camHUD];
+				botplayTxt.cameras = [camHUD];
+				timeBar.cameras = [camHUD];
+				msTimeTxt.cameras = [camHUD];
+				timeBarBG.cameras = [camHUD];
+				timeTxt.cameras = [camHUD];
+		}
+	}		
 	
 	function set_songSpeed(value:Float):Float
 	{
@@ -3417,36 +3518,15 @@ class PlayState extends MusicBeatState
 
 	public function updateScore(miss:Bool = false)
 	{
-		if (hudStyle != "Mode Real Totto")
+		if (hudStyle != "Full week")
+		
 			return;
 
-		var healthPercentRar:Int = Math.floor(health * 50);	
-			
-        judgementCounter.text = 'Chanfle: ${perfects}\nSick: ${sicks}\nGood: ${goods}\nBad: ${bads}\nShit: ${shits}\nMisses: ${songMisses}';
-		scoreTxt.text = 'Score: ' + songScore + ' // Deaths: ' + curDeaths + ' // Combo: ' + combo + ' // Health: ' + healthPercentRar + '%'; 
-		if (!ClientPrefs.hideScoreText) {
-		songTxt.text = curSong + " (" + ratingName + ") " + "| OS " + MainMenuState.osEngineVersion;
-		}
-
-		if(ClientPrefs.scoreZoom && !miss)
-		{	     
-			if (scoreTxtTween != null)
-			{
-				scoreTxtTween.cancel();
-			}
-			var infoText:Array<FlxText> = [sickTxt, goodTxt, badTxt, shitTxt];
-			for (text in infoText)
-			{
-				if (text != null)
-					text.scale.set(1.03, 1.03);				
-				scoreTxtTween = FlxTween.tween(scoreTxt.scale, {x: 1, y: 1}, 0.2, {
-					onComplete: function(twn:FlxTween) 
-					{
-						scoreTxtTween = null;
-					}
-				});
-			}
-		}
+			var healthPercentRar:Int = Math.floor(health * 50);	
+				
+			judgementCounter.text = 'Chanfle: ${perfects}\nSick: ${sicks}\nGood: ${goods}\nBad: ${bads}\nShit: ${shits}\nMisses: ${songMisses}';
+			scoreFullweek.text = 'Score: ' + songScore + ' // Deaths: ' + curDeaths + ' // Combo: ' + combo + ' // Health: ' + healthPercentRar + '%'; 
+			songTxt.text = curSong + " (" + ratingName + ") " + "| OS " + MainMenuState.osEngineVersion;
 	}
 	
 
@@ -4355,7 +4435,18 @@ class PlayState extends MusicBeatState
 		super.update(elapsed);
 
 		if (hudStyle == "Default") {
-			scoreTxt.text = 'Score: ' + songScore; 			
+			if(ratingName == '?') {
+				scoreTxt.text = 'Score: ' + songScore 
+				+ ' | Combo Breaks: ' + songMisses 
+				+ ' | Average: ?'
+				+ ' | Accuracy: ' + ratingName;
+			} else {
+				scoreTxt.text = 'Score: ' + songScore 
+				+ ' | Combo Breaks: ' + songMisses 
+				+ ' | Average: ' + Math.round(averageMs) + 'ms'
+				+ ' | Accuracy: ' + Highscore.floorDecimal(ratingPercent * 100, 2) + '%' 
+				+ ' | ' + ratingName + ' [' + ratingFC + ']';
+			}			
 		}
 
 		setOnLuas('curDecStep', curDecStep);
@@ -4472,7 +4563,7 @@ class PlayState extends MusicBeatState
 					songPercent = (curTime / songLength);
 
 					var songCalc:Float = (songLength - curTime);
-					if(hudStyle == 'Mode Real Totto') songCalc = curTime;
+					if(hudStyle == 'Full week') songCalc = curTime;
 
 					var secondsTotal:Int = Math.floor(songCalc / 1000);
 					if(secondsTotal < 0) secondsTotal = 0;
@@ -4484,7 +4575,7 @@ class PlayState extends MusicBeatState
 
 					switch (hudStyle)
 					{
-						case "Mode Real Totto":
+						case "Full week":
 							timeTxt.text = '${FlxStringUtil.formatTime(secondsTotal, false)} - ${FlxStringUtil.formatTime(Math.floor(songLength / 1000), false)}';
 						default:
 							timeTxt.text = FlxStringUtil.formatTime(secondsTotal, false);						
@@ -5713,7 +5804,7 @@ class PlayState extends MusicBeatState
 				{
 				    switch(hudStyle)
 					{
-						case "Mode Real Totto":
+						case "Full week":
 							RecalculateRating(false);
 						default:
 							RecalculateRating(false);
@@ -7347,7 +7438,7 @@ class PlayState extends MusicBeatState
 			if (songMisses > 0 && songMisses < 10) ratingFC = "SDCB";
 			else if (songMisses >= 10) ratingFC = "Clear";
 
-			if (hudStyle == "Mode Real Totto")
+			if (hudStyle == "Full week")
 				updateScore(badHit);
 		}			
 		setOnLuas('rating', ratingPercent);

@@ -50,7 +50,7 @@ class ClientPrefs {
 	public static var removePerfects:Bool = false;
 	public static var characterTrail:Bool = false;
 	public static var newUnlock:Bool = false;
-	public static var hudStyle:String = "Mode Real Totto";
+	public static var hudStyle:String = "Full week";
 	public static var checkForUpdates:Bool = true;
 	public static var seasonLocked:String = "Save Season";
 	public static var doNotShowWarnings:Bool = false;
