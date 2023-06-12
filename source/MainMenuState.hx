@@ -350,30 +350,34 @@ class MainMenuState extends MusicBeatState
 
 	override function update(elapsed:Float)
 	{
-        switch (teclas){
+		if (!FlxG.save.data.disableKeysThree)
+		{
+			switch (teclas){
 
-     case 0:
-        if (FlxG.keys.justPressed.C)
-            teclas += 1;
-     case 0:
-        if (FlxG.keys.justPressed.H)
-            teclas += 1;
-     case 0:
-        if (FlxG.keys.justPressed.A)
-            teclas += 1;						
-     case 1:
-        if (FlxG.keys.justPressed.V)
-            teclas += 1;
-     case 2:
-        if (FlxG.keys.justPressed.O) {
-			PlayState.isFreeplay = false;
-            PlayState.SONG = Song.loadFromJson('vesania-hard', 'vesania');
-			FlxG.save.data.songInsertRarThree = true;
-            PlayState.isStoryMode = false;
-            PlayState.storyDifficulty = 0;
-            LoadingState.loadAndSwitchState(new PlayState());
-            }
-		}
+		case 0:
+			if (FlxG.keys.justPressed.C)
+				teclas += 1;
+		case 0:
+			if (FlxG.keys.justPressed.H)
+				teclas += 1;
+		case 0:
+			if (FlxG.keys.justPressed.A)
+				teclas += 1;						
+		case 1:
+			if (FlxG.keys.justPressed.V)
+				teclas += 1;
+		case 2:
+			if (FlxG.keys.justPressed.O) {
+				PlayState.isFreeplay = false;
+				PlayState.SONG = Song.loadFromJson('vesania-hard', 'vesania');
+				FlxG.save.data.songInsertRarThree = true;
+				FlxG.save.data.disableKeysThree = true;
+				PlayState.isStoryMode = false;
+				PlayState.storyDifficulty = 2;
+				LoadingState.loadAndSwitchState(new PlayState());
+				}
+			}
+		}	
 		switch (keys){	
      case 0:
         if (FlxG.keys.justPressed.J)

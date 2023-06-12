@@ -30,7 +30,8 @@ class MasterEditorMenu extends MusicBeatState
 		'Dialogue Editor',
 		'Dialogue Portrait Editor',
 		'Character Editor',
-		'Chart Editor',
+		'Chart Editor (Locked)',
+		//'Chart Editor',
 		'GameJolt',
 		'Stage Editor (ALPHA)'
 	];
@@ -43,6 +44,13 @@ class MasterEditorMenu extends MusicBeatState
 
 	override function create()
 	{
+	    if(StoryMenuState.weekCompleted.get('Season2')){
+			options.insert(5,"Chart Editor");
+			options.remove("Chart Editor (Locked)");
+			FlxG.save.data.weekCompleted = StoryMenuState.weekCompleted;
+			FlxG.save.flush();			
+		}	
+
 		FlxG.camera.bgColor = FlxColor.BLACK;
 		#if desktop
 		// Updating Discord Rich Presence
@@ -87,6 +95,7 @@ class MasterEditorMenu extends MusicBeatState
 		changeSelection();
 
 		FlxG.mouse.visible = false;
+		
 		super.create();		
 	}
 
@@ -116,10 +125,10 @@ class MasterEditorMenu extends MusicBeatState
 			MusicBeatState.switchState(new MainMenuState());
 		}
 
-		if (controls.ACCEPT)
+		if (controls.ACCEPT && options[curSelected] != "Chart Editor (Locked)")
 		{
 			switch(options[curSelected]) {
-				case 'Character Editor':
+				case 'Character Editor': //
 					LoadingState.loadAndSwitchState(new CharacterEditorState(Character.DEFAULT_CHARACTER, false));
 				case 'Week Editor':
 					MusicBeatState.switchState(new WeekEditorState());
@@ -131,6 +140,8 @@ class MasterEditorMenu extends MusicBeatState
 					LoadingState.loadAndSwitchState(new DialogueEditorState(), false);
 				case 'Chart Editor'://felt it would be cool maybe
 					LoadingState.loadAndSwitchState(new ChartingState(), false);
+				case 'Chart Editor (Locked)'://Locked Charting
+					LoadingState.loadAndSwitchState(new ChartingState(), false);					
 				case 'GameJolt'://GameJoltState
 					MusicBeatState.switchState(new GameJoltLogin());					
 				case 'Stage Editor (ALPHA)': // i'll finish it somedays... maybe....

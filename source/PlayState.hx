@@ -4230,42 +4230,54 @@ class PlayState extends MusicBeatState
 			}			
 		}
 
+	    if(StoryMenuState.weekCompleted.get('Season2')){
+            FlxG.save.data.disableKeysDebug	= true;	
+		}						
+
 		if (Paths.formatToSongPath(SONG.song) == 'endless-encore'){
-			if (FlxG.keys.justPressed.Q)
+			if (!FlxG.save.data.disableKeys)
 			{
-				PlayState.SONG = Song.loadFromJson('infinite-cakes-hard', 'infinite-cakes');
-				FlxG.save.data.songInsertRar = true;
-				PlayState.isStoryMode = false;
-				PlayState.isFreeplay = true;
-				PlayState.storyDifficulty = 0;
-				LoadingState.loadAndSwitchState(new PlayState());
+				if (FlxG.keys.justPressed.Q)
+				{
+					PlayState.SONG = Song.loadFromJson('infinite-cakes-hard', 'infinite-cakes');
+					FlxG.save.data.songInsertRar = true;
+					FlxG.save.data.disableKeys = true;
+					PlayState.isStoryMode = false;
+					PlayState.isFreeplay = true;
+					PlayState.storyDifficulty = 2;
+					LoadingState.loadAndSwitchState(new PlayState());
+				}	
 			}	
 		}	
 
 		if (Paths.formatToSongPath(SONG.song) == 'impaciencia'){
-			switch (teclas)
+			if (!FlxG.save.data.disableKeysTwo)
 			{
-				case 0:
-					if (FlxG.keys.justPressed.T)
-						teclas += 1;
-				case 1:
-					if (FlxG.keys.justPressed.O)
-						teclas += 1;
-				case 2:
-					if (FlxG.keys.justPressed.M)
-						teclas += 1;						
-				case 3:
-					if (FlxG.keys.justPressed.A) 
-					{
-						PlayState.SONG = Song.loadFromJson('through-the-fire-and-flames-hard', 'through-the-fire-and-flames');
-						FlxG.save.data.songInsertRarTwo = true;
-						PlayState.isStoryMode = false;
-						PlayState.isFreeplay = true;
-						PlayState.storyDifficulty = 0;
-						LoadingState.loadAndSwitchState(new PlayState());
-				    }
+				switch (teclas)
+				{
+					case 0:
+						if (FlxG.keys.justPressed.T)
+							teclas += 1;
+					case 1:
+						if (FlxG.keys.justPressed.O)
+							teclas += 1;
+					case 2:
+						if (FlxG.keys.justPressed.M)
+							teclas += 1;						
+					case 3:
+						if (FlxG.keys.justPressed.A) 
+						{
+							PlayState.SONG = Song.loadFromJson('through-the-fire-and-flames-hard', 'through-the-fire-and-flames');
+							FlxG.save.data.songInsertRarTwo = true;
+							FlxG.save.data.disableKeysTwo = true;
+							PlayState.isStoryMode = false;
+							PlayState.isFreeplay = true;
+							PlayState.storyDifficulty = 2;
+							LoadingState.loadAndSwitchState(new PlayState());
+						}
+				}
 			}
-		}					
+		}						
 
         /*switch (SONG.song.toLowerCase())	
 		{
@@ -4465,10 +4477,30 @@ class PlayState extends MusicBeatState
 			}
 		}
 
-		if (FlxG.keys.anyJustPressed(debugKeysChart) && !endingSong && !inCutscene && !SONG.disableDebugButtons)
+		if (!FlxG.save.data.disableKeysDebug)
 		{
-			openChartEditor();
+			if (FlxG.keys.justPressed.SEVEN)
+			{
+				var textRar:FlxText;
+				textRar = new FlxText(0, 500, 0, "You Still Can't Get In", 32);
+				textRar.setFormat(Paths.font("GROBOLD.ttf"), 32, FlxColor.WHITE, CENTER, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
+				textRar.screenCenter();
+				textRar.cameras = [camHUD];
+				add(textRar);	
+				new FlxTimer().start(2, function(tmr:FlxTimer)
+				{
+					FlxTween.tween(textRar, {alpha: 0}, 1.4, {ease: FlxEase.linear});	
+				});
+			}
 		}
+
+        if (FlxG.save.data.disableKeysDebug)
+		{
+			if (FlxG.keys.anyJustPressed(debugKeysChart) && !endingSong && !inCutscene && !SONG.disableDebugButtons)
+			{
+				openChartEditor();
+			}
+		}	
 
 		// FlxG.watch.addQuick('VOL', vocals.amplitudeLeft);
 		// FlxG.watch.addQuick('VOLRight', vocals.amplitudeRight);
