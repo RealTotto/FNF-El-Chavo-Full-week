@@ -95,12 +95,15 @@ class ChartingState extends MusicBeatState
 		['playVideo', 'Value 1: Name of video'],
 		['Light', 'Flashes Camera\nValue 1: speed'],
 		['LightCam', 'Flashes Camera'],
+		['FlashCam', 'Flashes Camera Game'],
 		['Goodbye Hud', 'hud is gone,\nvalue 1: opacity,\nvalue 2: speed'],
 		['NoteSpin', 'value 1: duration,\nvalue 2: degrees'],
 		['TweenSpin', 'Tour Shit'],
 		['Bopping HUD', 'Value 1: beginning position,\nto unactivate it just leave the value blank'],
 		['Set Cam Zoom', 'Sets Camera Zoom\nValue 1: Cam zoom\nValue 2: if blank, it will smoothly zoom regularly,\notherwise it will do an instant zoom'],
 		['Cam Boom Speed', 'Value 1: Speed\nValue 2: Intensity'],
+		['dodge', 'fuck you'],
+		['Bad Apple', '\"a\" to make the BG white and characters black, \"b\" to reverse it.'],
 		['notBug', 'fixed scares and static in triple trouble'],
 		['Set Property', "Value 1: Variable name\nValue 2: New value"]
 	];
@@ -1797,9 +1800,9 @@ class ChartingState extends MusicBeatState
 		}
 
 		if(!blockInput) {
-			FlxG.sound.muteKeys = TitleState.muteKeys;
-			FlxG.sound.volumeDownKeys = TitleState.volumeDownKeys;
-			FlxG.sound.volumeUpKeys = TitleState.volumeUpKeys;
+			FlxG.sound.muteKeys = Cache.muteKeys;
+			FlxG.sound.volumeDownKeys = Cache.volumeDownKeys;
+			FlxG.sound.volumeUpKeys = Cache.volumeUpKeys;
 			for (dropDownMenu in blockPressWhileScrolling) {
 				if(dropDownMenu.dropPanel.visible) {
 					blockInput = true;

@@ -1,0 +1,81 @@
+{
+	"song": {
+		"events": [
+			[
+				33620.6896551724,
+				[
+					[
+						"Cam Boom Speed",
+						"2",
+						"3"
+					]
+				]
+			],
+			[
+				66206.8965517241,
+				[
+					[
+						"LightCam",
+						"",
+						""
+					],
+					[
+						"Bad Apple",
+						"a",
+						""
+					],
+					[
+						"Better Cinematics",
+						"1",
+						"120"
+					]
+				]
+			],
+			[
+				82500,
+				[
+					[
+						"LightCam",
+						"",
+						""
+					]
+				]
+			],
+			[
+				82629.3103448276,
+				[
+					[
+						"Better Cinematics",
+						"1",
+						"0"
+					],
+					[
+						"Bad Apple",
+						"b",
+						""
+					]
+				]
+			],
+			[
+				116379.310344828,
+				[
+					[
+						"Cam Boom Speed",
+						"0",
+						"0"
+					],
+					[
+						"Set Property",
+						"camGame.visible",
+						"false"
+					],
+					[
+						"Set Property",
+						"camHUD.visible",
+						"false"
+					]
+				]
+			]
+		]
+	}
+}

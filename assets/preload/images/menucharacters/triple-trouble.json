@@ -1,0 +1,11 @@
+{
+	"idle_anim": "TT_Chavo",
+	"image": "Menu_backgrounds_vecindad",
+	"position": [
+		840,
+		380
+	],
+	"flipX": false,
+	"scale": 0.6,
+	"confirm_anim": "M Dad Idle"
+}

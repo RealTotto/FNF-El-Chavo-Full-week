@@ -20,6 +20,7 @@ import lime.utils.Assets;
 import flixel.system.FlxSound;
 import openfl.utils.Assets as OpenFlAssets;
 import WeekData;
+import StoryData;
 #if MODS_ALLOWED
 import sys.FileSystem;
 #end
@@ -62,6 +63,10 @@ class FreeplayState extends MusicBeatState
 		persistentUpdate = true;
 		PlayState.isStoryMode = false;
 		PlayState.isFreeplay = false;
+		PlayState.isWeekSuicida = false;
+		PlayState.isNotWeekSuicida = false;
+		PlayState.isFreeplayCovers = false;
+		PlayState.isFreeplayDanger = false;	
 		WeekData.reloadWeekFiles(false);
 
 		#if desktop
@@ -436,6 +441,10 @@ class FreeplayState extends MusicBeatState
 		PlayState.SONG = Song.loadFromJson(poop, songLowercase);
 		PlayState.isStoryMode = false;
 		PlayState.isFreeplay = false;
+		PlayState.isWeekSuicida = false;
+		PlayState.isNotWeekSuicida = false;	
+		PlayState.isFreeplayCovers = false;	
+		PlayState.isFreeplayDanger = false;	
 		PlayState.storyDifficulty = curDifficulty;	
 		
 		if(colorTween != null) 

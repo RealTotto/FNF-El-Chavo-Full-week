@@ -60,16 +60,19 @@ class SongsProgression extends MusicBeatSubstate
 		text.screenCenter(X);
 		alphabetArray.push(text);
 		text.alpha = 0;
+		text.scrollFactor.set();
 		add(text);
 
 		yesText = new Alphabet(0, text.y + 150, 'Continue', true);
 		yesText.screenCenter(X);
 		yesText.x -= 300;
+		yesText.scrollFactor.set();
 		add(yesText);
 
 		noText = new Alphabet(0, text.y + 150, "Start again", true);
 		noText.screenCenter(X);
 		noText.x += 250;
+		noText.scrollFactor.set();
 		add(noText);
 		updateOptions();
 	}

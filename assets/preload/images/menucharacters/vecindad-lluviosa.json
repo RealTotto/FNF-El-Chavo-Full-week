@@ -1,0 +1,11 @@
+{
+	"idle_anim": "vc_lluviosa",
+	"image": "Menu_backgrounds_vecindad",
+	"position": [
+		820,
+		400
+	],
+	"flipX": false,
+	"scale": 0.6,
+	"confirm_anim": "M Dad Idle"
+}

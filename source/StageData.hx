@@ -17,6 +17,7 @@ typedef StageFile = {
 	var defaultZoom:Float;
 	var isPixelStage:Bool;
 	var isStepmania:Bool;
+	var isComboSuicida:Bool;
 
 	var boyfriend:Array<Dynamic>;
 	var girlfriend:Array<Dynamic>;

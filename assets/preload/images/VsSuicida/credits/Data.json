@@ -1,0 +1,41 @@
+{	
+	"roles":
+	[
+		["Programmer",32,		232,43,46],
+		["Artist",	32,			242,219,23],
+		["Composer",32,		    76,183,242],
+		["Animator",32,			98,224,117],
+		["Creator",32,			98,224,117],
+		["Charter",32,			98,224,117]
+	],
+
+	"participant":
+	[
+		["realtotto",	40,			"Main Programmer Vs El Chavo Category'",32,						    0,"https://youtube.com/@RealTotto_D"],
+		["LuciaRojas^W^",	40,		"Second Programmer Vs El Chavo Category'",32,						0,"https://youtube.com/@RealTotto_D"],
+		["Christ",	40,			    "Creator Of Vs El Chavo Suicida'",32,						        4,"https://www.youtube.com/channel/UCRLCCtq74Kp_dzzsWJT3eXg"],
+		["Esteban",	40,			    "Artist Of Vs El Chavo Suicida'",32,						        1,""],
+		["Gardv",	40,			    "Compositor Of Vs El Chavo Suicida'",32,						    2,"https://youtube.com/@GarDev15"],
+		["Red",	40,			        "Artist Of Vs El Chavo Suicida'",32,						        1,"https://www.youtube.com/channel/UC-7jF0LjYcBSkVfxpM3_HFA"],
+		["SosPitAnDix",	40,			"Charter Of Vs El Chavo Suicida'",32,						    5,"https://www.youtube.com/channel/UCQpoMnPmWYSU0cMMvVrsBgw"],
+		["notweuz_",	40,			"Main Programmer of OS Engine'",32,								    0,"https://twitter.com/notweuz_"],
+		["nelifs",	40,			    "Second Programmer and Designer of OS Engine'",32,					0,"https://github.com/nelifs"],
+		["Cooljer",	64,			    "Main Artist of OS Engine'",32,					                    1,"https://twitter.com/cooljer_"],
+		["Shadow Mario",40,			"Main Programmer of Psych Engine",32,								0,"https://twitter.com/Shadow_Mario_"],
+		["RiverOaken",64,			"Main Artist/Animator of Psych Engine",32,							1,"https://twitter.com/RiverOaken"],
+		["shubs",64,				"Additional Programmer of Psych Engine",32,							0,"https://twitter.com/yoshubs"],
+		["bb-panzu",64,				"Ex-Programmer of Psych Engine",32,									0,"https://twitter.com/bbsub3"],
+		["iFlicky",	64,				"Composer of Psync and Tea Time\nMade the Dialogue Sounds",32,		2,"https://twitter.com/flicky_i"],
+		["SqirraRNG",64,			"Crash Handler and Base code for\nChart Editor's Waveform",32,		0,"https://twitter.com/gedehari"],
+		["EliteMasterEric",40,		"Runtime Shaders support",32,										0,"https://twitter.com/EliteMasterEric"],
+		["PolybiusProxy",40,		".MP4 Video Loader Library (hxCodec)",32,							0,"https://twitter.com/polybiusproxy"],
+		["KadeDev",64,				"Fixed some cool stuff on Chart Editor\nand other PRs",32,			0,"https://twitter.com/kade0912"],
+		["Keoiki",64,				"Note Splash Animations",32,										1,"https://twitter.com/Keoiki_"],
+		["Nebula the Zorua",40,		"LUA JIT Fork and some Lua reworks",32,								0,"https://twitter.com/Nebula_Zorua"],
+		["Smokey",64,				"Sprite Atlas Support",32,											1,"https://twitter.com/Smokey_5_"],
+		["ninjamuffin99",40,		"Programmer of Friday Night Funkin'",32,							0,"https://twitter.com/ninja_muffin99"],
+		["PhantomArcade",40,		"Animator of Friday Night Funkin'",32,								3,"https://twitter.com/PhantomArcade3K"],
+		["evilsk8r",64,				"Artist of Friday Night Funkin'",32,								1,"https://twitter.com/evilsk8r"],
+		["kawaisprite",	64,			"Composer of Friday Night Funkin'",32,								2,"https://twitter.com/kawaisprite"]
+	]
+}

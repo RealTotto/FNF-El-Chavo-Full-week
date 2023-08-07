@@ -1,0 +1,4 @@
+<?xml version='1.0' encoding='utf-8'?>
+<TextureAtlas imagePath="menu_Season One.png"><SubTexture name="Season One basic0000" x="0" y="0" width="492" height="96" frameX="-57" frameY="-59" frameWidth="600" frameHeight="222" />
+<SubTexture name="Season One white0000" x="0" y="96" width="492" height="95" frameX="-57" frameY="-59" frameWidth="600" frameHeight="222" />
+</TextureAtlas>

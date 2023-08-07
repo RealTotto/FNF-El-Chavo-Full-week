@@ -214,6 +214,14 @@ class VisualsUISubState extends BaseOptionsMenu
 		addOption(option);
 		#end
 
+		var option:Option = new Option('Main Mod',
+		    'Which mod do you want to be the main one?',
+			'mainMod',
+			'string', 
+			'El Chavo Del 8', 
+			['El Chavo Del 8', 'Vs El Chavo Suicida', 'Los Covers Del Ocho']);
+		addOption(option);			
+
 		var option:Option = new Option('Intro Song', 
 		"Remove Intro Song Name", 
 		'introSongName', 

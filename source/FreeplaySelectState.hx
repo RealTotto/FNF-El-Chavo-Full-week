@@ -30,25 +30,31 @@ class FreeplaySelectState extends MusicBeatState
         super.create();
     }
 
+	var selectedSomethin:Bool = false;
+
     override public function update(elapsed:Float){
-        
-		if (controls.UI_UP_P) 
-			changeSelection(-1);
-		if (controls.UI_DOWN_P) 
-			changeSelection(1);
-		if (controls.BACK) {
-			FlxG.sound.play(Paths.sound('cancelMenu'));
-			MusicBeatState.switchState(new MainMenuState());
-		}
-        if (controls.ACCEPT){
-            switch(curSelected){
-                case 0:
-                MusicBeatState.switchState(new FreeplayState());
-                case 1:
-                MusicBeatState.switchState(new FreeplayCategory2State());
-            }
-        }
-        super.update(elapsed);
+		if (!selectedSomethin)
+		{        
+			if (controls.UI_UP_P) 
+				changeSelection(-1);
+			if (controls.UI_DOWN_P) 
+				changeSelection(1);
+			if (controls.BACK) {
+				selectedSomethin = true;
+				FlxG.sound.play(Paths.sound('cancelMenu'));
+				MusicBeatState.switchState(new MainMenuState());
+			}
+			if (controls.ACCEPT){
+				selectedSomethin = true;
+				switch(curSelected){
+					case 0:
+					MusicBeatState.switchState(new FreeplayState());
+					case 1:
+					MusicBeatState.switchState(new FreeplayCategory2State());
+				}
+			}
+			super.update(elapsed);
+		}	
     }
 
     function changeSelection(change:Int = 0) {

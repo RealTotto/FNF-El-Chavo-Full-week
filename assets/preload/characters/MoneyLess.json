@@ -1,0 +1,78 @@
+{
+	"animations": [
+		{
+			"offsets": [
+				76,
+				80
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "idle",
+			"indices": [],
+			"name": "idle"
+		},
+		{
+			"offsets": [
+				47,
+				146
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singUP",
+			"indices": [],
+			"name": "up"
+		},
+		{
+			"offsets": [
+				106,
+				-100
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singDOWN",
+			"indices": [],
+			"name": "down"
+		},
+		{
+			"offsets": [
+				76,
+				63
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singRIGHT",
+			"indices": [],
+			"name": "right"
+		},
+		{
+			"offsets": [
+				212,
+				61
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singLEFT",
+			"indices": [],
+			"name": "left"
+		}
+	],
+	"no_antialiasing": false,
+	"image": "CoversDelOcho/characters/MoneyLess",
+	"position": [
+		-20,
+		-50
+	],
+	"healthicon": "donstarved",
+	"flip_x": false,
+	"healthbar_colors": [
+		0,
+		16,
+		28
+	],
+	"camera_position": [
+		-100,
+		-60
+	],
+	"sing_duration": 4,
+	"scale": 1
+}

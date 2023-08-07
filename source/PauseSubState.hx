@@ -9,6 +9,7 @@ import flixel.group.FlxGroup.FlxTypedGroup;
 import flixel.input.keyboard.FlxKey;
 import flixel.system.FlxSound;
 import flixel.text.FlxText;
+import lime.graphics.Image;
 import openfl.Lib;
 import flixel.tweens.FlxEase;
 import flixel.tweens.FlxTween;
@@ -263,25 +264,66 @@ class PauseSubState extends MusicBeatSubstate
 					close();
 					PlayState.instance.openChangersMenu();
 				case "Exit to menu":
-				    PlayState.curDeaths = 0;
 					PlayState.deathCounter = 0;
 					PlayState.seenCutscene = false;
 
 					WeekData.loadTheFirstEnabledMod();
 					if(PlayState.isStoryMode) {
 						MusicBeatState.switchState(new StoryMenuState());
+						FlxG.sound.playMusic(Paths.music('freakyMenu'));
+						Lib.application.window.title = "Friday Night Funkin': El Chavo";
+						Lib.application.window.setIcon(Image.fromBitmapData(Paths.image("iconOG").bitmap));
 					} else {
 						MusicBeatState.switchState(new FreeplayState());
+						FlxG.sound.playMusic(Paths.music('freakyMenu'));
+						Lib.application.window.title = "Friday Night Funkin': El Chavo";
+						Lib.application.window.setIcon(Image.fromBitmapData(Paths.image("iconOG").bitmap));
+						PlayState.curDeaths = 0;
 					}
 
 					if (PlayState.isFreeplay){
 						MusicBeatState.switchState(new FreeplayCategory2State());
+						FlxG.sound.playMusic(Paths.music('freakyMenu'));
+						Lib.application.window.title = "Friday Night Funkin': El Chavo";
+						Lib.application.window.setIcon(Image.fromBitmapData(Paths.image("iconOG").bitmap));
+						PlayState.curDeaths = 0;
 					}
+
+					if (PlayState.isWeekSuicida){
+						MusicBeatState.switchState(new StorySuicidaState());
+						FlxG.sound.playMusic(Paths.music('freakyMenuVs'));
+						Lib.application.window.title = "Friday Night Funkin': Vs El Chavo Suicida";
+						Lib.application.window.setIcon(Image.fromBitmapData(Paths.image("VsSuicida/IconSuicida").bitmap));
+						PlayState.weekMisses = 0;
+					} 
+					 
+					if (PlayState.isNotWeekSuicida){
+						MusicBeatState.switchState(new FreeplaySuicidaState());
+						FlxG.sound.playMusic(Paths.music('freakyMenuVs'));
+						Lib.application.window.title = "Friday Night Funkin': Vs El Chavo Suicida";
+						Lib.application.window.setIcon(Image.fromBitmapData(Paths.image("VsSuicida/IconSuicida").bitmap));
+						PlayState.curDeaths = 0;
+						PlayState.weekMisses = 0;
+					}	
+
+					if (PlayState.isFreeplayCovers){
+						MusicBeatState.switchState(new FreeplayCategoryRoadState());
+						FlxG.sound.playMusic(Paths.music('CoversDelOcho/freakyMenu'));
+						Lib.application.window.title = "Friday Night Funkin': El Chavo";
+						Lib.application.window.setIcon(Image.fromBitmapData(Paths.image("iconOG").bitmap));
+						PlayState.curDeaths = 0;						
+					}		
+
+					if (PlayState.isFreeplayDanger){
+						MusicBeatState.switchState(new FreeplayCategoryDangerState());
+						FlxG.sound.playMusic(Paths.music('CoversDelOcho/freakyMenu'));
+						Lib.application.window.title = "Friday Night Funkin': El Chavo";
+						Lib.application.window.setIcon(Image.fromBitmapData(Paths.image("iconOG").bitmap));
+						PlayState.curDeaths = 0;						
+					}							
 					PlayState.cancelMusicFadeTween();
-					FlxG.sound.playMusic(Paths.music('freakyMenu'));
 					PlayState.changedDifficulty = false;
 					PlayState.chartingMode = false;
-					Lib.application.window.title = "Friday Night Funkin': El Chavo";
 			}
 		}
 	}

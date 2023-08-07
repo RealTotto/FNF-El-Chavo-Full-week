@@ -1,0 +1,3 @@
+racetraitors:quicoKart:0xFFFFFF00
+raceblitz:quicoKart:0xFFFFFF00
+road-rage:quicoKart:0xFFFFFF00

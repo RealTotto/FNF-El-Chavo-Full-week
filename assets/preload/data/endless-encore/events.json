@@ -447,6 +447,21 @@
 				]
 			],
 			[
+				74529.2721518988,
+				[
+					[
+						"Play Animation",
+						"singLEFT",
+						"dad"
+					],
+					[
+						"Play Animation",
+						"singLEFT",
+						"bf"
+					]
+				]
+			],
+			[
 				74533.2278481013,
 				[
 					[
@@ -484,6 +499,21 @@
 				]
 			],
 			[
+				75003.9556962026,
+				[
+					[
+						"Play Animation",
+						"singDOWN",
+						"bf"
+					],
+					[
+						"Play Animation",
+						"singDOWN",
+						"dad"
+					]
+				]
+			],
+			[
 				75007.9113924051,
 				[
 					[
@@ -504,12 +534,47 @@
 				]
 			],
 			[
+				75288.7658227849,
+				[
+					[
+						"Play Animation",
+						"singUP",
+						"dad"
+					],
+					[
+						"Play Animation",
+						"singUP",
+						"bf"
+					]
+				]
+			],
+			[
 				75292.7215189874,
 				[
 					[
 						"Add Camera Zoom",
 						"0.5",
 						""
+					]
+				]
+			],
+			[
+				75664.5569620254,
+				[
+					[
+						"Image Flash",
+						"gofun",
+						""
+					],
+					[
+						"Play Animation",
+						"hey",
+						"dad"
+					],
+					[
+						"Play Animation",
+						"hey",
+						"bf"
 					]
 				]
 			],
@@ -581,12 +646,42 @@
 				]
 			],
 			[
+				87531.6455696203,
+				[
+					[
+						"Change Scroll Speed",
+						"0.7",
+						"0.3"
+					]
+				]
+			],
+			[
+				88386.0759493672,
+				[
+					[
+						"Change Scroll Speed",
+						"1.5",
+						"0.1"
+					]
+				]
+			],
+			[
 				88813.2911392406,
 				[
 					[
 						"TweenSpin",
 						"",
 						""
+					]
+				]
+			],
+			[
+				88860.759493671,
+				[
+					[
+						"Change Scroll Speed",
+						"1",
+						"0"
 					]
 				]
 			],

@@ -115,9 +115,11 @@ class FunkinLua {
 		set('stepCrochet', Conductor.stepCrochet);
 		set('songLength', FlxG.sound.music.length);
 		set('songName', PlayState.SONG.song);
+		set('curStage', PlayState.curStage);
 		set('startedCountdown', false);
 
 		set('isStoryMode', PlayState.isStoryMode);
+		set('isWeekSuicida', PlayState.isWeekSuicida);
 		set('difficulty', PlayState.storyDifficulty);
 		set('difficultyName', CoolUtil.difficulties[PlayState.storyDifficulty]);
 		set('weekRaw', PlayState.storyWeek);

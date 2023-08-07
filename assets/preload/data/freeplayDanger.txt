@@ -1,0 +1,4 @@
+Frostbite:FrostQuico:0xFFFFFF00
+Mercy-for-Don-Ramon:donstarved:0xFFADD8E6
+paciencia:chavoStarved:0xFF008F39
+dead-hope:face:0xFFFE0000

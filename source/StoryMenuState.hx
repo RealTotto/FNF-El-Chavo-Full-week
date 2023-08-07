@@ -18,6 +18,7 @@ import flixel.util.FlxTimer;
 import lime.net.curl.CURLCode;
 import flixel.graphics.FlxGraphic;
 import WeekData;
+import StoryData;
 
 using StringTools;
 
@@ -57,6 +58,11 @@ class StoryMenuState extends MusicBeatState
 		Paths.clearUnusedMemory();
 
 		PlayState.isStoryMode = true;
+		PlayState.isWeekSuicida = false;
+		PlayState.isFreeplay = false;
+		PlayState.isNotWeekSuicida = false;	
+		PlayState.isFreeplayCovers = false;
+		PlayState.isFreeplayDanger = false;	
 		WeekData.reloadWeekFiles(true);
 		if(curWeek >= WeekData.weeksList.length) curWeek = 0;
 		persistentUpdate = persistentDraw = true;
@@ -304,6 +310,7 @@ class StoryMenuState extends MusicBeatState
 			persistentUpdate = false;
 			openSubState(new SongsProgression(function()
 			{
+				PlayState.curDeaths = 0;
 				playSong(songArray);
 			}, function()
 			{
@@ -313,6 +320,7 @@ class StoryMenuState extends MusicBeatState
 					songArray[songArray.length] = resumeInfo.song;
 
 				songArray = songArray.slice(songArray.indexOf(resumeInfo.song));
+				PlayState.curDeaths = resumeInfo.curDeaths;
 
 				playSong(songArray);
 			}, function()
@@ -322,6 +330,7 @@ class StoryMenuState extends MusicBeatState
 		}
 		else
 		{
+			PlayState.curDeaths = 0;
 			playSong(songArray);
 		}
 	}	
@@ -343,6 +352,11 @@ class StoryMenuState extends MusicBeatState
 
 			PlayState.storyPlaylist = songs;
 			PlayState.isStoryMode = true;
+			PlayState.isWeekSuicida = false;
+			PlayState.isFreeplay = false;
+			PlayState.isNotWeekSuicida = false;	
+		    PlayState.isFreeplayCovers = false;
+		    PlayState.isFreeplayDanger = false;						
 			selectedWeek = true;
 
 			var diffic = CoolUtil.getDifficultyFilePath(curDifficulty);

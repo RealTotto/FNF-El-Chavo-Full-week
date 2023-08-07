@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="ChavoMetalero.png">
+	<!-- Created with Adobe Animate version 22.0.3.179 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="Idle0000" x="0" y="0" width="547" height="661"/>
+	<SubTexture name="Idle0001" x="547" y="0" width="547" height="661"/>
+	<SubTexture name="Idle0002" x="1094" y="0" width="547" height="661"/>
+	<SubTexture name="Idle0003" x="1641" y="0" width="547" height="661"/>
+	<SubTexture name="Idle0004" x="2188" y="0" width="547" height="661"/>
+	<SubTexture name="Idle0005" x="2735" y="0" width="547" height="661"/>
+	<SubTexture name="Idle0006" x="2735" y="0" width="547" height="661"/>
+	<SubTexture name="down0000" x="3282" y="0" width="707" height="750"/>
+	<SubTexture name="down0001" x="0" y="750" width="707" height="750"/>
+	<SubTexture name="down0002" x="707" y="750" width="707" height="750"/>
+	<SubTexture name="down0003" x="1414" y="750" width="707" height="750"/>
+	<SubTexture name="down0004" x="2121" y="750" width="707" height="750"/>
+	<SubTexture name="left0000" x="2828" y="750" width="674" height="682"/>
+	<SubTexture name="left0001" x="0" y="1500" width="674" height="682"/>
+	<SubTexture name="left0002" x="674" y="1500" width="674" height="682"/>
+	<SubTexture name="right0000" x="1348" y="1500" width="596" height="734"/>
+	<SubTexture name="right0001" x="1944" y="1500" width="596" height="734"/>
+	<SubTexture name="right0002" x="2540" y="1500" width="596" height="734"/>
+	<SubTexture name="up0000" x="3136" y="1500" width="634" height="732"/>
+	<SubTexture name="up0001" x="0" y="2234" width="634" height="732"/>
+	<SubTexture name="up0002" x="634" y="2234" width="634" height="732"/>
+</TextureAtlas>

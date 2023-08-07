@@ -1,0 +1,78 @@
+{
+	"animations": [
+		{
+			"offsets": [
+				76,
+				80
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "idle",
+			"indices": [],
+			"name": "idle"
+		},
+		{
+			"offsets": [
+				130,
+				169
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singUP",
+			"indices": [],
+			"name": "up"
+		},
+		{
+			"offsets": [
+				75,
+				45
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singDOWN",
+			"indices": [],
+			"name": "down"
+		},
+		{
+			"offsets": [
+				-23,
+				-95
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singRIGHT",
+			"indices": [],
+			"name": "right"
+		},
+		{
+			"offsets": [
+				314,
+				85
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singLEFT",
+			"indices": [],
+			"name": "left"
+		}
+	],
+	"no_antialiasing": true,
+	"image": "CoversDelOcho/characters/Faceless_Quico_GBC",
+	"position": [
+		80,
+		160
+	],
+	"healthicon": "nada",
+	"flip_x": false,
+	"healthbar_colors": [
+		0,
+		16,
+		28
+	],
+	"camera_position": [
+		-160,
+		-60
+	],
+	"sing_duration": 4,
+	"scale": 1
+}

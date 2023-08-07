@@ -50,7 +50,18 @@ class FreeplayCategory2State extends MusicBeatState
 	var colorTween:FlxTween;
 
 	override function create()
-	{		    
+	{	
+		Paths.clearStoredMemory();
+		Paths.clearUnusedMemory();
+
+		persistentUpdate = true;
+		PlayState.isFreeplay = true;
+		PlayState.isStoryMode = false;	
+		PlayState.isWeekSuicida = false;
+		PlayState.isNotWeekSuicida = false;	
+		PlayState.isFreeplayCovers = false;
+		PlayState.isFreeplayDanger = false;	
+
 		transIn = FlxTransitionableState.defaultTransIn;
 		transOut = FlxTransitionableState.defaultTransOut;
 		var initSonglist = CoolUtil.coolTextFile(Paths.txt('freeplayExtra'));
@@ -378,8 +389,11 @@ class FreeplayCategory2State extends MusicBeatState
 		trace(poop);
 
 		PlayState.SONG = Song.loadFromJson(poop, songLowercase);
-		PlayState.isStoryMode = false;
 		PlayState.isFreeplay = true;
+		PlayState.isStoryMode = false;	
+		PlayState.isWeekSuicida = false;
+		PlayState.isFreeplayCovers = false;
+		PlayState.isFreeplayDanger = false;	
 		PlayState.storyDifficulty = curDifficulty;
 
 		PlayState.storyWeek = songs[curSelected].week;

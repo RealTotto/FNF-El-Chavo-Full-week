@@ -54,6 +54,7 @@ class ClientPrefs {
 	public static var checkForUpdates:Bool = true;
 	public static var seasonLocked:String = "Save Season";
 	public static var doNotShowWarnings:Bool = false;
+	public static var mainMod:String = "El Chavo Del 8";
 	public static var introSongName:Bool = false;
 	public static var gameplaySettings:Map<String, Dynamic> = [
 		'scrollspeed' => 1.0,
@@ -174,6 +175,7 @@ class ClientPrefs {
 		FlxG.save.data.seasonLocked = seasonLocked;
 		FlxG.save.data.newUnlock = newUnlock;
 		FlxG.save.data.doNotShowWarnings = doNotShowWarnings;
+		FlxG.save.data.mainMod = mainMod;
 		FlxG.save.data.introSongName = introSongName;
 		FlxG.save.data.checkForUpdates = checkForUpdates;
 	
@@ -375,6 +377,10 @@ class ClientPrefs {
 		{
 			doNotShowWarnings = FlxG.save.data.doNotShowWarnings;
 		}		
+		if (FlxG.save.data.mainMod != null)
+		{
+			mainMod = FlxG.save.data.mainMod;
+		}			
 		if (FlxG.save.data.introSongName != null)
 		{
 			introSongName = FlxG.save.data.introSongName;
@@ -402,12 +408,12 @@ class ClientPrefs {
 	public static function reloadControls() {
 		PlayerSettings.player1.controls.setKeyboardScheme(KeyboardScheme.Solo);
 
-		TitleState.muteKeys = copyKey(keyBinds.get('volume_mute'));
-		TitleState.volumeDownKeys = copyKey(keyBinds.get('volume_down'));
-		TitleState.volumeUpKeys = copyKey(keyBinds.get('volume_up'));
-		FlxG.sound.muteKeys = TitleState.muteKeys;
-		FlxG.sound.volumeDownKeys = TitleState.volumeDownKeys;
-		FlxG.sound.volumeUpKeys = TitleState.volumeUpKeys;
+		Cache.muteKeys = copyKey(keyBinds.get('volume_mute'));
+		Cache.volumeDownKeys = copyKey(keyBinds.get('volume_down'));
+		Cache.volumeUpKeys = copyKey(keyBinds.get('volume_up'));
+		FlxG.sound.muteKeys = Cache.muteKeys;
+		FlxG.sound.volumeDownKeys = Cache.volumeDownKeys;
+		FlxG.sound.volumeUpKeys = Cache.volumeUpKeys;
 	}
 	public static function copyKey(arrayToCopy:Array<FlxKey>):Array<FlxKey> {
 		var copiedArray:Array<FlxKey> = arrayToCopy.copy();

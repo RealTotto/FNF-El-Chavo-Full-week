@@ -3,3 +3,4 @@ atropellado:realchavo:0xFF008000
 endless-encore:quicomajin:0xFF0000FF
 game-over:face:0xFF9D0101
 road-rage:quicoKart:0xFFFFFF00
+impaciencia-mix:don-ramon:0xFFFF0000

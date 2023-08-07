@@ -58,6 +58,7 @@ class MainMenuState extends MusicBeatState
 		//'donate',
 		//'discord', you can go to discord now by pressing ctrl in credits
 		//'instrumental', the instrumentalstate is in its beta version you can now use it by entering donate
+		//'category mods',
 		'options'
 	];
 
@@ -78,6 +79,9 @@ class MainMenuState extends MusicBeatState
 
 	var dateNow:String = Date.now().toString();
 	var timeRar:FlxText;
+
+	public static var backMenus:Bool = false;
+	public static var backMenuNormal:Bool;
 
 	override function create()
 	{
@@ -152,7 +156,13 @@ class MainMenuState extends MusicBeatState
             } else if(hours > 8) {
                 themedBg.loadGraphic(Paths.image('menuBG'));
             }
-        }		
+        }	
+
+		var notaTxt:FlxSprite = new FlxSprite().loadGraphic(Paths.image('Nota'));
+		notaTxt.scrollFactor.set(0, 0);
+		notaTxt.antialiasing = ClientPrefs.globalAntialiasing;
+		notaTxt.updateHitbox();
+        add(notaTxt);
 
         camFollow = new FlxObject(0, 0, 1, 1);
         camFollowPos = new FlxObject(0, 0, 1, 1);
@@ -193,7 +203,7 @@ class MainMenuState extends MusicBeatState
 		for (i in 0...optionShit.length)
 		{
 			var offset:Float = 108 - (Math.max(optionShit.length, 4) - 4) * 80;
-			var menuItem:FlxSprite = new FlxSprite(0, (i * 140) + offset);
+			var menuItem:FlxSprite = new FlxSprite(curoffset, (i * 140) + offset);
 			menuItem.scale.x = scale;
 			menuItem.scale.y = scale;
 			menuItem.frames = Paths.getSparrowAtlas('mainmenu/menu_' + optionShit[i]);
@@ -203,13 +213,13 @@ class MainMenuState extends MusicBeatState
 			menuItem.animation.addByPrefix('idle', optionShit[i] + " basic", 24);
 			menuItem.animation.play('idle');			
 			menuItem.ID = i;
-			menuItem.x = -40;
+			//menuItem.x = -40;
 			menuItems.add(menuItem);
 			var scr:Float = (optionShit.length - 4) * 0.135;
 			if(optionShit.length < 6) scr = 0;
 			menuItem.scrollFactor.set(0, scr);
 			menuItem.antialiasing = ClientPrefs.globalAntialiasing;
-			menuItem.setGraphicSize(Std.int(menuItem.width * 0.90));
+			menuItem.setGraphicSize(Std.int(menuItem.width * 0.58));
 			menuItem.updateHitbox();
 			//curoffset = curoffset + 20;
 			//switch (i)
@@ -421,6 +431,7 @@ class MainMenuState extends MusicBeatState
 
 			if(FlxG.keys.justPressed.CONTROL)
 			{
+				LoadingState.loadAndSwitchState(new CategoryModsState());
 				timeRar.visible = true;
 				if(optionShit[curSelected] == "freeplay Locked") {
 					textBlocked.visible = true;	
@@ -473,12 +484,15 @@ class MainMenuState extends MusicBeatState
 								#end
 								case 'awards':
 									MusicBeatState.switchState(new AchievementsMenuState());
+									backMenuNormal = true;
 								case 'credits':
 									MusicBeatState.switchState(new CreditsState());
 								case 'donate':
 									MusicBeatState.switchState(new InstrumentalState());									
 								/*case 'instrumental':
-									MusicBeatState.switchState(new InstrumentalState());*/										
+									MusicBeatState.switchState(new InstrumentalState());*/	
+								case 'category mods':
+								    MusicBeatState.switchState(new CategoryModsState());										
 								case 'options':
 									LoadingState.loadAndSwitchState(new options.OptionsState());
 							}
@@ -517,7 +531,9 @@ class MainMenuState extends MusicBeatState
 		{
 			var daChoice:String = optionShit[curSelected];
 			spr.animation.play('idle');			
-			spr.updateHitbox();
+			//spr.updateHitbox();
+			spr.scale.x = 0.7;
+			spr.scale.y = 0.7;
 
 			if (spr.ID == curSelected)
 			{				

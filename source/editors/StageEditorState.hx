@@ -676,9 +676,9 @@ class StageEditorState extends MusicBeatState
 			}
 		}
 
-        FlxG.sound.muteKeys = TitleState.muteKeys;
-		FlxG.sound.volumeDownKeys = TitleState.volumeDownKeys;
-		FlxG.sound.volumeUpKeys = TitleState.volumeUpKeys;
+        FlxG.sound.muteKeys = Cache.muteKeys;
+		FlxG.sound.volumeDownKeys = Cache.volumeDownKeys;
+		FlxG.sound.volumeUpKeys = Cache.volumeUpKeys;
 
         if(!charDropDown.dropPanel.visible) {
 

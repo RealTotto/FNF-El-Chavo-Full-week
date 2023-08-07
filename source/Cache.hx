@@ -11,6 +11,7 @@ import flixel.FlxSprite;
 import flixel.addons.transition.FlxTransitionSprite.GraphicTransTileDiamond;
 import flixel.addons.transition.FlxTransitionableState;
 import flixel.addons.transition.TransitionData;
+import flixel.input.keyboard.FlxKey;
 import flixel.graphics.FlxGraphic;
 import flixel.graphics.frames.FlxAtlasFrames;
 import flixel.math.FlxPoint;
@@ -32,10 +33,19 @@ class Cache extends MusicBeatState
     var randomTxt:FlxText;
 
 	var isTweening:Bool = false;
-	var lastString:String = '';    
+	var lastString:String = ''; 
+
+	public static var muteKeys:Array<FlxKey> = [FlxKey.ZERO];
+	public static var volumeDownKeys:Array<FlxKey> = [FlxKey.NUMPADMINUS, FlxKey.MINUS];
+	public static var volumeUpKeys:Array<FlxKey> = [FlxKey.NUMPADPLUS, FlxKey.PLUS];       
 
 	override function create()
 	{
+		Paths.clearStoredMemory();
+		Paths.clearUnusedMemory(); 
+
+        WeekData.loadTheFirstEnabledMod();
+
         FlxG.mouse.visible = false;
 
         FlxG.worldBounds.set(0,0);
@@ -69,7 +79,27 @@ class Cache extends MusicBeatState
             cache();
         });
 
+		FlxG.game.focusLostFramerate = 60;
+		FlxG.sound.muteKeys = muteKeys;
+		FlxG.sound.volumeDownKeys = volumeDownKeys;
+		FlxG.sound.volumeUpKeys = volumeUpKeys;
+		FlxG.keys.preventDefaultKeys = [TAB];
+
+		PlayerSettings.init();        
+
         super.create();
+
+		FlxG.save.bind('funkin', 'ninjamuffin99');
+
+		ClientPrefs.loadPrefs();
+		GameProgression.load(); 
+
+		Highscore.load();
+
+		if (FlxG.save.data.weekCompleted != null)
+		{
+			StoryMenuState.weekCompleted = FlxG.save.data.weekCompleted;
+		}                       
     }
 
     var calledDone = false;
@@ -143,7 +173,23 @@ class Cache extends MusicBeatState
 
         trace("Finished caching...");
 
-        FlxG.switchState(new TitleState());
+        if (ClientPrefs.mainMod == "El Chavo Del 8"){
+            FlxG.switchState(new TitleState());
+
+            return;
+        }	
+
+		if (ClientPrefs.mainMod == "Vs El Chavo Suicida"){ 
+            FlxG.switchState(new TitleSuicidaState());
+
+            return; 
+        }     
+
+		if (ClientPrefs.mainMod == "Los Covers Del Ocho"){
+            FlxG.switchState(new TitleCoversState());
+
+            return; 
+        }   		          
     }
 
 	function changeText()

@@ -147,7 +147,7 @@ class Note extends FlxSprite
 						missHealth = 0.1;
 					} else {
 						missHealth = 0.3;
-					}
+					}					
 					hitCausesMiss = true;
 				case 'Alt Animation':
 					animSuffix = '-alt';

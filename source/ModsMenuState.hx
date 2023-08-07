@@ -494,7 +494,18 @@ class ModsMenuState extends MusicBeatState
 			}
 			else
 			{
-				MusicBeatState.switchState(new MainMenuState());
+				if (MainMenuState.backMenuNormal)
+				{
+					MusicBeatState.switchState(new MainMenuState());
+				}
+				
+				if (MainMenuState.backMenus)
+				{
+					MusicBeatState.switchState(new MenuSuicidaState());
+					MainMenuState.backMenus = false;
+				} else {
+					MusicBeatState.switchState(new MainCoversState());
+				}				
 			}
 		}
 

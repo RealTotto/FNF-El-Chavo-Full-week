@@ -6,6 +6,8 @@ import flixel.FlxSubState;
 import flixel.math.FlxMath;
 import flixel.math.FlxPoint;
 import flixel.util.FlxColor;
+import lime.graphics.Image;
+import openfl.Lib;
 import flixel.util.FlxTimer;
 import flixel.tweens.FlxEase;
 import flixel.tweens.FlxTween;
@@ -95,20 +97,57 @@ class GameOverSubstate extends MusicBeatSubstate
 		if (controls.BACK)
 		{
 			FlxG.sound.music.stop();
-			PlayState.curDeaths = 0;
 			PlayState.deathCounter = 0;
 			PlayState.seenCutscene = false;
 			PlayState.chartingMode = false;
 
 			WeekData.loadTheFirstEnabledMod();
-			if (PlayState.isStoryMode)
+			if(PlayState.isStoryMode) {
 				MusicBeatState.switchState(new StoryMenuState());
-			else
-				MusicBeatState.switchState(new FreeplayState());	
-			if (PlayState.isFreeplay)
-			    MusicBeatState.switchState(new FreeplayCategory2State());	
+				FlxG.sound.playMusic(Paths.music('freakyMenu'));
+				Lib.application.window.title = "Friday Night Funkin': El Chavo";
+				Lib.application.window.setIcon(Image.fromBitmapData(Paths.image("iconOG").bitmap));
+			} else {
+				MusicBeatState.switchState(new FreeplayState());
+				FlxG.sound.playMusic(Paths.music('freakyMenu'));
+				Lib.application.window.title = "Friday Night Funkin': El Chavo";
+				Lib.application.window.setIcon(Image.fromBitmapData(Paths.image("iconOG").bitmap));
+				PlayState.curDeaths = 0;
+			}
 
-			FlxG.sound.playMusic(Paths.music('freakyMenu'));
+			if (PlayState.isFreeplay){
+				MusicBeatState.switchState(new FreeplayCategory2State());
+				FlxG.sound.playMusic(Paths.music('freakyMenu'));
+				Lib.application.window.title = "Friday Night Funkin': El Chavo";
+				Lib.application.window.setIcon(Image.fromBitmapData(Paths.image("iconOG").bitmap));
+				PlayState.curDeaths = 0;
+			}
+
+			if (PlayState.isWeekSuicida){
+				MusicBeatState.switchState(new StorySuicidaState());
+				FlxG.sound.playMusic(Paths.music('freakyMenuVs'));
+				Lib.application.window.title = "Friday Night Funkin': Vs El Chavo Suicida";
+				Lib.application.window.setIcon(Image.fromBitmapData(Paths.image("VsSuicida/IconSuicida").bitmap));
+				PlayState.weekMisses = 0;
+			} 
+				
+			if (PlayState.isNotWeekSuicida){
+				MusicBeatState.switchState(new FreeplaySuicidaState());
+				FlxG.sound.playMusic(Paths.music('freakyMenuVs'));
+				Lib.application.window.title = "Friday Night Funkin': Vs El Chavo Suicida";
+				Lib.application.window.setIcon(Image.fromBitmapData(Paths.image("VsSuicida/IconSuicida").bitmap));
+				PlayState.curDeaths = 0;
+				PlayState.weekMisses = 0;
+			}
+
+			if (PlayState.isFreeplayCovers){
+				MusicBeatState.switchState(new FreeplayCategoryRoadState());
+				FlxG.sound.playMusic(Paths.music('CoversDelOcho/freakyMenu'));
+				Lib.application.window.title = "Friday Night Funkin': El Chavo";
+				Lib.application.window.setIcon(Image.fromBitmapData(Paths.image("iconOG").bitmap));
+				PlayState.curDeaths = 0;				
+			}										
+
 			PlayState.instance.callOnLuas('onGameOverConfirm', [false]);
 		}
 

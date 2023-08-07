@@ -68,6 +68,8 @@ function onDestroy()
 end
 
 function onCreatePost()
+	setProperty('scoreFullweek.visible', false)
+	
 	precacheImage('pcport/bf-die')
 	precacheImage('pcport/luigi')
 	precacheImage('flower')

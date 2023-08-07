@@ -1,0 +1,11 @@
+<?xml version='1.0' encoding='utf-8'?>
+<TextureAtlas imagePath="Space.png"><!-- Created with Adobe Animate version 18.0.1.115 -->
+	<!-- http://www.adobe.com/products/animate.html --><SubTexture name="Press_Space0000" x="0" y="0" width="723" height="516" frameX="-119" frameY="-246" frameWidth="900" frameHeight="900" />
+<SubTexture name="Press_Space0001" x="0" y="0" width="723" height="516" frameX="-119" frameY="-246" frameWidth="900" frameHeight="900" />
+<SubTexture name="Press_Space0002" x="0" y="0" width="723" height="516" frameX="-119" frameY="-246" frameWidth="900" frameHeight="900" />
+<SubTexture name="Press_Space0003" x="0" y="0" width="723" height="516" frameX="-119" frameY="-246" frameWidth="900" frameHeight="900" />
+<SubTexture name="Press_Space0004" x="723" y="0" width="692" height="514" frameX="-125" frameY="-249" frameWidth="900" frameHeight="900" />
+<SubTexture name="Press_Space0005" x="723" y="0" width="692" height="514" frameX="-125" frameY="-249" frameWidth="900" frameHeight="900" />
+<SubTexture name="Press_Space0006" x="723" y="0" width="692" height="514" frameX="-125" frameY="-249" frameWidth="900" frameHeight="900" />
+<SubTexture name="Press_Space0007" x="723" y="0" width="692" height="514" frameX="-125" frameY="-249" frameWidth="900" frameHeight="900" />
+</TextureAtlas>

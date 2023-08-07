@@ -1,0 +1,50 @@
+{
+	"storyName": "vs el chavo del 8 suicida v1",
+	"difficulties": "Hard",
+	"hideFreeplay": false,
+	"weekBackground": "C8",
+	"weekBefore": "tutorial",
+	"freeplayColor": [
+		146,
+		113,
+		253
+	],
+	"startUnlocked": true,
+	"hideStoryMode": false,
+	"songs": [
+		[
+			"valediction",
+			"c1",
+			[
+				60,
+				60,
+				60
+			]
+		],
+		[
+			"uncommon",
+			"c2",
+			[
+				40,
+				40,
+				40
+			]
+		],
+		[
+			"black force",
+			"c3",
+			[
+				20,
+				20,
+				20
+			]
+		]
+	],
+	"weekCharacters": [
+		"",
+		"",
+		""
+	],
+	"hiddenUntilUnlocked": false,
+	"weekName": "SuicidaDel8"
+}

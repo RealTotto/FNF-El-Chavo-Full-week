@@ -28,6 +28,8 @@ import flixel.input.gamepad.FlxGamepad;
 import flixel.math.FlxMath;
 import flixel.math.FlxPoint;
 import flixel.math.FlxRect;
+import lime.graphics.Image;
+import openfl.Lib;
 import flixel.system.FlxSound;
 import flixel.system.ui.FlxSoundTray;
 import flixel.text.FlxText;
@@ -54,10 +56,6 @@ typedef TitleData =
 }
 class TitleState extends MusicBeatState
 {
-	public static var muteKeys:Array<FlxKey> = [FlxKey.ZERO];
-	public static var volumeDownKeys:Array<FlxKey> = [FlxKey.NUMPADMINUS, FlxKey.MINUS];
-	public static var volumeUpKeys:Array<FlxKey> = [FlxKey.NUMPADPLUS, FlxKey.PLUS];
-
 	public static var initialized:Bool = false;
 
 	var blackScreen:FlxSprite;
@@ -96,6 +94,9 @@ class TitleState extends MusicBeatState
 		Paths.clearStoredMemory();
 		Paths.clearUnusedMemory();
 
+		Lib.application.window.title = "Friday Night Funkin': El Chavo";
+		Lib.application.window.setIcon(Image.fromBitmapData(Paths.image("iconOG").bitmap));		
+
 		#if LUA_ALLOWED
 		Paths.pushGlobalMods();
 		#end
@@ -119,14 +120,6 @@ class TitleState extends MusicBeatState
 		}
 		#end*/
 
-		FlxG.game.focusLostFramerate = 60;
-		FlxG.sound.muteKeys = muteKeys;
-		FlxG.sound.volumeDownKeys = volumeDownKeys;
-		FlxG.sound.volumeUpKeys = volumeUpKeys;
-		FlxG.keys.preventDefaultKeys = [TAB];
-
-		PlayerSettings.init();
-
 		curWacky = FlxG.random.getObject(getIntroTextShit());
 
 		// DEBUG BULLSHIT
@@ -134,20 +127,15 @@ class TitleState extends MusicBeatState
 		swagShader = new ColorSwap();
 		super.create();
 
-		FlxG.save.bind('funkin', 'ninjamuffin99');
-
-		ClientPrefs.loadPrefs();
-		GameProgression.load();
-
 		#if CHECK_FOR_UPDATES
 		if(ClientPrefs.checkForUpdates && !closedState) {
 			trace('checking for update');
-			var http = new haxe.Http("https://raw.githubusercontent.com/ShadowMario/FNF-PsychEngine/main/gitVersion.txt");
+			var http = new haxe.Http("https://raw.githubusercontent.com/RealTotto/FNF-El-Chavo-Full-week/main/gitVersion.txt");
 
 			http.onData = function (data:String)
 			{
 				updateVersion = data.split('\n')[0].trim();
-				var curVersion:String = MainMenuState.psychEngineVersion.trim();
+				var curVersion:String = MainMenuState.osEngineVersion.trim();
 				trace('version online: ' + updateVersion + ', your version: ' + curVersion);
 				if(updateVersion != curVersion) {
 					trace('versions arent matching!');
@@ -162,8 +150,6 @@ class TitleState extends MusicBeatState
 			http.request();
 		}
 		#end
-
-		Highscore.load();
 
 		// IGNORE THIS!!!
 		titleJSON = Json.parse(Paths.getTextFromFile('images/gfDanceTitle.json'));
@@ -186,11 +172,6 @@ class TitleState extends MusicBeatState
 				titleJSON.gfy += 100;
 		}
 		#end
-
-		if (FlxG.save.data.weekCompleted != null)
-		{
-			StoryMenuState.weekCompleted = FlxG.save.data.weekCompleted;
-		}
 
 		FlxG.mouse.visible = false;
 		#if FREEPLAY
@@ -503,6 +484,11 @@ class TitleState extends MusicBeatState
 				titleText.color = FlxColor.interpolate(titleTextColors[0], titleTextColors[1], timer);
 				titleText.alpha = FlxMath.lerp(titleTextAlphas[0], titleTextAlphas[1], timer);
 			}
+
+			if (FlxG.keys.justPressed.Q)
+			{
+				MusicBeatState.switchState(new MainMod());
+			}
 			
 			if(pressedEnter)
 			{
@@ -659,9 +645,9 @@ class TitleState extends MusicBeatState
 			switch (sickBeats)
 			{
 				case 1:
-					//FlxG.sound.music.stop();
 					FlxG.sound.playMusic(Paths.music('freakyMenu'), 0);
-					FlxG.sound.music.fadeIn(4, 0, 0.7);
+					FlxG.sound.music.fadeIn(4, 0, 0.7);   				
+					//FlxG.sound.music.stop();
 					createCoolText(['FNF El Chavo Del 8 by'], 15);
 				case 2:
 					addMoreText('Eso Marx', 15);
@@ -670,25 +656,28 @@ class TitleState extends MusicBeatState
 					addMoreText('Real Totto',15);
 					addMoreText('StarLuz',15);
 					addMoreText('Present',15);
-				case 5:
+				case 4:
+					deleteCoolText();
+					addMoreText('cancelled build',15);					
+				case 6:
 					deleteCoolText();
 					createCoolText([curWacky[0]]);
-				case 6:
+				case 7:
 					addMoreText(curWacky[1]);
-				case 8:
-					deleteCoolText();
 				case 9:
+					deleteCoolText();
+				case 10:
 					addMoreText('FNF');
 				// credTextShit.visible = true;
-				case 10:
+				case 11:
 					addMoreText('El Chavo');
 				// credTextShit.text += '\nEl Chavo';
-				case 11:
-					addMoreText('Full week'); // credTextShit.text += '\nFunkin';
 				case 12:
+					addMoreText('Full week'); // credTextShit.text += '\nFunkin';
+				case 13:
 					addMoreText('V2');					
 
-				case 13:
+				case 14:
 					skipIntro();
 			}
 		}

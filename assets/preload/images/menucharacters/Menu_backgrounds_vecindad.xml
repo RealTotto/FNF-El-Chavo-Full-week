@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='utf-8'?>
+<TextureAtlas imagePath="backgrounds_vencidad.png"><SubTexture name="vc_lluviosa0000" x="0" y="2800" width="2551" height="1396" frameX="0" frameY="0" frameWidth="2551" frameHeight="1392" />
+<SubTexture name="vc_lluviosa0001" x="5120" y="0" width="2559" height="1392" frameX="7" frameY="-3" frameWidth="2551" frameHeight="1392" />
+<SubTexture name="vc_lluviosa0002" x="5120" y="0" width="2559" height="1392" frameX="7" frameY="-3" frameWidth="2551" frameHeight="1392" />
+<SubTexture name="vc_lluviosa0003" x="5120" y="1392" width="2553" height="1391" frameX="7" frameY="0" frameWidth="2551" frameHeight="1392" />
+<SubTexture name="vc_lluviosa0004" x="5120" y="1392" width="2553" height="1391" frameX="7" frameY="0" frameWidth="2551" frameHeight="1392" />
+<SubTexture name="vc_lluviosa0005" x="2551" y="2800" width="2542" height="1393" frameX="-1" frameY="-5" frameWidth="2551" frameHeight="1392" />
+<SubTexture name="vc_lluviosa0006" x="2551" y="2800" width="2542" height="1393" frameX="-1" frameY="-5" frameWidth="2551" frameHeight="1392" />
+<SubTexture name="vc_Space0000" x="0" y="0" width="2560" height="1400" frameX="0" frameY="0" frameWidth="2560" frameHeight="1400" />
+<SubTexture name="vc_Red0000" x="2560" y="0" width="2560" height="1400" frameX="0" frameY="0" frameWidth="2560" frameHeight="1400" />
+<SubTexture name="vc_Quico0000" x="0" y="1400" width="2560" height="1400" frameX="0" frameY="0" frameWidth="2560" frameHeight="1400" />
+<SubTexture name="TT_Chavo0000" x="2560" y="1400" width="2560" height="1400" frameX="0" frameY="0" frameWidth="2560" frameHeight="1400" />
+</TextureAtlas>

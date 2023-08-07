@@ -4,7 +4,8 @@ import flixel.FlxG;
 
 class GameProgression
 {
-	public static var weekProgress:Map<String, {song:String}> = [];
+	public static var weekProgress:Map<String, {song:String, curDeaths:Int}> = [];
+	public static var storyProgress:Map<String, {song:String, curDeaths:Int, Misses:Int}> = [];
 
 	public static function load()
 	{
@@ -12,11 +13,17 @@ class GameProgression
 		{
 			weekProgress = FlxG.save.data.weekProgress;
 		}	
+		if (FlxG.save.data.storyProgress != null)
+		{
+			storyProgress = FlxG.save.data.storyProgress;
+		}				
 	}
 
 	public static function save()
 	{
 		FlxG.save.data.weekProgress = weekProgress;	
+
+		FlxG.save.data.storyProgress = storyProgress;
 
 		FlxG.save.flush();
 	}
@@ -24,6 +31,8 @@ class GameProgression
 	public static function reset()
 	{
 		weekProgress = [];
+
+		storyProgress = [];
 
 		save();
 	}
