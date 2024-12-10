@@ -7,5 +7,5 @@ Go to the Official Page of OS Engine to know about the installation(https://gith
 ## Full week Credits:
 * [Eso Marx](https://www.youtube.com/@esomarx3074) - Mod Creator
 * [KoichiM4](https://twitter.com/m4_koi) - Mod Composer T2
-* [Real Totto](https://youtube.com/@RealTotto_D) - Mod Programmer
+* [MARD](https://youtube.com/@MARD476) - Mod Programmer
 * [StarLuz](https://www.youtube.com/channel/UC4qtZUhwN0S_d-Wj2X4mO6A) - Mod Programmer
